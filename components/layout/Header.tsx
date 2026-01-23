@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import Navigation from "./Navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
