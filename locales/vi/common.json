@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "work": "Dự án",
+    "caseStudies": "Case Studies",
+    "about": "Về tôi",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "badge": "UI/UX Designer · Developer-minded",
+    "title": "Sơn Hà",
+    "subtitle": "Thiết kế sản phẩm vừa đẹp vừa khả thi về mặt kỹ thuật",
+    "description": "UI/UX designer với nền tảng frontend development vững chắc. Tôi hiểu backend logic, cấu trúc database và API flows - đảm bảo mọi quyết định thiết kế đều dựa trên khả năng triển khai thực tế. Tôi đã làm việc với khách hàng thực và startup, ship những sản phẩm cân bằng giữa nhu cầu người dùng và thực tế kỹ thuật.",
+    "cta": "Xem Case Studies"
+  },
+  "caseStudies": {
+    "title": "Case Studies Nổi Bật"
+  },
+  "projects": {
+    "title": "Dự Án & Công Việc Thực Tế",
+    "filters": {
+      "all": "Tất cả",
+      "client": "Client",
+      "startup": "Startup",
+      "internship": "Thực tập",
+      "shipped": "Đã hoàn thành"
+    }
+  },
+  "experience": {
+    "title": "Kinh Nghiệm Chuyên Môn",
+    "viewDetails": "Xem chi tiết"
+  },
+  "about": {
+    "title": "Về Tôi",
+    "subtitle": "Xuất Phát Từ Developer, Tư Duy Designer",
+    "skills": {
+      "title": "Kỹ Năng & Khả Năng",
+      "design": {
+        "title": "Design",
+        "items": "UX Research · Wireframing · Prototyping · Design Systems · Usability Testing · Information Architecture"
+      },
+      "frontend": {
+        "title": "Frontend Development",
+        "items": "HTML/CSS · JavaScript · React · Tailwind · Component Libraries · Responsive Design"
+      },
+      "system": {
+        "title": "Hiểu Biết Hệ Thống",
+        "items": "API Design · Backend Logic · Database Basics · State Management · Performance Optimization"
+      }
+    },
+    "education": {
+      "title": "Học Vấn",
+      "degree": "Cử Nhân Khoa Học Máy Tính",
+      "university": "Tên Trường Đại Học"
+    }
+  },
+  "footer": {
+    "tagline": "Thiết kế và xây dựng bởi tôi",
+    "copyright": "© 2024 Sơn Hà. Bảo lưu mọi quyền."
+  }
+}
