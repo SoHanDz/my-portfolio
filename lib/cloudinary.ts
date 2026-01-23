@@ -9,9 +9,9 @@ export const getCloudinaryUrl = (
 ) => {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
   
-  if (!cloudName) {
-    console.warn('NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME is not set');
-    return '';
+  // Return placeholder if no cloud name or publicId
+  if (!cloudName || !publicId) {
+    return '/images/placeholder.png'; // hoặc return null
   }
 
   const transforms = [
@@ -24,7 +24,6 @@ export const getCloudinaryUrl = (
   return `https://res.cloudinary.com/${cloudName}/image/upload/${transforms}/${publicId}`;
 };
 
-// Preset sizes cho responsive images
 export const IMAGE_SIZES = {
   thumbnail: 400,
   card: 800,

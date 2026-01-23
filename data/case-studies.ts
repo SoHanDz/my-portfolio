@@ -38,4 +38,36 @@ export const caseStudies: CaseStudy[] = [
     ],
     technologies: ['Figma', 'React', 'TypeScript'],
   },
+  {
+    id: '2',
+    slug: 'fintech-mobile-app',
+    title: 'Fintech Mobile App',
+    subtitle: 'Onboarding & Finance Dashboard',
+    description: 'Onboarding experience and personal finance dashboard for a fintech startup',
+    thumbnail: 'case-studies/fintech-thumb',
+    coverImage: 'case-studies/fintech-hero',
+    tags: ['Startup', 'Mobile', 'Shipped'],
+    year: '2024',
+    client: 'FinanceFlow',
+    role: 'Product Designer',
+    duration: '3 months',
+    problem: 'Users abandoned onboarding process due to complexity and lack of clarity.',
+    solution: 'Simplified onboarding to 3 steps with clear value propositions and visual progress indicators.',
+    impact: [
+      'Increased onboarding completion by 70%',
+      'Reduced support tickets by 40%',
+      'Improved user satisfaction score by 35%',
+    ],
+    images: [
+      {
+        url: 'case-studies/fintech-1',
+        alt: 'Onboarding flow',
+      },
+    ],
+    metrics: [
+      { label: 'Completion Rate', value: '+70%' },
+      { label: 'Support Tickets', value: '-40%' },
+    ],
+    technologies: ['Figma', 'React Native', 'TypeScript'],
+  },
 ];
