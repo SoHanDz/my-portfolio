@@ -14,16 +14,21 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
+  console.log('🔍 Layout Locale:', locale);
+
   if (!routing.locales.includes(locale as "en" | "vi")) {
     notFound();
   }
 
-  const messages = await getMessages();
+  // Pass locale explicitly
+  const messages = await getMessages({ locale });
+
+  console.log('🔍 Messages loaded:', messages.hero?.title);
 
   return (
     <html lang={locale} className="dark">
-      <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
+      <body className="antialiased" suppressHydrationWarning>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <Header />
           {children}
           <Footer />

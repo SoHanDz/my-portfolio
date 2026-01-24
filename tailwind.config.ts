@@ -31,6 +31,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        cyan: {
+          500: "#06b6d4",
+          600: "#0891b2",
+        },
         border: "hsl(var(--border))",
       },
       borderRadius: {

@@ -20,7 +20,7 @@ export default function ProjectsSection() {
   });
 
   return (
-    <section id="work" className="py-24 bg-muted/30">
+    <section id="work" className="py-24 bg-transparent">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <motion.div
