@@ -7,8 +7,8 @@ export const caseStudies: CaseStudy[] = [
     title: 'Healthcare Platform Redesign',
     subtitle: 'Redesigning patient management flow',
     description: 'Redesigning patient management flow to reduce cognitive load and improve data accuracy',
-    thumbnail: 'case-studies/healthcare-calendar',
-    coverImage: 'case-studies/healthcare-hero',
+    thumbnail: 'samples/landscapes/beach-boat', // Demo image
+    coverImage: 'samples/landscapes/beach-boat', // Demo image
     tags: ['Client', 'Web App', 'UX-heavy'],
     year: '2024',
     client: 'HealthTech Corp',
@@ -23,11 +23,11 @@ export const caseStudies: CaseStudy[] = [
     ],
     images: [
       {
-        url: 'case-studies/healthcare-1',
+        url: 'samples/cloudinary-group',
         alt: 'Calendar interface redesign',
       },
       {
-        url: 'case-studies/healthcare-2',
+        url: 'samples/people/kitchen-bar',
         alt: 'Patient data entry flow',
       },
     ],
@@ -44,8 +44,8 @@ export const caseStudies: CaseStudy[] = [
     title: 'Fintech Mobile App',
     subtitle: 'Onboarding & Finance Dashboard',
     description: 'Onboarding experience and personal finance dashboard for a fintech startup',
-    thumbnail: 'case-studies/fintech-thumb',
-    coverImage: 'case-studies/fintech-hero',
+    thumbnail: 'samples/food/spices', // Demo image
+    coverImage: 'samples/landscapes/architecture-signs', // Demo image
     tags: ['Startup', 'Mobile', 'Shipped'],
     year: '2024',
     client: 'FinanceFlow',
@@ -60,7 +60,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     images: [
       {
-        url: 'case-studies/fintech-1',
+        url: 'samples/people/smiling-man',
         alt: 'Onboarding flow',
       },
     ],
