@@ -22,7 +22,7 @@ export default function CaseStudyNavigation({
   const router = useRouter();
 
   const handleNavigation = (slug: string) => {
-    router.push(`/case-studies/${slug}` as any);
+    router.push(`/case-studies/${slug}` as '/');
   };
 
   return (

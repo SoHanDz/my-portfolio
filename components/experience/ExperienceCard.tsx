@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { Experience } from '@/types';
 import { Briefcase } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 interface ExperienceCardProps {
   experience: Experience;
@@ -36,11 +35,6 @@ export default function ExperienceCard({ experience, index }: ExperienceCardProp
       <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
         {experience.description}
       </p>
-
-      {/* View Details Button - Optional */}
-      {/* <Button variant="ghost" size="sm" className="px-0">
-        View Details →
-      </Button> */}
     </motion.div>
   );
 }
