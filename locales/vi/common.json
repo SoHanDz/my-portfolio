@@ -57,5 +57,22 @@
   "footer": {
     "tagline": "Thiết kế và xây dựng bởi tôi",
     "copyright": "© 2024 Sơn Hà. Bảo lưu mọi quyền."
+  },
+  "caseStudy": {
+    "overview": "Tổng Quan",
+    "problem": "Vấn Đề",
+    "solution": "Giải Pháp",
+    "impact": "Tác Động & Kết Quả",
+    "role": "Vai Trò",
+    "client": "Khách Hàng",
+    "duration": "Thời Gian",
+    "year": "Năm",
+    "technologies": "Công Nghệ",
+    "viewLiveProject": "Xem Dự Án",
+    "relatedProjects": "Dự Án Liên Quan",
+    "nextProject": "Dự Án Tiếp Theo",
+    "previousProject": "Dự Án Trước",
+    "metrics": "Chỉ Số Chính",
+    "gallery": "Thư Viện Hình Ảnh"
   }
 }

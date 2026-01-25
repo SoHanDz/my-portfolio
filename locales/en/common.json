@@ -57,5 +57,22 @@
   "footer": {
     "tagline": "Designed and built by me",
     "copyright": "© 2024 Son Ha. All rights reserved."
+  },
+  "caseStudy": {
+    "overview": "Overview",
+    "problem": "The Problem",
+    "solution": "The Solution",
+    "impact": "Impact & Results",
+    "role": "Role",
+    "client": "Client",
+    "duration": "Duration",
+    "year": "Year",
+    "technologies": "Technologies",
+    "viewLiveProject": "View Live Project",
+    "relatedProjects": "Related Projects",
+    "nextProject": "Next Project",
+    "previousProject": "Previous Project",
+    "metrics": "Key Metrics",
+    "gallery": "Project Gallery"
   }
 }

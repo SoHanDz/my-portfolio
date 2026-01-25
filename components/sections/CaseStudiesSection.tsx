@@ -1,12 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
-import { caseStudies } from '@/data/case-studies';
+import { getCaseStudies } from '@/data/case-studies/index';
 import CaseStudyCard from '@/components/case-study/CaseStudyCard';
 
 export default function CaseStudiesSection() {
   const t = useTranslations('caseStudies');
+  const locale = useLocale();
+  const caseStudies = getCaseStudies(locale);
 
   return (
     <section id="case-studies" className="py-24">
