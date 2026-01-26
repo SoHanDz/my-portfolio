@@ -1,6 +1,6 @@
 import { Project } from '@/types';
 
-export const projects: Project[] = [
+export const projectsEN: Project[] = [
   {
     id: '1',
     title: 'E-commerce Platform',
@@ -104,7 +104,6 @@ export const projects: Project[] = [
     description: 'Enterprise tool for sales team workflow optimization',
     tags: ['Client', 'Shipped'],
     category: 'client',
-    // Không có detail → sẽ không có button "View Details"
   },
   
   {
@@ -113,6 +112,5 @@ export const projects: Project[] = [
     description: 'Landing pages and marketing materials for B2B SaaS product',
     tags: ['Internship'],
     category: 'internship',
-    // Không có detail
   },
 ];

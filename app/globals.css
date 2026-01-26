@@ -71,3 +71,14 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Smooth transitions for cards */
+@layer utilities {
+  .card-hover-effect {
+    @apply transition-all duration-300;
+  }
+  
+  .card-hover-effect:hover {
+    @apply border-cyan-500 shadow-lg shadow-cyan-500/20;
+  }
+}

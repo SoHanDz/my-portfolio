@@ -26,6 +26,20 @@
       "shipped": "Đã hoàn thành"
     }
   },
+  "project": {
+    "viewDetails": "Xem Chi Tiết",
+    "projectOverview": "Tổng Quan Dự Án",
+    "myRole": "Vai Trò Của Tôi",
+    "teamSize": "Quy Mô Team",
+    "keyResponsibilities": "Trách Nhiệm Chính",
+    "myContributions": "Đóng Góp Của Tôi",
+    "impactResults": "Tác Động & Kết Quả",
+    "technologiesTools": "Công Nghệ & Công Cụ",
+    "challengesSolutions": "Thách Thức & Giải Pháp",
+    "keyLearnings": "Bài Học Chính",
+    "projectVisuals": "Hình Ảnh Dự Án",
+    "live": "Xem Trực Tiếp"
+  },
   "experience": {
     "title": "Kinh Nghiệm Chuyên Môn",
     "viewDetails": "Xem chi tiết"

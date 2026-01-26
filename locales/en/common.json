@@ -26,6 +26,20 @@
       "shipped": "Shipped"
     }
   },
+  "project": {
+    "viewDetails": "View Details",
+    "projectOverview": "Project Overview",
+    "myRole": "My Role",
+    "teamSize": "Team Size",
+    "keyResponsibilities": "Key Responsibilities",
+    "myContributions": "My Contributions",
+    "impactResults": "Impact & Results",
+    "technologiesTools": "Technologies & Tools",
+    "challengesSolutions": "Challenges & Solutions",
+    "keyLearnings": "Key Learnings",
+    "projectVisuals": "Project Visuals",
+    "live": "Live"
+  },
   "experience": {
     "title": "Professional Experience",
     "viewDetails": "View Details"

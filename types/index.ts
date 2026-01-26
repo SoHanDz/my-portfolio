@@ -31,6 +31,25 @@ export interface CaseStudy {
   nextProject?: string;
 }
 
+export interface ProjectDetail {
+  overview: string;
+  responsibilities: string[];
+  contributions: string[];
+  impact: string[];
+  technologies: string[];
+  teamSize?: string;
+  myRole?: string;
+  challenges?: string;
+  learnings?: string[];
+  images?: {
+    url: string;
+    alt: string;
+    caption?: string;
+  }[];
+  liveUrl?: string;
+  demoUrl?: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -39,6 +58,7 @@ export interface Project {
   tags: string[];
   category: 'client' | 'startup' | 'internship' | 'shipped';
   link?: string;
+  detail?: ProjectDetail; // ← Thêm field này
 }
 
 export interface Experience {

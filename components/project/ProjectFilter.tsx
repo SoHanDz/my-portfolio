@@ -16,16 +16,16 @@ export default function ProjectFilter({ activeFilter, onFilterChange }: ProjectF
   const t = useTranslations('projects.filters');
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-3">
       {filters.map((filter) => (
         <button
           key={filter}
           onClick={() => onFilterChange(filter)}
           className={cn(
-            'px-4 py-2 rounded-md text-sm font-medium transition-colors',
+            'px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300',
             activeFilter === filter
-              ? 'bg-primary text-primary-foreground'
-              : 'bg-muted text-muted-foreground hover:bg-muted/80'
+              ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/30 scale-105'
+              : 'bg-transparent text-muted-foreground border border-border hover:border-cyan-500/50 hover:text-cyan-500 hover:bg-cyan-500/5'
           )}
         >
           {t(filter)}
