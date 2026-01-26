@@ -20,9 +20,11 @@ export default function ProjectDetailDialog({
   open,
   onOpenChange,
 }: ProjectDetailDialogProps) {
+  
+  const t = useTranslations('project');
+  
   if (!project.detail) return null;
 
-  const t = useTranslations('project');
   const { detail } = project;
 
   return (

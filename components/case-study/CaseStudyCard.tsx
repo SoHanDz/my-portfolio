@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 import { useParams } from 'next/navigation';
 import { CaseStudy } from '@/types';
 import { getCloudinaryUrl, IMAGE_SIZES } from '@/lib/cloudinary';
