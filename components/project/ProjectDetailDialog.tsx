@@ -22,8 +22,8 @@ export default function ProjectDetailDialog({
 }: ProjectDetailDialogProps) {
   if (!project.detail) return null;
 
-  const { detail } = project;
   const t = useTranslations('project');
+  const { detail } = project;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>

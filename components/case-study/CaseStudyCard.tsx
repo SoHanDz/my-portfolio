@@ -15,7 +15,6 @@ interface CaseStudyCardProps {
 }
 
 export default function CaseStudyCard({ caseStudy, index }: CaseStudyCardProps) {
-  const router = useRouter();
   const params = useParams();
   const locale = params.locale as string;
 
