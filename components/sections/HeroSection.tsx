@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
-  const t = useTranslations('hero');
+  const t = useTranslations("hero");
 
   const handleScrollToCaseStudies = () => {
-    const element = document.getElementById('case-studies');
+    const element = document.getElementById("case-studies");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -48,7 +48,7 @@ export default function HeroSection() {
             delay: 1,
           }}
         />
-        
+
         {/* Floating Particles */}
         {[...Array(6)].map((_, i) => (
           <motion.div
@@ -90,7 +90,7 @@ export default function HeroSection() {
             >
               <div className="px-4 py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-sm text-cyan-500 flex items-center gap-2">
                 <Sparkles className="w-4 h-4" />
-                {t('badge')}
+                {t("badge")}
               </div>
             </motion.div>
 
@@ -102,7 +102,7 @@ export default function HeroSection() {
               className="text-5xl md:text-6xl lg:text-7xl mb-6 font-bold"
             >
               <span className="bg-gradient-to-r from-white via-cyan-500 to-white bg-clip-text text-transparent">
-                {t('title')}
+                {t("title")}
               </span>
             </motion.h1>
 
@@ -113,7 +113,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-xl md:text-2xl text-white/90 mb-6 font-medium"
             >
-              {t('subtitle')}
+              {t("subtitle")}
             </motion.p>
 
             {/* Description */}
@@ -123,7 +123,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed"
             >
-              {t('description')}
+              {t("description")}
             </motion.p>
 
             {/* CTA */}
@@ -131,15 +131,31 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex gap-4"
+              className="flex flex-wrap gap-4"
             >
               <Button
                 size="lg"
                 onClick={handleScrollToCaseStudies}
                 className="group bg-cyan-500 hover:bg-cyan-600 text-white"
               >
-                {t('cta')}
+                {t("cta")}
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="group border-white/20 text-white hover:bg-white/10 hover:text-white hover:border-white/40"
+              >
+                <a
+                  href="https://drive.google.com/file/d/1ivLmhSK3UiGpohJ6udCAvhPjVvQcau01/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('ctaCV')}
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
             </motion.div>
           </motion.div>
@@ -168,21 +184,21 @@ export default function HeroSection() {
                 animate={{ rotate: 360 }}
                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
               />
-              
+
               {/* Center Glow */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-32 h-32 bg-cyan-500/30 rounded-full blur-3xl" />
               </div>
-              
+
               {/* Floating Dots */}
               {[0, 60, 120, 180, 240, 300].map((angle, i) => (
                 <motion.div
                   key={i}
                   className="absolute w-3 h-3 bg-cyan-500 rounded-full"
                   style={{
-                    top: '50%',
-                    left: '50%',
-                    transformOrigin: '0 0',
+                    top: "50%",
+                    left: "50%",
+                    transformOrigin: "0 0",
                   }}
                   animate={{
                     rotate: angle,
@@ -192,7 +208,12 @@ export default function HeroSection() {
                   }}
                   transition={{
                     rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-                    scale: { duration: 2, repeat: Infinity, ease: "easeInOut", delay: i * 0.3 },
+                    scale: {
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                      delay: i * 0.3,
+                    },
                   }}
                 />
               ))}

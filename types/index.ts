@@ -61,6 +61,20 @@ export interface Project {
   detail?: ProjectDetail; // ← Thêm field này
 }
 
+export interface ExperienceDetail {
+  overview: string;
+  responsibilities: string[];
+  projects: {
+    title: string;
+    description: string;
+    category: 'social-media' | 'web-design' | 'branding';
+    images?: string[]; // Cloudinary public IDs
+  }[];
+  achievements: string[];
+  skills: string[];
+  duration: string;
+}
+
 export interface Experience {
   id: string;
   title: string;
@@ -68,6 +82,7 @@ export interface Experience {
   period: string;
   description: string;
   icon?: string;
+  detail?: ExperienceDetail; // ← Thêm field này
 }
 
 export interface Skill {

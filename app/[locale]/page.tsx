@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
+      <AboutSection />
       <CaseStudiesSection />
       <ProjectsSection />
-      <AboutSection />
     </main>
   );
 }
