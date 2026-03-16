@@ -1,7 +1,9 @@
+import dynamic from 'next/dynamic';
 import HeroSection from '@/components/sections/HeroSection';
-import ProjectsSection from '@/components/sections/ProjectsSection';
-import CaseStudySection from '@/components/sections/CaseStudiesSection';
-import AboutSection from '@/components/sections/AboutSection';
+
+const ProjectsSection = dynamic(() => import('@/components/sections/ProjectsSection'));
+const CaseStudySection = dynamic(() => import('@/components/sections/CaseStudiesSection'));
+const AboutSection = dynamic(() => import('@/components/sections/AboutSection'));
 
 export default function HomePage() {
   return (
