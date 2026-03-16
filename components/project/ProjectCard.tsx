@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { Project } from '@/types';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, ArrowUpRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import ProjectDetailDrawer from './ProjectDetailDrawer';
 

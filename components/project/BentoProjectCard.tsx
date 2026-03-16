@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Project } from '@/types';
-import { Badge } from '@/components/ui/badge';
 import { ArrowUpRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import ProjectDetailDrawer from './ProjectDetailDrawer';
