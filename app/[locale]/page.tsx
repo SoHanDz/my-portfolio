@@ -3,7 +3,7 @@ import HeroSection from '@/components/sections/HeroSection';
 
 const ProjectsSection = dynamic(() => import('@/components/sections/ProjectsSection'));
 const CaseStudySection = dynamic(() => import('@/components/sections/CaseStudiesSection'));
-const AboutSection = dynamic(() => import('@/components/sections/AboutSection'));
+// const AboutSection = dynamic(() => import('@/components/sections/AboutSection'));
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <ProjectsSection />
       <CaseStudySection />
-      <AboutSection />
+      {/* <AboutSection /> */}
     </main>
   );
 }
