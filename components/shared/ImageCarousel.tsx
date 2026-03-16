@@ -87,7 +87,7 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
               onClick={() => setCurrentIndex(index)}
               className={`relative w-20 h-20 rounded-md overflow-hidden shrink-0 border-2 transition-all ${
                 index === currentIndex
-                  ? 'border-cyan-500 scale-105'
+                  ? 'border-orange-500 scale-105'
                   : 'border-border opacity-50 hover:opacity-100'
               }`}
             >

@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -31,11 +32,12 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        cyan: {
-          500: "#06b6d4",
-          600: "#0891b2",
-        },
         border: "hsl(var(--border))",
+        // Orange accent
+        orange: {
+          500: '#F0503D',
+          600: '#D64534',
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -45,4 +47,6 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;

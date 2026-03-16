@@ -12,7 +12,7 @@ export default function CaseStudyContent({ caseStudy }: CaseStudyContentProps) {
   const t = useTranslations('caseStudy');
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Problem */}
@@ -59,7 +59,7 @@ export default function CaseStudyContent({ caseStudy }: CaseStudyContentProps) {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex items-start gap-3"
                 >
-                  <span className="text-cyan-500 mt-1">✓</span>
+                  <span className="text-orange-500 mt-1">✓</span>
                   <span className="text-lg text-muted-foreground">{item}</span>
                 </motion.li>
               ))}

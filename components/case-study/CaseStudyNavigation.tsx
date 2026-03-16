@@ -47,7 +47,7 @@ export default function CaseStudyNavigation({
                     <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                     {t('previousProject')}
                   </span>
-                  <span className="text-lg font-semibold group-hover:text-cyan-500 transition-colors">
+                  <span className="text-lg font-semibold group-hover:text-orange-500 transition-colors">
                     {prevProject.title}
                   </span>
                 </Button>
@@ -72,7 +72,7 @@ export default function CaseStudyNavigation({
                     {t('nextProject')}
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
-                  <span className="text-lg font-semibold group-hover:text-cyan-500 transition-colors">
+                  <span className="text-lg font-semibold group-hover:text-orange-500 transition-colors">
                     {nextProject.title}
                   </span>
                 </Button>

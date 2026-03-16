@@ -57,7 +57,7 @@ export default function ExperienceDetailContent({ experience }: ExperienceDetail
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex items-start gap-3"
                   >
-                    <span className="text-cyan-500 mt-1">✓</span>
+                    <span className="text-orange-500 mt-1">✓</span>
                     <span className="text-lg text-muted-foreground">{item}</span>
                   </motion.li>
                 ))}
@@ -95,7 +95,7 @@ export default function ExperienceDetailContent({ experience }: ExperienceDetail
                   <div>
                     <div className="flex flex-wrap items-center gap-3 mb-3">
                       <h3 className="text-2xl font-bold">{project.title}</h3>
-                      <Badge variant="outline" className="text-cyan-500 border-cyan-500/30">
+                      <Badge variant="outline" className="text-orange-500 border-orange-500/30">
                         {categoryLabels[project.category]}
                       </Badge>
                     </div>
@@ -126,7 +126,7 @@ export default function ExperienceDetailContent({ experience }: ExperienceDetail
               transition={{ duration: 0.5 }}
               className="text-3xl font-bold mb-8 flex items-center gap-3"
             >
-              <Award className="w-8 h-8 text-cyan-500" />
+              <Award className="w-8 h-8 text-orange-500" />
               Key Achievements
             </motion.h2>
 
@@ -138,7 +138,7 @@ export default function ExperienceDetailContent({ experience }: ExperienceDetail
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="p-6 border border-border rounded-lg bg-card hover:border-cyan-500/50 transition-colors"
+                  className="p-6 border border-border rounded-lg bg-card hover:border-orange-500/50 transition-colors"
                 >
                   <p className="leading-relaxed">{item}</p>
                 </motion.div>
@@ -170,7 +170,7 @@ export default function ExperienceDetailContent({ experience }: ExperienceDetail
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
-                  className="px-4 py-2 bg-muted border border-border rounded-lg text-sm font-medium hover:border-cyan-500/50 hover:bg-cyan-500/5 transition-colors"
+                  className="px-4 py-2 bg-muted border border-border rounded-lg text-sm font-medium hover:border-orange-500/50 hover:bg-orange-500/5 transition-colors"
                 >
                   {skill}
                 </motion.span>

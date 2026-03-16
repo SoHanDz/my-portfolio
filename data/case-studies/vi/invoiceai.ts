@@ -1,47 +1,48 @@
+// invoiceai.ts
 import { CaseStudy } from '@/types';
 
 export const invoiceaiVI: CaseStudy = {
   id: '1',
   slug: 'invoiceai-saas-redesign',
   title: 'InvoiceAI - Thiết Kế Lại SaaS',
-  subtitle: 'Từ Logistics Đến Fintech Tuân Thủ',
-  description: 'Thiết kế lại hệ thống kho bãi thành nền tảng SaaS hóa đơn điện tử hiện đại theo quy định tuân thủ số của Việt Nam',
+  subtitle: 'Từ Công Cụ Quản Lý Kho Đến Nền Tảng SaaS Hóa Đơn Điện Tử',
+  description: 'Thiết kế lại hệ thống quản lý kho bị từ chối thành nền tảng SaaS đáp ứng quy định hóa đơn điện tử mới của Việt Nam',
   thumbnail: 'case-studies/invoiceai-thumb',
   coverImage: 'case-studies/invoiceai-hero',
-  tags: ['Client', 'Web App', 'UX-heavy', 'Redesign'],
+  tags: ['Startup', 'Web App', 'Redesign'],
   year: '2024 - Hiện tại',
   client: 'Bảo mật',
-  role: 'Lead UI/UX Designer',
-  duration: 'Tháng 5/2024 - Hiện tại (Nhiều giai đoạn)',
-  problem: 'Hệ thống quản lý kho ban đầu cho XTC Logistics không được nghiệm thu. Dự án cần chuyển hướng để giải quyết cơ hội thị trường mới: Quy định hóa đơn điện tử bắt buộc của Việt Nam yêu cầu doanh nghiệp áp dụng giải pháp hóa đơn số.',
-  solution: 'Thiết kế lại nền tảng từ công cụ logistics đơn mục đích thành hệ thống SaaS hóa đơn điện tử linh hoạt. Tập trung vào tạo hóa đơn trực quan, quy trình tuân thủ, và dashboard hiện đại hấp dẫn các doanh nghiệp vừa và nhỏ đang thích ứng với quy định mới.',
+  role: 'UI/UX Designer & Frontend Developer',
+  duration: 'Tháng 5/2024 - Hiện tại',
+  problem: 'Hệ thống quản lý kho XTC — được xây dựng cho một xưởng sản xuất ví da — đã hoàn thành nhưng bị client từ chối. Thay vì bỏ dự án, team quyết định pivot: rework lại thành nền tảng SaaS nhắm đến các doanh nghiệp SME cần tuân thủ quy định hóa đơn điện tử bắt buộc mới của Việt Nam.',
+  solution: 'Redesign UI từ đầu trong khi giữ lại những phần hoạt động tốt từ XTC. Cơ cấu lại các màn hình chính — bao gồm trang tạo đơn hàng — thành layout theo block rõ ràng (header, filter, table). Dùng v0.dev để khám phá hướng UI cho 3 màn hình chính, sau đó tự implement lại bằng code. Xây dựng design system cơ bản để đảm bảo tính nhất quán.',
   impact: [
-    'Chuyển đổi dự án bị từ chối thành sản phẩm SaaS khả thi',
-    'Thiết kế cho khả năng mở rộng và kiến trúc đa thuê bao',
-    'Giải quyết nhu cầu thị trường cấp thiết (Quy định hóa đơn điện tử VN)',
-    'UI hiện đại cải thiện tính chuyên nghiệp và tin cậy'
+    'Hệ thống đang chạy thực tế và có người dùng sử dụng',
+    'Hoàn thành design và implement cho 20+ màn hình chính',
+    'Layout theo block cải thiện khả năng đọc và thao tác so với phiên bản cũ',
+    'UI mới nhận phản hồi tốt hơn rõ rệt so với phiên bản XTC',
   ],
   images: [
     {
       url: 'case-studies/invoiceai-dashboard',
       alt: 'Tổng quan Dashboard InvoiceAI',
-      caption: 'Dashboard SaaS hiện đại với các chỉ số chính'
+      caption: 'Dashboard được redesign cho nền tảng SaaS'
     },
     {
       url: 'case-studies/invoiceai-invoice-form',
-      alt: 'Luồng tạo hóa đơn',
-      caption: 'Quy trình tạo hóa đơn được tối ưu hóa'
+      alt: 'Trang tạo đơn hàng sau redesign',
+      caption: 'Trang tạo đơn hàng với layout block rõ ràng'
     },
     {
       url: 'case-studies/invoiceai-before-after',
       alt: 'So sánh Trước và Sau',
-      caption: 'Sự phát triển từ hệ thống logistics sang nền tảng SaaS'
+      caption: 'UI từ XTC đến InvoiceAI'
     }
   ],
   metrics: [
-    { label: 'Giai đoạn dự án', value: '2' },
-    { label: 'Màn hình chính', value: '15+' },
-    { label: 'Tuân thủ', value: '100%' }
+    { label: 'Màn hình chính', value: '20+' },
+    { label: 'Trạng thái', value: 'Live' },
+    { label: 'Giai đoạn', value: '2' },
   ],
-  technologies: ['Figma', 'Design System', 'User Flows'],
+  technologies: ['Figma', 'v0.dev', 'React', 'TypeScript', 'Ant Design'],
 };

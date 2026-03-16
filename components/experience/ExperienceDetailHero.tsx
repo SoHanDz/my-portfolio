@@ -43,8 +43,8 @@ export default function ExperienceDetailHero({ experience }: ExperienceDetailHer
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-6"
           >
-            <div className="w-16 h-16 rounded-lg bg-cyan-500/10 flex items-center justify-center">
-              <Briefcase className="w-8 h-8 text-cyan-500" />
+            <div className="w-16 h-16 rounded-lg bg-orange-500/10 flex items-center justify-center">
+              <Briefcase className="w-8 h-8 text-orange-500" />
             </div>
           </motion.div>
 

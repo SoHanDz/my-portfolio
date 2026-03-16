@@ -4,7 +4,7 @@ export interface CaseStudy {
   title: string;
   subtitle: string;
   description: string;
-  thumbnail: string; // Cloudinary public ID
+  thumbnail: string;
   coverImage: string;
   tags: string[];
   year: string;
@@ -29,6 +29,15 @@ export interface CaseStudy {
     label: string;
   };
   nextProject?: string;
+  research?: {
+    method: string;
+    findings: string[];
+  };
+  platforms?: {
+    name: string;
+    description: string;
+    screens: string[];
+  }[];
 }
 
 export interface ProjectDetail {

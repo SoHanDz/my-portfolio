@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Skill } from '@/types';
-import { Palette, Code, Database } from 'lucide-react';
+import { Palette, Code, Database, Sparkles } from 'lucide-react';
 
 interface SkillCardProps {
   skill: Skill;
@@ -13,6 +13,7 @@ const iconMap = {
   design: Palette,
   frontend: Code,
   system: Database,
+  ai: Sparkles,
 };
 
 export default function SkillCard({ skill, index }: SkillCardProps) {

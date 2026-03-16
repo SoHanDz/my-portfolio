@@ -96,7 +96,7 @@ export default function ProjectDetailDialog({
             <ul className="space-y-2">
               {detail.responsibilities.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-cyan-500 mt-1">•</span>
+                  <span className="text-orange-500 mt-1">•</span>
                   <span className="text-muted-foreground">{item}</span>
                 </li>
               ))}
@@ -109,7 +109,7 @@ export default function ProjectDetailDialog({
             <ul className="space-y-2">
               {detail.contributions.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-cyan-500 mt-1">✓</span>
+                  <span className="text-orange-500 mt-1">✓</span>
                   <span className="text-muted-foreground">{item}</span>
                 </li>
               ))}
@@ -126,7 +126,7 @@ export default function ProjectDetailDialog({
               {detail.impact.map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 border border-border rounded-lg bg-card hover:border-cyan-500/50 transition-colors"
+                  className="p-4 border border-border rounded-lg bg-card hover:border-orange-500/50 transition-colors"
                 >
                   <p className="text-sm">{item}</p>
                 </div>
@@ -167,7 +167,7 @@ export default function ProjectDetailDialog({
               <ul className="space-y-2">
                 {detail.learnings.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="text-cyan-500 mt-1">💡</span>
+                    <span className="text-orange-500 mt-1">💡</span>
                     <span className="text-muted-foreground">{item}</span>
                   </li>
                 ))}

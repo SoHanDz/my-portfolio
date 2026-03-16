@@ -4,20 +4,22 @@
     "work": "Dự án",
     "caseStudies": "Case Studies",
     "about": "Về tôi",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "viewCV": "Xem CV"
   },
   "hero": {
-    "badge": "UI/UX Designer · Developer-minded",
-    "title": "Sơn Hà",
-    "subtitle": "Thiết kế sản phẩm vừa đẹp vừa khả thi về mặt kỹ thuật",
-    "description": "UI/UX designer với nền tảng frontend development vững chắc. Tôi hiểu backend logic, cấu trúc database và API flows - đảm bảo mọi quyết định thiết kế đều dựa trên khả năng triển khai thực tế. Tôi đã làm việc với khách hàng thực và startup, ship những sản phẩm cân bằng giữa nhu cầu người dùng và thực tế kỹ thuật.",
-    "cta": "Xem Case Studies",
-    "ctaCV": "Xem CV"
+    "badge": "Xin chào, mình là Sơn Hà",
+    "title": "Thiết Kế <highlight>Giao Diện Đẹp</highlight>, Dev <highlight>Code Được Ngay</highlight>",
+    "description": "Là UI/UX Designer có gốc Frontend Dev, tôi xóa bỏ khoảng cách giữa thiết kế và lập trình. Các bản design của tôi luôn khả thi kỹ thuật—hiểu rõ API, component logic và constraint thực tế—giúp team của bạn ship sản phẩm nhanh hơn.",
+    "cta": "Khám phá Portfolio"
   },
   "caseStudies": {
-    "title": "Case Studies Nổi Bật"
+    "eyebrow": "Nghiên cứu thực tế",
+    "title": "Case Studies Nổi Bật",
+    "viewCaseStudy": "Xem Case Study"
   },
   "projects": {
+    "eyebrow": "Dự án thực tế",
     "title": "Dự Án & Công Việc Thực Tế",
     "filters": {
       "all": "Tất cả",
@@ -48,6 +50,10 @@
   "about": {
     "title": "Về Tôi",
     "subtitle": "Xuất Phát Từ Developer, Tư Duy Designer",
+    "bio": "Tôi bắt đầu từ frontend developer trước khi chuyển hướng sang UI/UX design. Nền tảng này cho tôi góc nhìn khác biệt — thiết kế với tư duy kỹ thuật, tạo ra các cấu trúc component khả thi và giao tiếp hiệu quả với engineering team. Mục tiêu của tôi là xây dựng sản phẩm không chỉ đẹp mà còn thực tế và có thể mở rộng được.",
+    "experience": {
+      "title": "Kinh Nghiệm Chuyên Môn"
+    },
     "skills": {
       "title": "Kỹ Năng & Khả Năng",
       "design": {
@@ -61,33 +67,53 @@
       "system": {
         "title": "Hiểu Biết Hệ Thống",
         "items": "API Design · Backend Logic · Database Basics · State Management · Performance Optimization"
+      },
+      "ai": {
+        "title": "AI & Công Cụ",
+        "items": "ChatGPT · Claude · Cursor · v0 · Midjourney · Prompt Engineering · AI-assisted Design"
       }
     },
     "education": {
       "title": "Học Vấn",
-      "degree": "Cử Nhân Khoa Học Máy Tính",
-      "university": "Tên Trường Đại Học"
+      "degree": "Ngành tin học ứng dụng",
+      "university": "Cao đẳng Viễn Đông"
     }
   },
   "footer": {
-    "tagline": "Thiết kế và xây dựng bởi tôi",
-    "copyright": "© 2024 Sơn Hà. Bảo lưu mọi quyền."
+    "eyebrow": "Liên hệ",
+    "heading": "Hãy cùng tạo ra điều gì đó.",
+    "ctaContact": "Nhắn cho mình",
+    "ctaCV": "Xem CV",
+    "copyright": "© 2025 Sơn Hà. Bảo lưu mọi quyền."
   },
-  "caseStudy": {
-    "overview": "Tổng Quan",
-    "problem": "Vấn Đề",
-    "solution": "Giải Pháp",
-    "impact": "Tác Động & Kết Quả",
-    "role": "Vai Trò",
-    "client": "Khách Hàng",
-    "duration": "Thời Gian",
-    "year": "Năm",
-    "technologies": "Công Nghệ",
-    "viewLiveProject": "Xem Dự Án",
-    "relatedProjects": "Dự Án Liên Quan",
-    "nextProject": "Dự Án Tiếp Theo",
-    "previousProject": "Dự Án Trước",
-    "metrics": "Chỉ Số Chính",
-    "gallery": "Thư Viện Hình Ảnh"
+  "libraryCaseStudy": {
+    "eyebrow": "Case Study",
+    "meta": {
+      "client": "Khách hàng",
+      "role": "Vai trò",
+      "year": "Năm",
+      "platforms": "Nền tảng"
+    },
+    "problem": {
+      "eyebrow": "Vấn đề",
+      "heading": "Quản lý bằng Excel, sinh viên không biết sách gì có",
+      "before": "Trước đây"
+    },
+    "research": {
+      "eyebrow": "Research",
+      "heading": "Khảo sát thực tế tại thư viện"
+    },
+    "solution": {
+      "eyebrow": "Giải pháp",
+      "heading": "Hệ thống 3 nền tảng"
+    },
+    "impact": {
+      "eyebrow": "Kết quả",
+      "heading": "Thay thế hoàn toàn quy trình cũ"
+    },
+    "gallery": {
+      "eyebrow": "Thiết kế",
+      "heading": "Hình ảnh UI"
+    }
   }
 }

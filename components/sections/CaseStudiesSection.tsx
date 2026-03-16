@@ -11,21 +11,25 @@ export default function CaseStudiesSection() {
   const caseStudies = getCaseStudies(locale);
 
   return (
-    <section id="case-studies" className="py-24">
-      <div className="container mx-auto px-4">
-        {/* Section Title */}
+    <section id="case-studies" className="py-24 bg-card">
+      <div className="container mx-auto px-4 max-w-5xl">
+
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-16"
+          className="mb-12"
         >
+          <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-3">
+            {t('eyebrow')}
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold">{t('title')}</h2>
         </motion.div>
 
-        {/* Case Studies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        {/* Cards — stacked full width */}
+        <div className="space-y-6">
           {caseStudies.map((caseStudy, index) => (
             <CaseStudyCard
               key={caseStudy.id}
@@ -34,6 +38,7 @@ export default function CaseStudiesSection() {
             />
           ))}
         </div>
+
       </div>
     </section>
   );

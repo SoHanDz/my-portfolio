@@ -5,91 +5,91 @@ export const caseStudies: CaseStudy[] = [
     id: '1',
     slug: 'invoiceai-saas-redesign',
     title: 'InvoiceAI - SaaS Redesign',
-    subtitle: 'From Logistics to Fintech Compliance',
-    description: 'Redesigning a warehouse system into a modern SaaS e-invoicing platform for Vietnam\'s digital compliance regulations',
+    subtitle: 'From Warehouse Tool to SaaS E-invoicing Platform',
+    description: 'Redesigning a rejected warehouse management system into a SaaS platform addressing Vietnam\'s new e-invoice regulations',
     thumbnail: 'case-studies/invoiceai-thumb',
     coverImage: 'case-studies/invoiceai-hero',
-    tags: ['Client', 'Web App', 'UX-heavy', 'Redesign'],
+    tags: ['Startup', 'Web App', 'Redesign'],
     year: '2024 - Present',
     client: 'Confidential',
-    role: 'Lead UI/UX Designer',
-    duration: 'May 2024 - Present (Multiple phases)',
-    problem: 'Original warehouse management system for XTC Logistics was not accepted. The project needed to pivot to address a new market opportunity: Vietnam\'s mandatory e-invoice regulations requiring businesses to adopt digital invoicing solutions.',
-    solution: 'Redesigned the platform from a single-purpose logistics tool into a flexible SaaS e-invoicing system. Focused on intuitive invoice creation, compliance workflows, and a modern dashboard that appeals to SMBs adapting to new regulations.',
+    role: 'UI/UX Designer & Frontend Developer',
+    duration: 'May 2024 - Present',
+    problem: 'The original XTC warehouse management system — built for a leather wallet workshop — was completed but rejected by the client. Rather than abandoning the project, the team decided to pivot: rework the system into a SaaS platform targeting SMEs that need to comply with Vietnam\'s new mandatory e-invoicing regulations.',
+    solution: 'Redesigned the UI from the ground up while preserving the parts that worked well from XTC. Restructured key screens — including the order creation page — into clearer block-based layouts (header, filters, table). Used v0.dev to explore UI directions for 3 key screens, then self-implemented the chosen designs. Also built a basic design system to keep the interface consistent across modules.',
     impact: [
-      'Transformed rejected project into viable SaaS product',
-      'Designed for scalability and multi-tenant architecture',
-      'Addressed urgent market need (Vietnam e-invoice mandate)',
-      'Modern UI improved perceived professionalism and trust'
+      'System is live and being used by real users',
+      'Completed design and implementation for 20+ core screens',
+      'Restructured layouts improved readability and usability over the legacy version',
+      'New UI received noticeably better feedback compared to the XTC version',
     ],
     images: [
       {
         url: 'case-studies/invoiceai-dashboard',
         alt: 'InvoiceAI Dashboard Overview',
-        caption: 'Modern SaaS dashboard with key metrics'
+        caption: 'Redesigned dashboard for the SaaS platform'
       },
       {
         url: 'case-studies/invoiceai-invoice-form',
-        alt: 'Invoice creation flow',
-        caption: 'Streamlined invoice creation process'
+        alt: 'Order creation page redesign',
+        caption: 'Restructured order creation page with clear block-based layout'
       },
       {
         url: 'case-studies/invoiceai-before-after',
         alt: 'Before and After comparison',
-        caption: 'Evolution from logistics system to SaaS platform'
+        caption: 'UI evolution from XTC to InvoiceAI'
       }
     ],
     metrics: [
+      { label: 'Core Screens', value: '20+' },
+      { label: 'Project Status', value: 'Live' },
       { label: 'Project Phases', value: '2' },
-      { label: 'Key Screens', value: '15+' },
-      { label: 'Compliance', value: '100%' }
     ],
-    technologies: ['Figma', 'Design System', 'User Flows'],
+    technologies: ['Figma', 'v0.dev', 'React', 'TypeScript', 'Ant Design'],
   },
-  
+
   {
     id: '2',
-    slug: 'khu13-music-club-website',
-    title: 'Khu13 Music Club Website',
-    subtitle: 'Youth-Oriented Nightlife Experience',
-    description: 'Designing an engaging, interactive website for a music club targeting young adults with a modern, bold aesthetic',
-    thumbnail: 'case-studies/khu13-thumb',
-    coverImage: 'case-studies/khu13-hero',
-    tags: ['Client', 'Web Design', 'Interactive'],
-    year: '2025',
-    client: 'Khu13 Music Club',
+    slug: 'library-vien-dong',
+    title: 'Library Management System',
+    subtitle: 'Digitizing Manual Processes for Vien Dong College',
+    description: 'Designing a library management system to replace manual Excel-based workflows — my first real project with on-site user research',
+    thumbnail: 'case-studies/library-thumb',
+    coverImage: 'case-studies/library-hero',
+    tags: ['Client', 'Web App', 'UX Research'],
+    year: '2024',
+    client: 'Vien Dong College',
     role: 'UI/UX Designer',
-    duration: 'January 2025 - Present',
-    problem: 'Khu13 needed a website that captures the energy and vibe of their music club while making it easy for young audiences to discover events, view lineups, and engage with the brand. The site needed to stand out in a competitive nightlife market.',
-    solution: 'Research-driven design inspired by successful club websites like Finns Beach Club. Created bold, high-impact layouts with dark aesthetics, dynamic typography, and interactive prototypes that showcase events and atmosphere. Mobile-first approach for target demographic.',
+    duration: '2024',
+    problem: 'The librarian at Vien Dong College was managing all book borrowing and returns through Excel — manually entering each row every time a student borrowed or returned a book. The process was time-consuming and error-prone. On the student side, there was no way to know what books were available in the library without physically going there to ask.',
+    solution: 'Before designing anything, I visited the library on-site and spoke with the librarian to understand her daily workflow and pain points firsthand. This surfaced two distinct user groups with different needs: students who needed to search for books, and the librarian who needed a faster way to manage borrowing operations. I took on the design for both: a web portal for students to browse and borrow books online, and a desktop dashboard for the librarian to manage all operations — fully replacing Excel.',
     impact: [
-      'Interactive prototype ready for client review',
-      'Modern, youth-appealing aesthetic',
-      'Mobile-optimized for primary audience',
-      'Research-backed design decisions'
+      'System is deployed and actively used at the library',
+      'Librarian no longer needs to manually enter data into Excel',
+      'Students can search for available books without visiting the library',
+      'Fully replaced the previous paper-based process',
     ],
     images: [
       {
-        url: 'case-studies/khu13-homepage',
-        alt: 'Khu13 Homepage Design',
-        caption: 'Bold hero section with event highlights'
+        url: 'case-studies/library-student-portal',
+        alt: 'Student book search portal',
+        caption: 'Online book search and borrowing portal for students'
       },
       {
-        url: 'case-studies/khu13-events',
-        alt: 'Events page layout',
-        caption: 'Event calendar and lineup showcase'
+        url: 'case-studies/library-admin-dashboard',
+        alt: 'Admin dashboard for librarian',
+        caption: 'Dashboard replacing the manual Excel workflow'
       },
       {
-        url: 'case-studies/khu13-prototype',
-        alt: 'Interactive prototype',
-        caption: 'Clickable Figma prototype with animations'
-      }
+        url: 'case-studies/library-survey',
+        alt: 'On-site library research',
+        caption: 'On-site visit and librarian interview at the college'
+      },
     ],
     metrics: [
-      { label: 'References', value: '10+' },
-      { label: 'Key Pages', value: '6' },
-      { label: 'Interactive', value: '100%' }
+      { label: 'User Groups', value: '2' },
+      { label: 'Key Screens', value: '10+' },
+      { label: 'Status', value: 'Live' },
     ],
-    technologies: ['Figma', 'Interactive Prototyping', 'UI Research'],
-  }
+    technologies: ['Figma', 'React', 'Material-UI', 'PostgreSQL'],
+  },
 ];

@@ -12,7 +12,7 @@ interface CaseStudyHeroProps {
 
 export default function CaseStudyHero({ caseStudy }: CaseStudyHeroProps) {
   return (
-    <section className="relative py-20">
+    <section className="relative py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Tags */}

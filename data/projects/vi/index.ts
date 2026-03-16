@@ -1,525 +1,336 @@
-import { Project } from '@/types';
+import { Project } from "@/types";
 
 export const projectsVI: Project[] = [
   {
-    id: '1',
-    title: 'Hệ thống SaaS quản lý kho (InvoiceAI)',
-    description: 'Thiết kế và phát triển nền tảng SaaS quản lý kho hàng thông minh với AI tích hợp, phục vụ 200+ doanh nghiệp SME',
-    tags: ['SaaS', 'Đã hoàn thành'],
-    category: 'startup',
+    id: "1",
+    title: "Hệ thống SaaS quản lý kho (InvoiceAI)",
+    description:
+      "Hệ thống quản lý kho tích hợp hóa đơn điện tử, phát triển từ dự án thực tế XTC, đang có người dùng sử dụng",
+    tags: ["SaaS", "Đã triển khai"],
+    category: "startup",
     detail: {
-      overview: 'Dẫn dắt thiết kế hệ thống quản lý kho hàng toàn diện với tích hợp AI để tự động hóa quy trình nhập xuất, dự báo tồn kho và tạo báo cáo. Sản phẩm phục vụ 200+ doanh nghiệp SME tại Việt Nam với 1000+ người dùng hoạt động hàng ngày.',
-      
+      overview:
+        "InvoiceAI là hệ thống SaaS quản lý kho tích hợp hóa đơn điện tử, nhắm đến các doanh nghiệp SME tại Việt Nam. Dự án được pivot từ hệ thống XTC — phần mềm quản lý kho cho xưởng sản xuất mà mình từng tham gia xây dựng trước đó. Khi client không tiếp tục, giảng viên hướng dẫn quyết định mở rộng sản phẩm, thêm nghiệp vụ hóa đơn điện tử theo nghị định mới của Việt Nam và chuyển sang mô hình SaaS. Mình đảm nhận toàn bộ mảng UI — từ thiết kế trong Figma đến implement frontend.",
+
       responsibilities: [
-        'Thiết kế toàn bộ hệ thống từ wireframe đến high-fidelity prototype cho 15+ modules chính',
-        'Nghiên cứu người dùng qua phỏng vấn 30+ chủ kho và nhân viên quản lý',
-        'Xây dựng design system và component library cho consistency',
-        'Hợp tác với AI team để thiết kế dashboard dự báo và insights',
-        'Dẫn dắt usability testing với 50+ người dùng thực tế'
+        "Lead UI/UX cho toàn bộ dự án: từ thiết kế đến review implementation",
+        "Redesign lại hệ thống cũ (XTC) sang giao diện SaaS mới",
+        "Tham gia phát triển frontend song song với thiết kế",
+        "Research các giải pháp hóa đơn điện tử trên thị trường để định hướng UX",
+        "Phối hợp chặt với backend để đảm bảo thiết kế khả thi",
       ],
-      
+
       contributions: [
-        'Thiết kế dashboard tổng quan với real-time inventory tracking',
-        'Xây dựng luồng nhập/xuất hàng tối ưu giảm 60% thời gian xử lý',
-        'Tạo hệ thống báo cáo tự động với data visualization phong phú',
-        'Thiết kế mobile app cho nhân viên kho quét barcode/QR',
-        'Implement responsive design cho tablet và desktop',
-        'Tích hợp AI chatbot hỗ trợ người dùng 24/7'
+        "Redesign UI từ hệ thống XTC cũ, kế thừa những gì hoạt động tốt",
+        "Redesign trang tạo đơn hàng — chia lại layout theo block rõ ràng (header, filter, table) để cải thiện khả năng đọc và thao tác",
+        "Dùng v0.dev để khám phá hướng UI cho các màn hình chính, sau đó tự implement lại bằng code",
+        "Thiết kế các module chính: dashboard, quản lý kho, hóa đơn điện tử, báo cáo",
       ],
-      
+
       impact: [
-        'Giảm 70% sai sót trong quản lý tồn kho',
-        'Tăng 45% hiệu suất xử lý đơn hàng',
-        'Tiết kiệm 30% chi phí vận hành kho cho khách hàng',
-        'Đạt NPS score 72 (Very Good)',
-        'Retention rate 85% sau 6 tháng đầu'
+        "Hệ thống đang chạy thực tế và có người dùng sử dụng",
+        "Hoàn thành design và implement cho 20+ màn hình chính",
+        "UI mới nhận phản hồi tốt hơn rõ rệt so với phiên bản XTC cũ",
       ],
-      
-      technologies: ['Figma', 'React', 'TypeScript', 'Tailwind CSS', 'Chart.js', 'React Native'],
-      
-      teamSize: '8 (2 Designers, 3 Frontend Devs, 2 Backend Devs, 1 PM)',
-      myRole: 'Lead Product Designer',
-      
-      challenges: 'Thiết kế hệ thống phức tạp nhưng vẫn đảm bảo dễ sử dụng cho người dùng không am hiểu công nghệ. Giải quyết bằng cách áp dụng progressive disclosure và onboarding từng bước có hướng dẫn chi tiết.',
-      
+
+      technologies: ["Figma", "React", "TypeScript", "Ant Design"],
+
+      teamSize:
+        "6 (1 Lead/Backend, 1 UI/UX Designer, 2 Frontend Devs, 1 Backend Dev, 1 Tester)",
+      myRole: "UI/UX Designer & Frontend Developer",
+
+      challenges:
+        "Redesign một hệ thống đang chạy trong khi vẫn phải đảm bảo tiến độ phát triển. Nghiệp vụ hóa đơn điện tử khá phức tạp và đặc thù với quy định Việt Nam — cần thời gian để hiểu đủ sâu trước khi thiết kế. Cân bằng giữa vai trò designer và frontend dev trong cùng một dự án.",
+
       learnings: [
-        'Thiết kế hệ thống enterprise-level với nhiều vai trò người dùng',
-        'Tích hợp AI/ML insights vào UI một cách trực quan',
-        'Xây dựng và maintain design system quy mô lớn',
-        'Cân bằng giữa tính năng phong phú và trải nghiệm đơn giản'
+        "Hiểu thực tế về domain hóa đơn điện tử và nghiệp vụ kho hàng",
+        "Cách tích hợp AI tool (v0.dev) vào quy trình redesign thực tế",
+        "Giá trị của việc phân chia layout — chia block rõ ràng cải thiện đáng kể khả năng sử dụng",
+        "Làm quen với việc vừa design vừa code trong môi trường startup",
+        "Xử lý yêu cầu thay đổi liên tục khi sản phẩm đang pivot",
       ],
-      
+
       images: [
         {
-          url: 'projects/invoiceai-dashboard',
-          alt: 'Dashboard InvoiceAI',
-          caption: 'Dashboard tổng quan với real-time analytics'
-        }
-      ]
-    }
+          url: "projects/invoiceai-dashboard",
+          alt: "InvoiceAI Dashboard",
+          caption: "Dashboard redesign và Quản lý hóa đơn điện tử",
+        },
+      ],
+    },
   },
 
   {
-    id: '2',
-    title: 'Hệ thống Parcel Locker (Smart Box)',
-    description: 'Thiết kế UX/UI cho hệ thống tủ giao hàng thông minh phục vụ 10,000+ giao dịch mỗi ngày tại các chung cư cao cấp',
-    tags: ['IoT', 'Đã hoàn thành'],
-    category: 'client',
+    id: "2",
+    title: "Quản lý kho (XTC)",
+    description:
+      "Hệ thống quản lý kho hàng cho xưởng sản xuất ví da, bao gồm quản lý đơn hàng, tồn kho và sản phẩm",
+    tags: ["Client", "Không triển khai"],
+    category: "client",
     detail: {
-      overview: 'Thiết kế trải nghiệm đầu-cuối cho hệ thống parcel locker thông minh, bao gồm ứng dụng mobile cho người nhận hàng, dashboard web cho shipper, và giao diện màn hình cảm ứng trên tủ. Hệ thống được triển khai tại 50+ tòa nhà chung cư cao cấp tại TP.HCM và Hà Nội.',
-      
+      overview:
+        "XTC là hệ thống quản lý kho được xây dựng cho Xưởng Trường Chinh — một xưởng sản xuất ví da tại TP.HCM. Bài toán đặt ra là giúp xưởng thay thế quy trình quản lý thủ công bằng phần mềm, theo dõi được đơn hàng, tồn kho và sản phẩm. Mình tham gia với vai trò vừa thiết kế UI/UX vừa code frontend. Dự án hoàn thành nhưng client không tiếp tục triển khai; sau đó toàn bộ design và codebase được tái sử dụng làm nền tảng cho InvoiceAI.",
+
       responsibilities: [
-        'Thiết kế user flow cho 3 nhóm người dùng: người nhận, shipper, và quản lý tòa nhà',
-        'Tạo prototype tương tác cho mobile app và kiosk interface',
-        'Nghiên cứu ergonomics và accessibility cho màn hình tủ locker',
-        'Phối hợp với hardware team về kích thước màn hình và vị trí đặt',
-        'Testing thực tế tại 5 tòa nhà pilot'
+        "Thiết kế UI/UX cho các màn hình chính: dashboard, đơn hàng, tồn kho, sản phẩm, khách hàng",
+        "Tham khảo design patterns từ Sapo POS và adapt theo yêu cầu thực tế",
+        "Phát triển frontend cho các modules trong hệ thống",
+        "Đảm bảo tính nhất quán UI trong quá trình implement",
       ],
-      
+
       contributions: [
-        'Thiết kế quy trình mở tủ đơn giản với QR code hoặc OTP',
-        'Xây dựng notification system thông minh (push, SMS, email)',
-        'Tạo dashboard cho shipper theo dõi và quản lý giao hàng',
-        'Thiết kế giao diện kiosk 15 inch với UX tối ưu cho người cao tuổi',
-        'Implement dark mode cho ứng dụng mobile',
-        'Xây dựng analytics dashboard cho BQL tòa nhà'
+        "Thiết kế wireframe và mockup trong Figma cho toàn bộ màn hình chính",
+        "Xây dựng component library cơ bản để team implement nhất quán",
+        "Code frontend cho các trang quản lý đơn hàng và sản phẩm",
+        "Review và góp ý UI/UX trong quá trình phát triển",
       ],
-      
+
       impact: [
-        'Giảm 95% giao hàng thất bại do không застать nhà',
-        'Tăng 80% sự hài lòng của cư dân',
-        'Tiết kiệm 40% thời gian giao hàng cho shipper',
-        'Xử lý 10,000+ giao dịch mỗi ngày',
-        'Rating 4.7/5 trên App Store và Play Store'
+        "Hoàn thành thiết kế và implement cho các màn hình chính",
+        "Dự án không được triển khai do client thay đổi kế hoạch",
+        "Codebase và design được kế thừa lại cho dự án InvoiceAI",
       ],
-      
-      technologies: ['Figma', 'React Native', 'React', 'Node.js', 'Socket.io'],
-      
-      teamSize: '10 (2 Designers, 3 Mobile Devs, 2 Backend Devs, 2 Hardware Engineers, 1 PM)',
-      myRole: 'UX/UI Designer',
-      
-      challenges: 'Thiết kế cho nhiều touchpoints khác nhau (mobile, web, kiosk) với hardware constraints. Đảm bảo trải nghiệm nhất quán và đơn giản cho người cao tuổi.',
-      
+
+      technologies: ["Figma", "React", "TypeScript", "Ant Design"],
+
+      teamSize:
+        "8 (1 Lead/Backend, 1 UI/UX Designer, 3 Frontend Devs, 2 Backend Devs, 1 Tester)",
+      myRole: "UI/UX Designer & Frontend Developer",
+
+      challenges:
+        "Lần đầu làm việc với client thực tế — vừa phải hiểu nghiệp vụ kho hàng, vừa cân bằng giữa tham khảo design có sẵn và customize theo đúng nhu cầu. Đồng thời xử lý cả thiết kế lẫn code trong cùng một dự án.",
+
       learnings: [
-        'Thiết kế cho IoT và hệ thống hardware-software tích hợp',
-        'Multi-platform design với brand consistency',
-        'Accessibility và inclusive design',
-        'Working với cross-functional teams (hardware + software)'
+        "Cách tiếp cận và adapt design từ các sản phẩm có sẵn trên thị trường",
+        "Quy trình làm việc thực tế từ design đến handoff và implement",
+        "Tầm quan trọng của việc validate sớm với client",
+        "Kinh nghiệm đầu tiên kết hợp vai trò designer và frontend developer",
       ],
-      
+
       images: [
         {
-          url: 'projects/smartbox-system',
-          alt: 'Smart Box System',
-          caption: 'Multi-platform experience: Mobile app, Web dashboard, và Kiosk interface'
-        }
-      ]
-    }
+          url: "projects/xtc-warehouse",
+          alt: "XTC Warehouse System",
+          caption: "Dashboard tổng quan và màn hình quản lý đơn hàng",
+        },
+      ],
+    },
   },
 
   {
-    id: '3',
-    title: 'Quản lý kho (XTC)',
-    description: 'Hệ thống quản lý kho nội bộ cho công ty logistics, xử lý 5000+ đơn hàng mỗi ngày',
-    tags: ['Client', 'Đã hoàn thành'],
-    category: 'client',
+    id: "3",
+    title: "Quản lý thư viện (Cao đẳng Viễn Đông)",
+    description:
+      "Số hóa hệ thống quản lý thư viện cho trường Cao đẳng Viễn Đông — dự án thực tế đầu tiên, hiện đang được sử dụng",
+    tags: ["Client", "Đã hoàn thành"],
+    category: "client",
     detail: {
-      overview: 'Thiết kế hệ thống quản lý kho toàn diện cho công ty logistics XTC, tối ưu hóa quy trình từ nhập hàng, phân loại, lưu kho đến xuất hàng. Hệ thống phục vụ 100+ nhân viên kho tại 3 chi nhánh miền Nam.',
-      
+      overview:
+        "Thư viện Cao đẳng Viễn Đông đang vận hành hoàn toàn thủ công — mượn/trả sách bằng giấy tờ, không có hệ thống theo dõi. Giảng viên hướng dẫn đề xuất dự án số hóa và được hiệu trưởng phê duyệt. Mình là UI/UX designer chính, thiết kế toàn bộ giao diện desktop cho hai nhóm người dùng: sinh viên/giảng viên tra cứu và mượn sách, và thủ thư quản lý vận hành. Hệ thống hiện đang được triển khai và sử dụng thực tế tại thư viện.",
+
       responsibilities: [
-        'Phân tích quy trình làm việc hiện tại và xác định pain points',
-        'Thiết kế wireframes và mockups cho 12 modules chính',
-        'Tạo interactive prototype để demo với stakeholders',
-        'Hợp tác với development team trong suốt quá trình phát triển',
-        'Conduct UAT với nhân viên kho thực tế'
+        "Nghiên cứu quy trình mượn/trả sách thực tế tại thư viện",
+        "Thiết kế user flow cho 2 nhóm: người dùng (sinh viên, giảng viên) và admin (thủ thư)",
+        "Tạo wireframes và high-fidelity designs cho toàn bộ màn hình desktop",
+        "Phối hợp với dev team trong suốt quá trình implement",
       ],
-      
+
       contributions: [
-        'Thiết kế dashboard real-time theo dõi tình trạng kho',
-        'Xây dựng hệ thống quét barcode tối ưu cho mobile',
-        'Tạo luồng nhập/xuất hàng đơn giản với validation thông minh',
-        'Thiết kế báo cáo tự động theo ngày/tuần/tháng',
-        'Implement role-based access control UI',
-        'Tối ưu UX cho tablet 10 inch (thiết bị chính)'
+        "Thiết kế portal tra cứu và mượn sách cho sinh viên/giảng viên",
+        "Thiết kế dashboard admin cho thủ thư quản lý mượn/trả",
+        "Xây dựng design system cơ bản đảm bảo tính nhất quán",
+        "Thiết kế màn hình báo cáo thống kê cho ban quản lý",
       ],
-      
+
       impact: [
-        'Giảm 50% thời gian xử lý mỗi đơn hàng',
-        'Tăng 65% độ chính xác trong kiểm kho',
-        'Giảm 40% sai sót trong xuất hàng',
-        'Tiết kiệm 25% nhân lực xử lý giấy tờ',
-        'Tăng 30% năng suất tổng thể'
+        "Hệ thống được triển khai thực tế và đang hoạt động tại thư viện",
+        "Thay thế hoàn toàn quy trình thủ công trước đây",
+        "Lượng sử dụng còn hạn chế do thói quen mượn sách của sinh viên",
       ],
-      
-      technologies: ['Figma', 'React', 'TypeScript', 'Ant Design', 'Recharts'],
-      
-      teamSize: '6 (1 Designer, 2 Frontend Devs, 2 Backend Devs, 1 PM)',
-      myRole: 'UI/UX Designer',
-      
-      challenges: 'Thiết kế cho môi trường kho bãi với điều kiện ánh sáng khác nhau, màn hình cảm ứng có thể bị bẩn/ướt. Giải quyết bằng high contrast design và nút bấm kích thước lớn.',
-      
+
+      technologies: ["Figma", "React", "Material-UI", "PostgreSQL"],
+
+      teamSize:
+        "5 (1 Designer, 2 Frontend Devs, 1 Backend Dev, 1 Librarian Lead)",
+      myRole: "UI/UX Designer",
+
+      challenges:
+        "Thiết kế cho hai nhóm người dùng rất khác nhau: sinh viên quen công nghệ và thủ thư lớn tuổi ít tiếp xúc với phần mềm. Đây cũng là dự án thực tế đầu tiên nên còn nhiều bỡ ngỡ trong việc làm việc với stakeholder thật.",
+
       learnings: [
-        'Thiết kế cho môi trường công nghiệp và blue-collar workers',
-        'Tầm quan trọng của field research và contextual inquiry',
-        'Optimization cho thiết bị có performance hạn chế',
-        'Change management khi digitize quy trình thủ công'
+        "Trải nghiệm đầu tiên làm việc với client và stakeholder thực tế",
+        "Cách thiết kế cho nhiều user persona với nhu cầu khác nhau",
+        "Hiểu quy trình số hóa một nghiệp vụ truyền thống",
+        "Làm việc trong dự án có áp lực thật — được duyệt bởi ban giám hiệu",
       ],
-      
+
       images: [
         {
-          url: 'projects/xtc-warehouse',
-          alt: 'XTC Warehouse System',
-          caption: 'Dashboard và mobile interface cho nhân viên kho'
-        }
-      ]
-    }
+          url: "projects/library-system",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+      ],
+    },
   },
 
   {
-    id: '4',
-    title: 'Quản lý thư viện (Cao đẳng Viễn Đông)',
-    description: 'Số hóa hệ thống quản lý thư viện phục vụ 5000+ sinh viên và 200+ giảng viên',
-    tags: ['Client', 'Đã hoàn thành'],
-    category: 'client',
+    id: "4",
+    title: "Khu13 Website",
+    description:
+      "Website giới thiệu cho quán bar Khu13 tại TP.HCM — dự án freelance thực tế đầu tiên được khách hàng chốt",
+    tags: ["Freelance", "Tạm hoãn"],
+    category: "client",
     detail: {
-      overview: 'Thiết kế và triển khai hệ thống quản lý thư viện hiện đại cho trường Cao đẳng Viễn Đông, thay thế quy trình thủ công bằng giải pháp số hóa toàn diện. Hệ thống bao gồm web portal cho sinh viên/giảng viên và dashboard quản trị cho thư viện.',
-      
+      overview:
+        "Khu13 là một quán bar tại TP.HCM cần website để giới thiệu thương hiệu và không gian. Mình được anh khóa trên — người đang làm PM cho dự án — liên hệ để đảm nhận phần UI/UX. Đây là lần đầu mình tham gia dự án hoàn toàn từ bên ngoài, không qua giảng viên. Hiện tại đã hoàn thành wireframe, được khách hàng chốt và đang chờ nội dung từ phía quán để tiếp tục.",
+
       responsibilities: [
-        'Nghiên cứu quy trình mượn/trả sách hiện tại tại thư viện',
-        'Thiết kế user flow cho sinh viên, giảng viên, và thủ thư',
-        'Tạo wireframes và high-fidelity designs cho 10+ màn hình',
-        'Xây dựng design system cho tính nhất quán',
-        'User testing với 30+ sinh viên và 5 thủ thư'
+        "Nhận brief từ PM và xác định yêu cầu thiết kế",
+        "Thiết kế wireframe cho toàn bộ website",
+        "Present phương án thiết kế để PM trình với khách hàng",
       ],
-      
+
       contributions: [
-        'Thiết kế catalog tìm kiếm sách với filter và sort nâng cao',
-        'Xây dựng hệ thống đặt sách online và quản lý hàng chờ',
-        'Tạo dashboard cho thủ thư quản lý mượn/trả',
-        'Thiết kế mobile app cho sinh viên scan barcode tự mượn',
-        'Implement notification system cho hạn trả sách',
-        'Tạo báo cáo thống kê cho ban giám hiệu'
+        "Hoàn thành wireframe được khách hàng approve",
+        "Xác định cấu trúc nội dung và user flow phù hợp với quán bar",
       ],
-      
+
       impact: [
-        'Giảm 70% thời gian xử lý mượn/trả sách',
-        'Tăng 90% tỷ lệ trả sách đúng hạn nhờ notification',
-        'Tăng 150% lượt truy cập thư viện',
-        'Tiết kiệm 60% thời gian làm báo cáo',
-        'Satisfaction score: 4.4/5 từ sinh viên'
+        "Wireframe đã được khách hàng chốt và chấp thuận",
+        "Dự án đang tiếp tục — chờ nội dung từ phía khách hàng",
       ],
-      
-      technologies: ['Figma', 'React', 'Material-UI', 'PostgreSQL'],
-      
-      teamSize: '5 (1 Designer, 2 Frontend Devs, 1 Backend Dev, 1 Librarian Lead)',
-      myRole: 'UI/UX Designer',
-      
-      challenges: 'Thiết kế cho nhiều nhóm người dùng với trình độ công nghệ khác nhau (từ sinh viên tech-savvy đến thủ thư lớn tuổi). Phải đảm bảo hệ thống đơn giản nhưng đầy đủ chức năng.',
-      
+
+      technologies: ["Figma"],
+
+      teamSize: "2 (1 PM, 1 Designer)",
+      myRole: "UI/UX Designer",
+
+      challenges:
+        "Lần đầu làm việc trong môi trường freelance thật — nhận brief qua PM và phải hiểu đúng yêu cầu khách hàng chỉ qua thông tin được tổng hợp lại, không trực tiếp trao đổi với client.",
+
       learnings: [
-        'Thiết kế cho giáo dục và quản lý tài nguyên học tập',
-        'Research và design cho nhiều user personas khác nhau',
-        'Digitalization của quy trình truyền thống',
-        'Importance of training và documentation trong adoption'
+        "Quy trình làm việc freelance với PM làm cầu nối với khách hàng",
+        "Cách đọc và khai thác brief để ra quyết định thiết kế",
+        "Cách thuyết phục quyết định design khi không trực tiếp gặp client",
       ],
-      
+
       images: [
         {
-          url: 'projects/library-system',
-          alt: 'Library Management System',
-          caption: 'Student portal và Admin dashboard'
-        }
-      ]
-    }
+          url: "projects/khu13-feed",
+          alt: "Khu13 Website",
+          caption: "Wireframe website quán bar Khu13",
+        },
+      ],
+    },
   },
 
   {
-    id: '5',
-    title: 'Quản lý phòng khám ClinicAI',
-    description: 'Nền tảng quản lý phòng khám nha khoa tích hợp AI, phục vụ 30+ phòng khám',
-    tags: ['Healthcare', 'Đã hoàn thành'],
-    category: 'startup',
+    id: "5",
+    title: "Tuấn Phạm Audio Website",
+    description:
+      "Website giới thiệu sản phẩm thiết bị âm thanh cao cấp — thiết kế với AI-assisted workflow",
+    tags: ["Client", "Đang phát triển"],
+    category: "client",
     detail: {
-      overview: 'Thiết kế hệ thống quản lý phòng khám nha khoa toàn diện với tích hợp AI để hỗ trợ chẩn đoán, lập kế hoạch điều trị và quản lý bệnh nhân. Sản phẩm SaaS phục vụ 30+ phòng khám với 200+ bác sĩ và 5000+ bệnh nhân.',
-      
+      overview:
+        "Tuấn Phạm Audio là đại lý thiết bị âm thanh cao cấp tại TP.HCM, chuyên các dòng loa và ampli premium. Website cần thể hiện đúng định vị thương hiệu và giúp khách hàng tìm hiểu sản phẩm trước khi liên hệ đặt hàng — không phải mua trực tiếp. Mình đảm nhận phần thiết kế: định nghĩa layout, màu sắc và component system cho trang chủ, sau đó dùng Figma Make để generate các trang còn lại.",
+
       responsibilities: [
-        'Research quy trình làm việc tại 10+ phòng khám nha khoa',
-        'Thiết kế patient journey từ booking đến follow-up',
-        'Tạo dashboard cho bác sĩ, lễ tân, và quản lý',
-        'Phối hợp với AI team để tích hợp dental image analysis',
-        'Testing với bác sĩ nha khoa thực tế'
+        "Xác định visual direction phù hợp với định vị thương hiệu cao cấp",
+        "Thiết kế layout trang chủ và định nghĩa component system",
+        "Dùng Figma Make để mở rộng design cho các trang còn lại",
+        "Review và điều chỉnh output AI để đảm bảo nhất quán",
       ],
-      
+
       contributions: [
-        'Thiết kế hệ thống đặt lịch online với calendar tối ưu',
-        'Xây dựng EMR (Electronic Medical Record) cho nha khoa',
-        'Tạo treatment planning tool với visual tooth chart',
-        'Thiết kế AI-powered X-ray analysis interface',
-        'Implement patient portal để xem kết quả và lịch hẹn',
-        'Tạo billing và insurance management system'
+        "Thiết kế layout trang chủ, màu chủ đạo và các component chi tiết",
+        "Sử dụng Figma Make để generate design cho các trang sản phẩm và liên hệ",
+        "Review và tinh chỉnh output của AI theo đúng direction ban đầu",
+        "Thiết kế flow xem chi tiết sản phẩm và liên hệ đặt hàng",
       ],
-      
+
       impact: [
-        'Giảm 60% no-show rate nhờ reminder system',
-        'Tăng 40% số bệnh nhân có thể phục vụ mỗi ngày',
-        'Tiết kiệm 50% thời gian làm hồ sơ bệnh án',
-        'Tăng 35% revenue cho phòng khám nhờ tối ưu lịch hẹn',
-        'Rating 4.6/5 từ bác sĩ và lễ tân'
+        "Website được bàn giao và đưa vào sử dụng",
+        "Giao diện phản ánh đúng định vị cao cấp của thương hiệu",
       ],
-      
-      technologies: ['Figma', 'React', 'TypeScript', 'Ant Design', 'TensorFlow.js'],
-      
-      teamSize: '9 (2 Designers, 3 Frontend Devs, 2 Backend Devs, 1 AI Engineer, 1 PM)',
-      myRole: 'Product Designer',
-      
-      challenges: 'Thiết kế cho ngành y tế với yêu cầu bảo mật cao và quy định HIPAA-like. Cần hiển thị thông tin y tế phức tạp một cách dễ hiểu cho cả bác sĩ và bệnh nhân.',
-      
+
+      technologies: ["Figma", "Figma Make", "Next.js", "Tailwind CSS"],
+
+      teamSize: "3 (1 Designer, 2 Developers)",
+      myRole: "UI/UX Designer (AI-assisted workflow)",
+
+      challenges:
+        "Kiểm soát chất lượng output của AI — Figma Make không phải lúc nào cũng hiểu đúng intent thiết kế, cần review kỹ và điều chỉnh để đảm bảo nhất quán với direction ban đầu.",
+
       learnings: [
-        'Healthcare UX và medical data visualization',
-        'Compliance và privacy-first design',
-        'Designing cho AI-assisted workflows',
-        'Balancing clinician efficiency với patient experience'
+        "Workflow kết hợp AI vào quy trình thiết kế thực tế",
+        "Tầm quan trọng của việc định nghĩa rõ direction trước khi dùng AI",
+        "Cách thiết kế cho sản phẩm premium với yêu cầu visual cao",
+        "UX cho mô hình giới thiệu sản phẩm kết hợp liên hệ đặt hàng",
       ],
-      
+
       images: [
         {
-          url: 'projects/clinicai-dashboard',
-          alt: 'ClinicAI Dashboard',
-          caption: 'Doctor dashboard với AI-powered insights'
-        }
-      ]
-    }
+          url: "projects/tuanpham-audio",
+          alt: "Tuấn Phạm Audio",
+          caption: "Website giới thiệu sản phẩm âm thanh cao cấp",
+        },
+      ],
+    },
   },
 
   {
-    id: '6',
-    title: 'Quản lý tour du lịch (Du Lịch Cờ Hoa)',
-    description: 'Hệ thống quản lý booking và vận hành tour du lịch cho công ty du lịch 15 năm kinh nghiệm',
-    tags: ['Client', 'Đã hoàn thành'],
-    category: 'client',
+    id: "6",
+    title: "Hệ thống Parcel Locker (Smart Box)",
+    description:
+      "Thiết kế UI/UX cho hệ thống admin quản lý tủ giao hàng thông minh tại các chung cư",
+    tags: ["IoT", "Không triển khai"],
+    category: "startup",
     detail: {
-      overview: 'Thiết kế nền tảng quản lý tour du lịch toàn diện cho Du Lịch Cờ Hoa, bao gồm website booking cho khách hàng và hệ thống quản trị nội bộ cho nhân viên. Xử lý 500+ tour/tháng với 2000+ khách hàng.',
-      
-      responsibilities: [
-        'Phân tích quy trình booking và vận hành tour hiện tại',
-        'Thiết kế customer-facing website và admin dashboard',
-        'Tạo mobile app cho hướng dẫn viên quản lý tour',
-        'Testing với khách hàng và nhân viên công ty',
-        'Tạo marketing materials và landing pages'
-      ],
-      
-      contributions: [
-        'Thiết kế tour catalog với filter theo điểm đến/giá/ngày',
-        'Xây dựng booking flow đơn giản với multi-step form',
-        'Tạo dashboard cho sales team quản lý bookings',
-        'Thiết kế itinerary builder cho tour operator',
-        'Implement payment integration với VNPay và Momo',
-        'Tạo review system và rating cho tours'
-      ],
-      
-      impact: [
-        'Tăng 120% online bookings trong 6 tháng đầu',
-        'Giảm 45% thời gian xử lý mỗi booking',
-        'Tăng 80% repeat customers nhờ CRM tốt hơn',
-        'Tăng 50% conversion rate so với website cũ',
-        'Average rating 4.8/5 từ 500+ reviews'
-      ],
-      
-      technologies: ['Figma', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Mapbox'],
-      
-      teamSize: '6 (1 Designer, 2 Frontend Devs, 1 Backend Dev, 1 Marketing, 1 PM)',
-      myRole: 'UI/UX Designer',
-      
-      challenges: 'Thiết kế cho cả B2C (khách hàng) và B2B (đại lý du lịch). Cần tối ưu conversion rate trong khi vẫn cung cấp đủ thông tin chi tiết cho quyết định.',
-      
-      learnings: [
-        'E-commerce UX cho ngành du lịch',
-        'Dual-sided marketplace design',
-        'Payment integration và trust building',
-        'SEO-friendly design và content structure'
-      ],
-      
-      images: [
-        {
-          url: 'projects/travel-booking',
-          alt: 'Travel Booking System',
-          caption: 'Customer booking flow và Tour management dashboard'
-        }
-      ]
-    }
-  },
+      overview:
+        "Smart Box là ý tưởng startup xây dựng hệ thống tủ giao hàng thông minh tại các chung cư — lấy cảm hứng từ mô hình parcel locker phổ biến tại Trung Quốc, giải quyết bài toán giao hàng thất bại khi người nhận không có nhà. Mình tham gia thiết kế admin dashboard trên desktop, phục vụ nhóm quản lý vận hành hệ thống tủ. Dự án tạm hoãn do chưa tìm được nhà đầu tư.",
 
-  {
-    id: '7',
-    title: 'Website tìm kiếm văn phòng (OfficefinderVN)',
-    description: 'Nền tảng marketplace kết nối người tìm văn phòng với chủ tòa nhà, 1000+ listings',
-    tags: ['Marketplace', 'Đã hoàn thành'],
-    category: 'startup',
-    detail: {
-      overview: 'Thiết kế platform giúp doanh nghiệp tìm kiếm và thuê văn phòng, coworking space tại TP.HCM và Hà Nội. Kết nối 500+ chủ tòa nhà với 2000+ doanh nghiệp tìm văn phòng.',
-      
       responsibilities: [
-        'Research nhu cầu của cả người tìm và cho thuê văn phòng',
-        'Thiết kế search và filter experience tối ưu',
-        'Tạo listing pages với property details',
-        'Phối hợp với marketing team về SEO và conversion',
-        'A/B testing các elements quan trọng'
+        "Nghiên cứu mô hình parcel locker và các hệ thống tương tự",
+        "Thiết kế admin dashboard cho desktop",
+        "Xây dựng user flow cho các nghiệp vụ quản lý tủ và giao dịch",
+        "Phối hợp với team để đảm bảo thiết kế phù hợp với hướng phát triển sản phẩm",
       ],
-      
-      contributions: [
-        'Thiết kế advanced search với map-based interface',
-        'Xây dựng comparison tool để so sánh nhiều văn phòng',
-        'Tạo inquiry system và lead management cho landlords',
-        'Thiết kế virtual tour feature với 360° photos',
-        'Implement filtering theo amenities, giá, diện tích',
-        'Tạo landlord dashboard để quản lý listings'
-      ],
-      
-      impact: [
-        'Tăng 200% số lượng inquiries trong 3 tháng',
-        'Conversion rate 12% từ visit sang inquiry',
-        'Giảm 50% thời gian tìm văn phòng cho clients',
-        'GMV 2 tỷ VNĐ trong 6 tháng đầu',
-        'Average session duration: 8 phút'
-      ],
-      
-      technologies: ['Figma', 'Next.js', 'React', 'Mapbox', 'Algolia Search'],
-      
-      teamSize: '7 (2 Designers, 2 Frontend Devs, 1 Backend Dev, 1 SEO, 1 PM)',
-      myRole: 'Senior UI/UX Designer',
-      
-      challenges: 'Cân bằng giữa cung cấp đủ thông tin chi tiết mà không làm người dùng quá tải. Tối ưu search UX cho dataset lớn với nhiều filters.',
-      
-      learnings: [
-        'Marketplace và two-sided platform design',
-        'Map-based search interface patterns',
-        'Real estate specific UX requirements',
-        'SEO-driven design decisions'
-      ],
-      
-      images: [
-        {
-          url: 'projects/officefinder-search',
-          alt: 'OfficeFinder Search',
-          caption: 'Map-based search và Property comparison tool'
-        }
-      ]
-    }
-  },
 
-  {
-    id: '8',
-    title: 'Khu13 Website',
-    description: 'Website cộng đồng chia sẻ review nhà hàng, quán ăn phong cách Gen Z',
-    tags: ['Community', 'Đang phát triển'],
-    category: 'client',
-    detail: {
-      overview: 'Thiết kế nền tảng review ẩm thực cho Gen Z với giao diện trẻ trung, tập trung vào ảnh đẹp và short-form content. Mục tiêu tạo cộng đồng foodie năng động tại TP.HCM.',
-      
-      responsibilities: [
-        'Research xu hướng social media và food content của Gen Z',
-        'Thiết kế brand identity và visual system',
-        'Tạo user flow cho posting và discovery',
-        'Design Instagram-like feed với focus on visuals',
-        'Testing với target audience 18-25 tuổi'
-      ],
-      
       contributions: [
-        'Thiết kế Instagram-style feed với swipe gestures',
-        'Xây dựng filter system theo món ăn, giá, location',
-        'Tạo story-like format cho quick reviews',
-        'Implement hashtag và trending system',
-        'Design gamification với badges và leaderboard',
-        'Tạo recommendation algorithm UI'
+        "Thiết kế dashboard quản lý tủ locker và trạng thái ô tủ",
+        "Xây dựng màn hình theo dõi và quản lý giao dịch",
+        "Thiết kế giao diện quản lý người dùng và phân quyền",
+        "Tạo wireframes và mockups cho các màn hình admin chính",
       ],
-      
-      impact: [
-        '5000+ users trong 2 tháng soft launch',
-        'Average 15 posts per active user',
-        'Engagement rate 25% (rất cao)',
-        '40% daily active users',
-        'Viral trên social media với 50K+ mentions'
-      ],
-      
-      technologies: ['Figma', 'React Native', 'Next.js', 'Tailwind CSS', 'Firebase'],
-      
-      teamSize: '4 (1 Designer, 2 Developers, 1 Community Manager)',
-      myRole: 'Product Designer & Co-founder',
-      
-      challenges: 'Differentiate từ các platform hiện có (Foursquare, Google Maps). Tạo viral loop để organic growth mà không có marketing budget lớn.',
-      
-      learnings: [
-        'Social media và community product design',
-        'Gen Z user behavior và preferences',
-        'Growth hacking và viral mechanics',
-        'Building MVP với resource constraints'
-      ],
-      
-      images: [
-        {
-          url: 'projects/khu13-feed',
-          alt: 'Khu13 Feed',
-          caption: 'Instagram-style feed và Discovery interface'
-        }
-      ]
-    }
-  },
 
-  {
-    id: '9',
-    title: 'Tuấn Phạm Audio Website',
-    description: 'Website thương mại điện tử cho thương hiệu thiết bị âm thanh cao cấp',
-    tags: ['E-commerce', 'Đã hoàn thành'],
-    category: 'client',
-    detail: {
-      overview: 'Thiết kế website bán hàng cho Tuấn Phạm Audio, đại lý chính thức các thương hiệu loa, ampli cao cấp. Tập trung vào showcase sản phẩm premium và education cho audiophiles.',
-      
-      responsibilities: [
-        'Research đối tượng khách hàng audiophile',
-        'Thiết kế product pages với thông tin kỹ thuật chi tiết',
-        'Tạo showroom virtual tour experience',
-        'Design consultation booking flow',
-        'Optimize cho high-value B2C sales'
-      ],
-      
-      contributions: [
-        'Thiết kế premium product pages với technical specs',
-        'Xây dựng comparison tool cho các model',
-        'Tạo video integration để demo âm thanh',
-        'Design appointment booking cho audition',
-        'Implement wish list và inquiry system',
-        'Tạo education content về audio systems'
-      ],
-      
       impact: [
-        'Tăng 85% online inquiries',
-        'Average order value: 50 triệu VNĐ',
-        'Conversion rate 8% cho high-ticket items',
-        'Tăng 60% showroom visits qua online bookings',
-        'Customer satisfaction: 4.9/5'
+        "Hoàn thành design cho các màn hình admin chính",
+        "Dự án tạm hoãn ở giai đoạn thiết kế do chưa có đầu tư",
       ],
-      
-      technologies: ['Figma', 'Next.js', 'Tailwind CSS', 'WooCommerce'],
-      
-      teamSize: '4 (1 Designer, 2 Developers, 1 Content Creator)',
-      myRole: 'UI/UX Designer',
-      
-      challenges: 'Thiết kế cho niche market (audiophiles) với high expectations về chất lượng. Trình bày technical information một cách attractive mà không overwhelming.',
-      
+
+      technologies: ["Figma"],
+
+      teamSize: "8 thành viên",
+      myRole: "UI/UX Designer",
+
+      challenges:
+        "Lần đầu thiết kế cho hệ thống IoT — cần hiểu nghiệp vụ vận hành thực tế trước khi thiết kế. Khó khăn khi làm việc trong môi trường startup chưa có product rõ ràng, yêu cầu thay đổi liên tục.",
+
       learnings: [
-        'Luxury e-commerce design principles',
-        'Technical product presentation',
-        'High-value consultation-based sales UX',
-        'Content-heavy design với video và specs'
+        "Tiếp cận thiết kế cho hệ thống IoT và vận hành thực địa",
+        "Cách research domain mới khi chưa có kinh nghiệm thực tế",
+        "Trải nghiệm làm việc trong startup giai đoạn pre-investment",
       ],
-      
+
       images: [
         {
-          url: 'projects/tuanpham-audio',
-          alt: 'Tuấn Phạm Audio',
-          caption: 'Premium product page và Comparison tool'
-        }
-      ]
-    }
+          url: "projects/smartbox-system",
+          alt: "Smart Box System",
+          caption: "Admin dashboard quản lý hệ thống tủ locker",
+        },
+      ],
+    },
   },
 ];

@@ -4,20 +4,22 @@
     "work": "Work",
     "caseStudies": "Case Studies",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "viewCV": "View CV"
   },
   "hero": {
-    "badge": "UI/UX Designer · Developer-minded",
-    "title": "Son Ha",
-    "subtitle": "Designing products that are both beautiful and technically feasible",
-    "description": "UI/UX designer with a strong frontend development background. I understand backend logic, database structures, and API flows - ensuring every design decision is grounded in real-world implementation. I have worked with real clients and startups, shipping products that balance user needs with technical reality.",
-    "cta": "View Case Studies",
-    "ctaCV": "View CV"
+    "badge": "Hi, I'm Son Ha",
+    "title": "Designing <highlight>Beautiful UIs</highlight> That Are <highlight>Actually Shippable</highlight>",
+    "description": "As a UI/UX Designer with a Frontend background, I bridge the gap between pixels and production. My designs are not just concepts—they are technically feasible from API flows to component logic—so your team hands off less and ships faster.",
+    "cta": "Explore Portfolio"
   },
   "caseStudies": {
-    "title": "Selected Case Studies"
+    "eyebrow": "Case Studies",
+    "title": "Selected Case Studies",
+    "viewCaseStudy": "View Case Study"
   },
   "projects": {
+    "eyebrow": "Selected Work",
     "title": "Work & Real Projects",
     "filters": {
       "all": "All",
@@ -48,6 +50,10 @@
   "about": {
     "title": "About",
     "subtitle": "Developer Background, Designer Mindset",
+    "bio": "I started as a frontend developer before transitioning into UI/UX design. This background gives me a unique perspective — I design with technical constraints in mind, create feasible component structures, and communicate effectively with engineering teams. My focus is on building products that are not just beautiful, but scalable and practical.",
+    "experience": {
+      "title": "Professional Experience"
+    },
     "skills": {
       "title": "Skills & Capabilities",
       "design": {
@@ -61,33 +67,53 @@
       "system": {
         "title": "System Understanding",
         "items": "API Design · Backend Logic · Database Basics · State Management · Performance Optimization"
+      },
+      "ai": {
+        "title": "AI & Tools",
+        "items": "ChatGPT · Claude · Cursor · v0 · Midjourney · Prompt Engineering · AI-assisted Design"
       }
     },
     "education": {
       "title": "Education",
-      "degree": "Bachelor in Computer Science",
-      "university": "University Name"
+      "degree": "Information & Technologies",
+      "university": "Vien Dong University"
     }
   },
   "footer": {
-    "tagline": "Designed and built by me",
-    "copyright": "© 2024 Son Ha. All rights reserved."
+    "eyebrow": "Get in touch",
+    "heading": "Let's build something great.",
+    "ctaContact": "Say hello",
+    "ctaCV": "View CV",
+    "copyright": "© 2025 Son Ha. All rights reserved."
   },
-  "caseStudy": {
-    "overview": "Overview",
-    "problem": "The Problem",
-    "solution": "The Solution",
-    "impact": "Impact & Results",
-    "role": "Role",
-    "client": "Client",
-    "duration": "Duration",
-    "year": "Year",
-    "technologies": "Technologies",
-    "viewLiveProject": "View Live Project",
-    "relatedProjects": "Related Projects",
-    "nextProject": "Next Project",
-    "previousProject": "Previous Project",
-    "metrics": "Key Metrics",
-    "gallery": "Project Gallery"
+  "libraryCaseStudy": {
+    "eyebrow": "Case Study",
+    "meta": {
+      "client": "Client",
+      "role": "Role",
+      "year": "Year",
+      "platforms": "Platforms"
+    },
+    "problem": {
+      "eyebrow": "The Problem",
+      "heading": "Managing with Excel, students had no way to browse books",
+      "before": "Before"
+    },
+    "research": {
+      "eyebrow": "Research",
+      "heading": "On-site visit at the library"
+    },
+    "solution": {
+      "eyebrow": "Solution",
+      "heading": "A 3-platform system"
+    },
+    "impact": {
+      "eyebrow": "Impact",
+      "heading": "Fully replaced the old process"
+    },
+    "gallery": {
+      "eyebrow": "Design",
+      "heading": "UI Screenshots"
+    }
   }
 }

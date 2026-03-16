@@ -3,14 +3,14 @@
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 
-type FilterType = 'all' | 'client' | 'startup' | 'internship' | 'shipped';
+type FilterType = 'all' | 'client' | 'startup' | 'shipped';
 
 interface ProjectFilterProps {
   activeFilter: FilterType;
   onFilterChange: (filter: FilterType) => void;
 }
 
-const filters: FilterType[] = ['all', 'client', 'startup', 'internship', 'shipped'];
+const filters: FilterType[] = ['all', 'client', 'startup', 'shipped'];
 
 export default function ProjectFilter({ activeFilter, onFilterChange }: ProjectFilterProps) {
   const t = useTranslations('projects.filters');
@@ -24,8 +24,8 @@ export default function ProjectFilter({ activeFilter, onFilterChange }: ProjectF
           className={cn(
             'px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300',
             activeFilter === filter
-              ? 'bg-cyan-500 text-white shadow-lg shadow-cyan-500/30 scale-105'
-              : 'bg-transparent text-muted-foreground border border-border hover:border-cyan-500/50 hover:text-cyan-500 hover:bg-cyan-500/5'
+              ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/30 scale-105'
+              : 'bg-transparent text-muted-foreground border border-border hover:border-orange-500/50 hover:text-orange-500 hover:bg-orange-500/5'
           )}
         >
           {t(filter)}

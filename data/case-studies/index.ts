@@ -1,14 +1,14 @@
 import { CaseStudy } from '@/types';
 import { invoiceaiEN } from './en/invoiceai';
-import { khu13EN } from './en/khu13';
+import { libraryEN } from './en/library-vien-dong';
 import { invoiceaiVI } from './vi/invoiceai';
-import { khu13VI } from './vi/khu13';
+import { libraryVI } from './vi/library-vien-dong';
 
 export const getCaseStudies = (locale: string): CaseStudy[] => {
   if (locale === 'vi') {
-    return [invoiceaiVI, khu13VI];
+    return [invoiceaiVI, libraryVI];
   }
-  return [invoiceaiEN, khu13EN];
+  return [invoiceaiEN, libraryEN];
 };
 
 export const getCaseStudy = (slug: string, locale: string): CaseStudy | undefined => {
@@ -17,4 +17,4 @@ export const getCaseStudy = (slug: string, locale: string): CaseStudy | undefine
 };
 
 // For homepage - default to EN
-export const caseStudies = [invoiceaiEN, khu13EN];
+export const caseStudies = [invoiceaiEN, libraryEN];

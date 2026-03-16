@@ -3,17 +3,22 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { skills } from '@/data/skills';
-import { experiences } from '@/data/experience';
+import { useLocale } from 'next-intl';
+import { getExperiences } from '@/data/experience/index';
 import SkillCard from '@/components/about/SkillCard';
 import ExperienceCard from '@/components/experience/ExperienceCard';
+import { GraduationCap, Briefcase } from 'lucide-react';
 
 export default function AboutSection() {
   const t = useTranslations('about');
+  const locale = useLocale();
+  const experiences = getExperiences(locale);
 
   return (
-    <section id="about" className="py-24">
-      <div className="container mx-auto px-4">
-        {/* Experience Section */}
+    <section id="about" className="py-24 bg-card">
+      <div className="container mx-auto px-4 max-w-6xl">
+
+        {/* ── BIO ── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,67 +26,78 @@ export default function AboutSection() {
           transition={{ duration: 0.5 }}
           className="mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+          <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-3">
             {t('title')}
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-10 max-w-2xl leading-tight">
+            {t('subtitle')}
           </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {/* About Text */}
-            <div>
-              <h3 className="text-2xl font-bold mb-4">{t('subtitle')}</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                I started as a frontend developer before transitioning into UI/UX design. 
-                This background gives me a unique perspective - I design with technical 
-                constraints in mind, create feasible component structures, and communicate 
-                effectively with engineering teams. My focus is on building products that 
-                are not just beautiful, but scalable and practical.
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Bio */}
+            <div className="md:col-span-2">
+              <p className="text-muted-foreground leading-relaxed text-base">
+                {t('bio')}
               </p>
             </div>
 
             {/* Education */}
-            <div>
-              <h3 className="text-lg font-semibold mb-3 text-muted-foreground uppercase tracking-wide">
-                {t('education.title')}
-              </h3>
-              <div className="border-l-2 border-border pl-6">
-                <h4 className="text-xl font-bold mb-1">{t('education.degree')}</h4>
-                <p className="text-muted-foreground">{t('education.university')}</p>
+            <div className="bg-background rounded-xl p-5 border border-border h-fit">
+              <div className="flex items-center gap-2 mb-3">
+                <GraduationCap className="w-4 h-4 text-orange-500" />
+                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">
+                  {t('education.title')}
+                </p>
               </div>
-            </div>
-          </div>
-
-          {/* Professional Experience */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-8">Professional Experience</h3>
-            <div className="space-y-6">
-              {experiences.map((experience, index) => (
-                <ExperienceCard
-                  key={experience.id}
-                  experience={experience}
-                  index={index}
-                />
-              ))}
+              <h4 className="font-bold text-base mb-1">{t('education.degree')}</h4>
+              <p className="text-sm text-muted-foreground">{t('education.university')}</p>
             </div>
           </div>
         </motion.div>
 
-        {/* Skills Section */}
+        {/* ── EXPERIENCE ── */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-20"
+        >
+          <div className="flex items-center gap-2 mb-8">
+            <Briefcase className="w-5 h-5 text-orange-500" />
+            <h2 className="text-2xl font-bold">{t('experience.title')}</h2>
+          </div>
+
+          <div className="space-y-4">
+            {experiences.map((experience, index) => (
+              <ExperienceCard
+                key={experience.id}
+                experience={experience}
+                index={index}
+                highlight={index === 0}
+              />
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ── SKILLS ── */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+          <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-3">
             {t('skills.title')}
-          </h2>
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {skills.map((skill, index) => (
               <SkillCard key={skill.id} skill={skill} index={index} />
             ))}
           </div>
         </motion.div>
+
       </div>
     </section>
   );

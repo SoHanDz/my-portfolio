@@ -16,7 +16,7 @@ export default function CaseStudyMetrics({ caseStudy }: CaseStudyMetricsProps) {
   }
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <motion.h2
@@ -37,9 +37,9 @@ export default function CaseStudyMetrics({ caseStudy }: CaseStudyMetricsProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 border border-border rounded-lg bg-card hover:border-cyan-500/50 transition-colors"
+                className="text-center p-6 border border-border rounded-lg bg-card hover:border-orange-500/50 transition-colors"
               >
-                <div className="text-4xl md:text-5xl font-bold text-cyan-500 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-orange-500 mb-2">
                   {metric.value}
                 </div>
                 <div className="text-sm text-muted-foreground">
