@@ -30,9 +30,6 @@ interface LightboxProps {
 
 function Lightbox({ images, initialIndex, onClose }: LightboxProps) {
   const [current, setCurrent] = useState(initialIndex);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -43,8 +40,6 @@ function Lightbox({ images, initialIndex, onClose }: LightboxProps) {
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [images.length, onClose]);
-
-  if (!mounted) return null;
 
   const img = images[current];
 

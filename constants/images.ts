@@ -5,7 +5,7 @@
 
 export const IMAGES = {
   // ── Avatar ──
-  avatar: '/avatar',
+  avatar: 'avatar/son-ha',
 
   // ── Marquee gallery — ảnh UI chạy ngang ở Hero ──
   // Thêm Cloudinary public ID vào đây
