@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { IMAGES } from "@/constants/images";
+import { getCloudinaryUrl } from "@/lib/cloudinary";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
@@ -29,10 +31,15 @@ export default function HeroSection() {
         >
           <div className="relative w-28 h-28 rounded-full ring-2 ring-orange-500/40 ring-offset-2 ring-offset-background overflow-hidden">
             <Image
-              src="/avatar.jpg" // TODO: thay bằng ảnh thật của bạn
+              src={
+                IMAGES.avatar.startsWith('/')
+                  ? IMAGES.avatar
+                  : getCloudinaryUrl(IMAGES.avatar, { width: 224, format: 'auto', quality: 'auto' })
+              }
               alt="Son Ha"
               fill
               className="object-cover"
+              priority
             />
           </div>
         </motion.div>

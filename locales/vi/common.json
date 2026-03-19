@@ -3,15 +3,15 @@
     "home": "Trang chủ",
     "work": "Dự án",
     "caseStudies": "Case Studies",
-    "about": "Về tôi",
+    "about": "Về em",
     "contact": "Liên hệ",
     "viewCV": "Xem CV"
   },
   "hero": {
-    "badge": "Xin chào, mình là Sơn Hà",
-    "title": "Thiết Kế <highlight>Giao Diện Đẹp</highlight>, Dev <highlight>Code Được Ngay</highlight>",
-    "description": "Là UI/UX Designer có gốc Frontend Dev, tôi xóa bỏ khoảng cách giữa thiết kế và lập trình. Các bản design của tôi luôn khả thi kỹ thuật—hiểu rõ API, component logic và constraint thực tế—giúp team của bạn ship sản phẩm nhanh hơn.",
-    "cta": "Khám phá Portfolio"
+    "badge": "Xin chào, em là Sơn Hà",
+    "title": "Em design UI <highlight>theo cách dev</highlight> thực sự <highlight>muốn build.</highlight>",
+    "description": "Bắt đầu từ frontend dev rồi chuyển sang design — nên em biết rõ spec tệ thì đau đầu thế nào. Em giữ cả hai góc nhìn để team Anh chị ship nhanh hơn, ít ma sát hơn.",
+    "cta": "Xem Portfolio"
   },
   "caseStudies": {
     "eyebrow": "Nghiên cứu thực tế",
@@ -32,59 +32,95 @@
   "project": {
     "viewDetails": "Xem Chi Tiết",
     "projectOverview": "Tổng Quan Dự Án",
-    "myRole": "Vai Trò Của Tôi",
+    "myRole": "Vai Trò Của Em",
     "teamSize": "Quy Mô Team",
     "keyResponsibilities": "Trách Nhiệm Chính",
-    "myContributions": "Đóng Góp Của Tôi",
+    "myContributions": "Đóng Góp Của Em",
     "impactResults": "Tác Động & Kết Quả",
     "technologiesTools": "Công Nghệ & Công Cụ",
     "challengesSolutions": "Thách Thức & Giải Pháp",
     "keyLearnings": "Bài Học Chính",
     "projectVisuals": "Hình Ảnh Dự Án",
-    "live": "Xem Trực Tiếp"
-  },
-  "experience": {
-    "title": "Kinh Nghiệm Chuyên Môn",
-    "viewDetails": "Xem chi tiết"
+    "live": "Xem Trực Tiếp",
+    "private": "Private / NDA"
   },
   "about": {
-    "title": "Về Tôi",
-    "subtitle": "Xuất Phát Từ Developer, Tư Duy Designer",
-    "bio": "Tôi bắt đầu từ frontend developer trước khi chuyển hướng sang UI/UX design. Nền tảng này cho tôi góc nhìn khác biệt — thiết kế với tư duy kỹ thuật, tạo ra các cấu trúc component khả thi và giao tiếp hiệu quả với engineering team. Mục tiêu của tôi là xây dựng sản phẩm không chỉ đẹp mà còn thực tế và có thể mở rộng được.",
-    "experience": {
-      "title": "Kinh Nghiệm Chuyên Môn"
+    "eyebrow": "Về Em",
+    "tagline": "Gốc Dev,\nTư Duy Designer.",
+    "bio1": "Em là UI/UX Designer với nền tảng lập trình frontend — hiện là sinh viên năm 3 tại Cao đẳng Viễn Đông, dự kiến tốt nghiệp cuối năm 2025. Từ năm 2, Em đã tham gia các dự án thực tế thông qua giảng viên, tức là Em đã có sản phẩm thật được triển khai thực tế.",
+    "bio2": "Vì xuất phát từ dev, Em thiết kế với tư duy code. Mỗi layout đều sẵn sàng để component hóa, mỗi khoảng cách đều có chủ đích, mỗi tương tác đều khả thi về mặt kỹ thuật — để team Anh chị tốn ít thời gian re-spec hơn và ship nhanh hơn.",
+    "stats": {
+      "projects": "Dự Án",
+      "clients": "Khách Hàng Thật",
+      "gpa": "GPA / 10"
     },
-    "skills": {
-      "title": "Kỹ Năng & Khả Năng",
-      "design": {
-        "title": "Design",
-        "items": "UX Research · Wireframing · Prototyping · Design Systems · Usability Testing · Information Architecture"
-      },
-      "frontend": {
-        "title": "Frontend Development",
-        "items": "HTML/CSS · JavaScript · React · Tailwind · Component Libraries · Responsive Design"
-      },
-      "system": {
-        "title": "Hiểu Biết Hệ Thống",
-        "items": "API Design · Backend Logic · Database Basics · State Management · Performance Optimization"
-      },
-      "ai": {
-        "title": "AI & Công Cụ",
-        "items": "ChatGPT · Claude · Cursor · v0 · Midjourney · Prompt Engineering · AI-assisted Design"
+    "process": {
+      "eyebrow": "Cách Em Làm Việc",
+      "title": "Quy trình",
+      "titleAccent": "xây dựng sản phẩm.",
+      "steps": {
+        "discover": {
+          "title": "Khám phá",
+          "description": "Phỏng vấn trực tiếp khách hàng — để hiểu cách họ thực sự nghĩ về sản phẩm, không chỉ gom list tính năng."
+        },
+        "research": {
+          "title": "Nghiên cứu",
+          "description": "Tìm hiểu đối thủ và tham khảo — chọn lọc những gì thực sự hiệu quả, không chỉ trông đẹp trên Dribbble."
+        },
+        "design": {
+          "title": "Thiết kế",
+          "description": "Brief hướng đi với khách hàng trước, rồi mới build toàn bộ màn hình — nhất quán và luôn nghĩ đến handoff từ đầu."
+        },
+        "deliver": {
+          "title": "Bàn giao",
+          "description": "Bàn giao file design hoàn chỉnh hoặc prototype — cái nào giúp team ship nhanh hơn thì dùng cái đó."
+        }
       }
     },
+    "skills": {
+      "eyebrow": "Kỹ Năng & Công Cụ",
+      "design": {
+        "title": "Thiết Kế",
+        "items": "Figma · UX Research · Wireframing · Prototyping · Design Systems · Usability Testing"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": "React · Next.js · Tailwind CSS · Node.js · MySQL · Thư viện Component"
+      },
+      "creative": {
+        "title": "Công Cụ Sáng Tạo",
+        "items": "Illustrator · Photoshop · Premiere Pro (cơ bản)"
+      },
+      "ai": {
+        "title": "AI & Công Cụ Hiện Đại",
+        "items": "Cursor · v0 · Claude · Midjourney · Prompt Engineering"
+      }
+    },
+    "experience": {
+      "eyebrow": "Kinh Nghiệm",
+      "internship": "Thực Tập",
+      "duration": "3 tháng",
+      "company": "VNMentors",
+      "role": "UI/UX Designer",
+      "period": "Tháng 10/2025 – 01/2026",
+      "description": "Tham gia team chính với vị trí Designer. Thiết kế ấn phẩm marketing 2D cho 990TOEIC và logo cho cả 990TOEIC lẫn VNMentors."
+    },
     "education": {
-      "title": "Học Vấn",
-      "degree": "Ngành tin học ứng dụng",
-      "university": "Cao đẳng Viễn Đông"
+      "eyebrow": "Học Vấn",
+      "degree": "Công Nghệ Thông Tin",
+      "school": "Cao đẳng Viễn Đông",
+      "period": "2023 – 2025",
+      "gpa": "GPA 8.2 / 10",
+      "note": "Năm 3 · Tốt nghiệp cuối 2025"
     }
   },
   "footer": {
-    "eyebrow": "Liên hệ",
-    "heading": "Hãy cùng tạo ra điều gì đó.",
-    "ctaContact": "Nhắn cho mình",
+    "eyebrow": "Cảm ơn anh chị đã ghé qua",
+    "heading": "Anh chị đã xem đến tận đây rồi.",
+    "subtext": "Điều đó thực sự có ý nghĩa với em. Nếu có điều gì đó thu hút anh chị — hoặc đơn giản chỉ muốn chào hỏi — Em rất vui được nghe từ anh chị. Em đang tìm kiếm vị trí UI/UX fresher.",
+    "ctaContact": "Liên hệ",
     "ctaCV": "Xem CV",
-    "copyright": "© 2025 Sơn Hà. Bảo lưu mọi quyền."
+    "copyright": "© 2025 Sơn Hà. All rights reserved."
   },
   "libraryCaseStudy": {
     "eyebrow": "Case Study",

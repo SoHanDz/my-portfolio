@@ -9,9 +9,9 @@
   },
   "hero": {
     "badge": "Hi, I'm Son Ha",
-    "title": "Designing <highlight>Beautiful UIs</highlight> That Are <highlight>Actually Shippable</highlight>",
-    "description": "As a UI/UX Designer with a Frontend background, I bridge the gap between pixels and production. My designs are not just concepts—they are technically feasible from API flows to component logic—so your team hands off less and ships faster.",
-    "cta": "Explore Portfolio"
+    "title": "I design UIs <highlight>the way devs</highlight> actually <highlight>want to build them.</highlight>",
+    "description": "Started as a frontend dev, switched to design — and never forgot how annoying bad specs are. I keep both sides in mind so your team ships faster with less friction.",
+    "cta": "Explore My Work"
   },
   "caseStudies": {
     "eyebrow": "Case Studies",
@@ -41,47 +41,83 @@
     "challengesSolutions": "Challenges & Solutions",
     "keyLearnings": "Key Learnings",
     "projectVisuals": "Project Visuals",
-    "live": "Live"
-  },
-  "experience": {
-    "title": "Professional Experience",
-    "viewDetails": "View Details"
+    "live": "Live",
+    "private": "Private / NDA"
   },
   "about": {
-    "title": "About",
-    "subtitle": "Developer Background, Designer Mindset",
-    "bio": "I started as a frontend developer before transitioning into UI/UX design. This background gives me a unique perspective — I design with technical constraints in mind, create feasible component structures, and communicate effectively with engineering teams. My focus is on building products that are not just beautiful, but scalable and practical.",
-    "experience": {
-      "title": "Professional Experience"
+    "eyebrow": "About Me",
+    "tagline": "Developer Background,\nDesigner Mindset.",
+    "bio1": "I'm a UI/UX Designer with a frontend development background — currently a 3rd-year student at Vien Dong College, graduating late 2025. Since my 2nd year, I've been involved in real-world projects through faculty connections, which means I've shipped work that actually lives in production.",
+    "bio2": "Because I started as a dev, I design with code in mind. Every layout I create is component-ready, every spacing decision is intentional, and every interaction is technically feasible — so your team spends less time re-speccing and more time shipping.",
+    "stats": {
+      "projects": "Projects",
+      "clients": "Real Clients",
+      "gpa": "GPA / 10"
     },
-    "skills": {
-      "title": "Skills & Capabilities",
-      "design": {
-        "title": "Design",
-        "items": "UX Research · Wireframing · Prototyping · Design Systems · Usability Testing · Information Architecture"
-      },
-      "frontend": {
-        "title": "Frontend Development",
-        "items": "HTML/CSS · JavaScript · React · Tailwind · Component Libraries · Responsive Design"
-      },
-      "system": {
-        "title": "System Understanding",
-        "items": "API Design · Backend Logic · Database Basics · State Management · Performance Optimization"
-      },
-      "ai": {
-        "title": "AI & Tools",
-        "items": "ChatGPT · Claude · Cursor · v0 · Midjourney · Prompt Engineering · AI-assisted Design"
+    "process": {
+      "eyebrow": "How I Work",
+      "title": "A process that",
+      "titleAccent": "actually ships.",
+      "steps": {
+        "discover": {
+          "title": "Discover",
+          "description": "Interview the client directly — to understand how they actually think about their product, not just collect a list of features."
+        },
+        "research": {
+          "title": "Research",
+          "description": "Study competitors and references — picking out what actually works, not just what looks good on Dribbble."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Brief the client on direction first, then build out all screens consistently with handoff in mind from day one."
+        },
+        "deliver": {
+          "title": "Deliver",
+          "description": "Hand off polished design files or a working prototype — whichever gets your team shipping fastest."
+        }
       }
     },
+    "skills": {
+      "eyebrow": "Skills & Tools",
+      "design": {
+        "title": "Design",
+        "items": "Figma · UX Research · Wireframing · Prototyping · Design Systems · Usability Testing"
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": "React · Next.js · Tailwind CSS · Node.js · MySQL · Component Libraries"
+      },
+      "creative": {
+        "title": "Creative Tools",
+        "items": "Illustrator · Photoshop · Premiere Pro (basic)"
+      },
+      "ai": {
+        "title": "AI & Modern Tools",
+        "items": "Cursor · v0 · Claude · Midjourney · Prompt Engineering"
+      }
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "internship": "Internship",
+      "duration": "3 months",
+      "company": "VNMentors",
+      "role": "UI/UX Designer",
+      "period": "Oct 2025 – Jan 2026",
+      "description": "Joined the core team as Designer. Designed 2D marketing assets for 990TOEIC and created logos for both 990TOEIC and VNMentors."
+    },
     "education": {
-      "title": "Education",
-      "degree": "Information & Technologies",
-      "university": "Vien Dong University"
+      "eyebrow": "Education",
+      "degree": "Information Technology",
+      "school": "Vien Dong College",
+      "period": "2023 – 2025",
+      "gpa": "GPA 8.2 / 10",
+      "note": "Year 3 · Graduating late 2025"
     }
   },
   "footer": {
-    "eyebrow": "Get in touch",
-    "heading": "Let's build something great.",
+    "eyebrow": "Thank you for visiting",
+    "heading": "You made it to the end.",
+    "subtext": "That means a lot. If something here caught your eye — or if you just want to say hi — I'd love to hear from you. I'm currently open to fresher/junior UI/UX roles.",
     "ctaContact": "Say hello",
     "ctaCV": "View CV",
     "copyright": "© 2025 Son Ha. All rights reserved."

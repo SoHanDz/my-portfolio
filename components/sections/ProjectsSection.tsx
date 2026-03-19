@@ -4,21 +4,10 @@ import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getProjects } from '@/data/projects/index';
-import BentoProjectCard from '@/components/project/BentoProjectCard';
+import ProjectCard from '@/components/project/ProjectCard';
 import ProjectFilter from '@/components/project/ProjectFilter';
 
-type FilterType = 'all' | 'client' | 'startup' | 'shipped';
-
-// Bento pattern repeats every 6 cards:
-// [large, small, small, wide, medium, small, ...]
-const BENTO_PATTERN: Array<'large' | 'medium' | 'small' | 'wide'> = [
-  'large',  // col-span-2 row-span-2
-  'small',  // col-span-1 row-span-1
-  'small',  // col-span-1 row-span-1
-  'wide',   // col-span-2 row-span-1
-  'medium', // col-span-1 row-span-2
-  'small',  // col-span-1 row-span-1
-];
+type FilterType = 'all' | 'client' | 'startup';
 
 export default function ProjectsSection() {
   const t = useTranslations('projects');
@@ -32,53 +21,96 @@ export default function ProjectsSection() {
     return project.category === activeFilter;
   });
 
+  // Split into 2 columns for masonry
+  const leftCol = filteredProjects.filter((_, i) => i % 2 === 0);
+  const rightCol = filteredProjects.filter((_, i) => i % 2 === 1);
+
   return (
-    <section id="work" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="work" className="relative py-24 md:py-32 bg-background overflow-hidden">
+
+      {/* Decorative background text — same style as About */}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute -top-4 right-0 text-[18vw] font-black text-foreground/[0.03] leading-none select-none"
+      >
+        WORK
+      </span>
+
+      <div className="max-w-6xl mx-auto px-6 md:px-10">
 
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
           className="mb-10"
         >
-          <p className="text-sm font-medium text-orange-500 uppercase tracking-widest mb-3">
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-4">
             {t('eyebrow')}
           </p>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <h2 className="text-4xl md:text-5xl font-bold">{t('title')}</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-foreground">
+              {t('title')}
+            </h2>
             <ProjectFilter activeFilter={activeFilter} onFilterChange={setActiveFilter} />
           </div>
         </motion.div>
 
-        {/* Bento Grid */}
+        {/* Masonry Grid */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeFilter}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 md:grid-cols-3 auto-rows-auto gap-4"
+            transition={{ duration: 0.25 }}
           >
-            {filteredProjects.map((project, index) => (
-              <BentoProjectCard
-                key={project.id}
-                project={project}
-                index={index}
-                size={BENTO_PATTERN[index % BENTO_PATTERN.length]}
-              />
-            ))}
+            {filteredProjects.length === 0 ? (
+              <div className="text-center py-20">
+                <p className="text-muted-foreground text-sm">No projects found</p>
+              </div>
+            ) : (
+              <>
+                {/* Desktop: 2-column masonry */}
+                <div className="hidden md:grid md:grid-cols-2 gap-4 items-start">
+                  {/* Left column */}
+                  <div>
+                    {leftCol.map((project, i) => (
+                      <ProjectCard
+                        key={project.id}
+                        project={project}
+                        index={i * 2}
+                      />
+                    ))}
+                  </div>
+                  {/* Right column — offset slightly */}
+                  <div className="mt-10">
+                    {rightCol.map((project, i) => (
+                      <ProjectCard
+                        key={project.id}
+                        project={project}
+                        index={i * 2 + 1}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Mobile: single column */}
+                <div className="md:hidden">
+                  {filteredProjects.map((project, i) => (
+                    <ProjectCard
+                      key={project.id}
+                      project={project}
+                      index={i}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
           </motion.div>
         </AnimatePresence>
 
-        {filteredProjects.length === 0 && (
-          <div className="text-center py-20">
-            <p className="text-muted-foreground">No projects found</p>
-          </div>
-        )}
       </div>
     </section>
   );
