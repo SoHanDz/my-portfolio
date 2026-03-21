@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Project } from '@/types';
@@ -11,6 +11,9 @@ import {
 import { getCloudinaryUrl, IMAGE_SIZES } from '@/lib/cloudinary';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+
+const MotionImage = motion(Image);
 
 interface ProjectDetailDialogProps {
   project: Project;
@@ -23,19 +26,10 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
   const [activeImg, setActiveImg] = useState(0);
   const [expanded, setExpanded] = useState(false);
 
-  if (!project.detail) return null;
-  const { detail } = project;
-  const images = detail.images ?? [];
+  const images = project.detail?.images ?? [];
 
-  const handleOpenChange = (val: boolean) => {
-    if (!val) { setActiveImg(0); setExpanded(false); }
-    onOpenChange(val);
-  };
-
-  const currentImg = images[activeImg];
-
-  const prev = () => setActiveImg(i => (i - 1 + images.length) % images.length);
-  const next = () => setActiveImg(i => (i + 1) % images.length);
+  const prev = useCallback(() => setActiveImg(i => (i - 1 + images.length) % images.length), [images.length]);
+  const next = useCallback(() => setActiveImg(i => (i + 1) % images.length), [images.length]);
 
   useEffect(() => {
     if (!expanded) return;
@@ -46,7 +40,16 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [expanded, images.length]);
+  }, [expanded, prev, next]);
+
+  if (!project.detail) return null;
+  const { detail } = project;
+  const currentImg = images[activeImg];
+
+  const handleOpenChange = (val: boolean) => {
+    if (!val) { setActiveImg(0); setExpanded(false); }
+    onOpenChange(val);
+  };
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
@@ -66,15 +69,16 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
             >
               {/* Image — full space */}
               <AnimatePresence mode="wait">
-                <motion.img
+                <MotionImage
                   key={activeImg}
                   src={getCloudinaryUrl(currentImg.url, { width: IMAGE_SIZES.full })}
                   alt={currentImg.alt}
+                  fill
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.15 }}
-                  className="w-full h-full object-contain"
+                  className="object-contain"
                 />
               </AnimatePresence>
 
@@ -162,15 +166,16 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
                     onClick={() => setExpanded(true)}
                   >
                     <AnimatePresence mode="wait">
-                      <motion.img
+                      <MotionImage
                         key={activeImg}
                         src={getCloudinaryUrl(currentImg.url, { width: IMAGE_SIZES.card })}
                         alt={currentImg.alt}
+                        fill
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.15 }}
-                        className="w-full h-full object-cover"
+                        className="object-cover"
                       />
                     </AnimatePresence>
 
@@ -213,7 +218,7 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
                         <button key={i} onClick={() => setActiveImg(i)}
                           className={`rounded-lg overflow-hidden shrink-0 transition-all duration-200 ${i === activeImg ? 'ring-2 ring-orange-500 opacity-100' : 'opacity-50 hover:opacity-80'}`}
                           style={{ width: 56, height: 36 }}>
-                          <img src={getCloudinaryUrl(img.url, { width: 200 })} alt={img.alt} className="w-full h-full object-cover" />
+                          <Image src={getCloudinaryUrl(img.url, { width: 200 })} alt={img.alt} width={56} height={36} className="w-full h-full object-cover" />
                         </button>
                       ))}
                     </div>
