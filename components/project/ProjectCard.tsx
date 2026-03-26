@@ -6,6 +6,8 @@ import { ArrowUpRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Project } from '@/types';
 import ProjectDetailDialog from './ProjectDetailDialog';
+import Image from 'next/image';
+import { getCloudinaryUrl, IMAGE_SIZES } from '@/lib/cloudinary';
 
 interface ProjectCardProps {
   project: Project;
@@ -16,6 +18,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
   const [hovered, setHovered] = useState(false);
   const [dialogOpen, setDialogOpen] = useState(false);
   const t = useTranslations('project');
+  const thumbnail = project.thumbnail;
 
   return (
     <>
@@ -33,15 +36,25 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           onClick={() => project.detail && setDialogOpen(true)}
         >
           {/* Image area */}
-          <div className="relative w-full bg-muted overflow-hidden" style={{ minHeight: '160px' }}>
-            <div
-              className="absolute inset-0 opacity-[0.04]"
-              style={{
-                backgroundImage:
-                  'linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px)',
-                backgroundSize: '20px 20px',
-              }}
-            />
+          <div className="relative w-full bg-muted overflow-hidden aspect-[16/9]">
+            {thumbnail && process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME ? (
+              <Image
+                src={getCloudinaryUrl(thumbnail, { width: IMAGE_SIZES.card })}
+                alt={project.title}
+                fill
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            ) : (
+              <div
+                className="absolute inset-0 opacity-[0.04]"
+                style={{
+                  backgroundImage:
+                    'linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px)',
+                  backgroundSize: '20px 20px',
+                }}
+              />
+            )}
 
             {/* Arrow */}
             <div className="absolute top-3 right-3 z-10">

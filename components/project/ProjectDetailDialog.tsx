@@ -6,7 +6,7 @@ import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Project } from '@/types';
 import {
   ExternalLink, Lock, ChevronLeft, ChevronRight,
-  Users, Wrench, TrendingUp, Lightbulb, Minimize2, Maximize2,
+  Users, Wrench, TrendingUp, Lightbulb, Minimize2, Maximize2, Figma,
 } from 'lucide-react';
 import { getCloudinaryUrl, IMAGE_SIZES } from '@/lib/cloudinary';
 import { useTranslations } from 'next-intl';
@@ -143,18 +143,6 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
                   <h2 className="text-lg font-bold text-foreground leading-snug">{project.title}</h2>
                   <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{project.description}</p>
                 </div>
-                <div className="shrink-0 mt-0.5">
-                  {detail.liveUrl ? (
-                    <a href={detail.liveUrl} target="_blank" rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-orange-500 text-white hover:bg-orange-600 transition-colors">
-                      <ExternalLink className="w-3 h-3" /> {t('live')}
-                    </a>
-                  ) : (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground border border-border/60 px-3 py-1.5 rounded-full">
-                      <Lock className="w-3 h-3" /> {t('private')}
-                    </span>
-                  )}
-                </div>
               </div>
 
               {/* Image viewer */}
@@ -260,6 +248,27 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
                       </div>
                     )}
                   </div>
+                )}
+
+                {/* Figma link — nổi bật trước overview */}
+                {detail.figmaUrl && (
+                  <a
+                    href={detail.figmaUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl border border-border/60 hover:border-orange-500/60 hover:bg-orange-500/5 transition-all duration-200 group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-[#F24E1E]/10 flex items-center justify-center shrink-0">
+                        <Figma className="w-4 h-4 text-[#F24E1E]" />
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold text-foreground">View Figma Design</p>
+                        <p className="text-[10px] text-muted-foreground">Open design file in Figma</p>
+                      </div>
+                    </div>
+                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-orange-500 transition-colors shrink-0" />
+                  </a>
                 )}
 
                 {/* Overview */}

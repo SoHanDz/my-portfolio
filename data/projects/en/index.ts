@@ -1,69 +1,70 @@
 import { Project } from "@/types";
 
 export const projectsEN: Project[] = [
+  // {
+  //   id: "1",
+  //   title: "SaaS Warehouse Management System (InvoiceAI)",
+  //   description:
+  //     "Warehouse management system integrated with e-invoicing, built on top of a real-world project (XTC), currently live with active users",
+  //   tags: ["SaaS", "In Development"],
+  //   category: "startup",
+  //   detail: {
+  //     overview:
+  //       "InvoiceAI is a SaaS warehouse management system integrated with e-invoicing, targeting SMEs in Vietnam. The project was pivoted from XTC — a warehouse management system I previously helped build for a manufacturing workshop. When the client discontinued, my lecturer decided to expand the product by adding e-invoicing features aligned with Vietnam's new regulations and restructuring it as a SaaS platform. I owned the entire UI layer — from Figma designs to frontend implementation.",
+
+  //     responsibilities: [
+  //       "Led UI/UX for the entire project: from design to implementation review",
+  //       "Redesigned the legacy XTC system into a new SaaS interface",
+  //       "Contributed to frontend development alongside design work",
+  //       "Researched existing e-invoice solutions on the market to guide UX decisions",
+  //       "Collaborated closely with the backend team to ensure design feasibility",
+  //     ],
+
+  //     contributions: [
+  //       "Redesigned the full UI from the legacy XTC system, preserving what worked well",
+  //       "Built a basic design system: color palette, typography, and component library",
+  //       "Redesigned the order creation page — restructured the layout into clear sections (header, filters, table) to improve readability",
+  //       "Used v0.dev to explore UI directions for key screens, then self-implemented the chosen designs in code",
+  //       "Designed core modules: dashboard, warehouse management, e-invoicing, and reporting",
+  //     ],
+
+  //     impact: [
+  //       "System is live and being used by real users",
+  //       "Completed design and implementation for 20+ core screens",
+  //       "New UI received noticeably better feedback compared to the legacy XTC version",
+  //     ],
+
+  //     technologies: ["Figma", "React", "TypeScript", "Ant Design"],
+
+  //     teamSize:
+  //       "6 (1 Lead/Backend, 1 UI/UX Designer, 2 Frontend Devs, 1 Backend Dev, 1 Tester)",
+  //     myRole: "UI/UX Designer & Frontend Developer",
+
+  //     challenges:
+  //       "Redesigning a live system while development was still running in parallel. The e-invoicing domain is complex and highly specific to Vietnamese regulations — it took time to understand deeply enough to design well. Balancing the designer and frontend developer roles within the same project.",
+
+  //     learnings: [
+  //       "Hands-on understanding of the e-invoicing domain and warehouse business logic",
+  //       "How to use AI tools (v0.dev) as part of a real redesign workflow",
+  //       "The value of layout structure — grouping content into clear blocks significantly improves usability",
+  //       "Getting comfortable with designing and coding simultaneously in a startup environment",
+  //       "Handling constantly changing requirements during a product pivot",
+  //     ],
+
+  //     images: [
+  //       {
+  //         url: "projects/invoiceai-dashboard",
+  //         alt: "InvoiceAI Dashboard",
+  //         caption: "Dashboard redesign and E-invoice Management",
+  //       },
+  //     ],
+  //   },
+  // },
+
   {
     id: "1",
-    title: "SaaS Warehouse Management System (InvoiceAI)",
-    description:
-      "Warehouse management system integrated with e-invoicing, built on top of a real-world project (XTC), currently live with active users",
-    tags: ["SaaS", "In Development"],
-    category: "startup",
-    detail: {
-      overview:
-        "InvoiceAI is a SaaS warehouse management system integrated with e-invoicing, targeting SMEs in Vietnam. The project was pivoted from XTC — a warehouse management system I previously helped build for a manufacturing workshop. When the client discontinued, my lecturer decided to expand the product by adding e-invoicing features aligned with Vietnam's new regulations and restructuring it as a SaaS platform. I owned the entire UI layer — from Figma designs to frontend implementation.",
-
-      responsibilities: [
-        "Led UI/UX for the entire project: from design to implementation review",
-        "Redesigned the legacy XTC system into a new SaaS interface",
-        "Contributed to frontend development alongside design work",
-        "Researched existing e-invoice solutions on the market to guide UX decisions",
-        "Collaborated closely with the backend team to ensure design feasibility",
-      ],
-
-      contributions: [
-        "Redesigned the full UI from the legacy XTC system, preserving what worked well",
-        "Built a basic design system: color palette, typography, and component library",
-        "Redesigned the order creation page — restructured the layout into clear sections (header, filters, table) to improve readability",
-        "Used v0.dev to explore UI directions for key screens, then self-implemented the chosen designs in code",
-        "Designed core modules: dashboard, warehouse management, e-invoicing, and reporting",
-      ],
-
-      impact: [
-        "System is live and being used by real users",
-        "Completed design and implementation for 20+ core screens",
-        "New UI received noticeably better feedback compared to the legacy XTC version",
-      ],
-
-      technologies: ["Figma", "React", "TypeScript", "Ant Design"],
-
-      teamSize:
-        "6 (1 Lead/Backend, 1 UI/UX Designer, 2 Frontend Devs, 1 Backend Dev, 1 Tester)",
-      myRole: "UI/UX Designer & Frontend Developer",
-
-      challenges:
-        "Redesigning a live system while development was still running in parallel. The e-invoicing domain is complex and highly specific to Vietnamese regulations — it took time to understand deeply enough to design well. Balancing the designer and frontend developer roles within the same project.",
-
-      learnings: [
-        "Hands-on understanding of the e-invoicing domain and warehouse business logic",
-        "How to use AI tools (v0.dev) as part of a real redesign workflow",
-        "The value of layout structure — grouping content into clear blocks significantly improves usability",
-        "Getting comfortable with designing and coding simultaneously in a startup environment",
-        "Handling constantly changing requirements during a product pivot",
-      ],
-
-      images: [
-        {
-          url: "projects/invoiceai-dashboard",
-          alt: "InvoiceAI Dashboard",
-          caption: "Dashboard redesign and E-invoice Management",
-        },
-      ],
-    },
-  },
-
-  {
-    id: "2",
     title: "Warehouse Management System (XTC)",
+    thumbnail: "projects/xtc-thumb",
     description:
       "Warehouse management system for a leather wallet manufacturing workshop, covering order management, inventory, and products",
     tags: ["Client", "Not Deployed"],
@@ -108,9 +109,37 @@ export const projectsEN: Project[] = [
         "First experience combining the designer and frontend developer roles",
       ],
 
+      figmaUrl:
+        "https://www.figma.com/design/svUoZBkgXBlCkiuOlVqOLo/XTC?node-id=429-8248&t=iLoBuDmYsxI6bZZe-1",
+
       images: [
         {
-          url: "projects/xtc-warehouse",
+          url: "marquee/ui-1",
+          alt: "XTC Warehouse System",
+          caption: "Overview dashboard and order management screen",
+        },
+        {
+          url: "projects/xtc-warehouse2",
+          alt: "XTC Warehouse System",
+          caption: "Overview dashboard and order management screen",
+        },
+        {
+          url: "projects/xtc-warehouse3",
+          alt: "XTC Warehouse System",
+          caption: "Overview dashboard and order management screen",
+        },
+        {
+          url: "projects/xtc-warehouse4",
+          alt: "XTC Warehouse System",
+          caption: "Overview dashboard and order management screen",
+        },
+        {
+          url: "projects/xtc-warehouse5",
+          alt: "XTC Warehouse System",
+          caption: "Overview dashboard and order management screen",
+        },
+        {
+          url: "projects/xtc-warehouse6",
           alt: "XTC Warehouse System",
           caption: "Overview dashboard and order management screen",
         },
@@ -119,8 +148,9 @@ export const projectsEN: Project[] = [
   },
 
   {
-    id: "3",
+    id: "2",
     title: "Library Management System (Vien Dong College)",
+    thumbnail: "projects/library-thumb",
     description:
       "Digitizing the library management system for Vien Dong College — my first real-world project, currently live",
     tags: ["Client", "Shipped"],
@@ -165,19 +195,48 @@ export const projectsEN: Project[] = [
         "Working on a project with real accountability — approved by the college principal",
       ],
 
+      figmaUrl:
+        "https://www.figma.com/design/ZBiYMRQm34xQjg0kN516kk/VD-Library?node-id=0-1&t=SoJ71L0kNNZJIBDB-1",
+
       images: [
         {
-          url: "projects/library-system",
+          url: "projects/library-system1",
           alt: "Library Management System",
-          caption: "Student portal and Admin dashboard",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system2",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system3",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system4",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system5",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "marquee/ui-4",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
         },
       ],
     },
   },
 
   {
-    id: "4",
+    id: "3",
     title: "Khu13 Website",
+    thumbnail: "projects/khu13-thumb",
     description:
       "Website for Khu13 bar in Ho Chi Minh City — my first freelance project, wireframe approved by client",
     tags: ["Freelance", "In Development"],
@@ -216,6 +275,9 @@ export const projectsEN: Project[] = [
         "Presenting and justifying design decisions without direct client access",
       ],
 
+      figmaUrl:
+        "https://www.figma.com/design/xyXNKvTA0ueuc9pGdGRBSe/KHU13?node-id=0-1&t=JLXiMsrISg2lcvH8-1",
+
       images: [
         {
           url: "projects/khu13-feed",
@@ -227,8 +289,58 @@ export const projectsEN: Project[] = [
   },
 
   {
+    id: "4",
+    title: "SmartBox — Parcel Locker System",
+    thumbnail: "projects/smartbox-thumb",
+    description:
+      "A smart parcel locker system for residential buildings — shipper drops off, resident picks up with QR code. No waiting, no missed deliveries.",
+    tags: ["Startup", "On Hold"],
+    category: "startup",
+    detail: {
+      overview:
+        "SmartBox is a parcel locker startup inspired by the widespread locker delivery model in China — solving the last-mile delivery problem in Vietnamese apartment buildings. Instead of shippers calling and waiting for residents to come down, they drop packages into an assigned locker slot and leave. Residents receive a QR code and pick up at their own convenience. I owned the full UI/UX across all four platforms: the web admin dashboard for building managers, and the mobile app for both recipients and shippers. The project was put on hold indefinitely after the team was unable to secure investment.",
+
+      responsibilities: [
+        "Led UI/UX design across all platforms: web admin dashboard and mobile app (shipper + recipient flows)",
+        "Mapped out user flows for three distinct user types: building admin, shipper, and resident",
+        "Designed the locker management dashboard for building owners and system admins",
+        "Designed the mobile experience for shippers to assign lockers and for residents to retrieve packages via QR code",
+        "Collaborated with a 9-person team across design and development",
+      ],
+
+      contributions: [
+        "Designed the full admin web dashboard: locker grid status, rental management, transaction history, pricing setup, and customer management",
+        "Designed the shipper mobile flow: locker assignment, drop-off confirmation",
+        "Designed the resident mobile flow: QR code retrieval, rental history, real-time locker status",
+        "Created a consistent design system used across both web and mobile surfaces",
+      ],
+
+      impact: [
+        "Completed UI/UX for all core screens across web and mobile",
+        "Project paused at design stage — investment could not be secured",
+        "Design work served as the full product blueprint for future development",
+      ],
+
+      technologies: ["Figma"],
+
+      teamSize: "9 members (Product, Design, Frontend, Backend, Business)",
+      myRole: "UI/UX Designer — All Platforms",
+
+      challenges:
+        "Designing for three completely different user types within a single product ecosystem — each with different mental models, contexts, and devices. The admin dashboard needed to handle complex locker state management, while the mobile flows had to be fast and intuitive enough for shippers under time pressure.",
+
+      learnings: [
+        "How to design a multi-platform product with consistent logic but different interaction patterns",
+        "Thinking through locker state management as a UI problem — available, occupied, overdue, locked",
+        "Designing under real startup constraints — no established precedent, no existing users to test with",
+        "Working in a larger team where design decisions had direct downstream impact on development scope",
+      ],
+    },
+  },
+  {
     id: "5",
     title: "Tuan Pham Audio Website",
+    thumbnail: "projects/tuanpham-thumb",
     description:
       "Product showcase website for a premium audio equipment brand — designed with an AI-assisted workflow",
     tags: ["Client", "Shipped"],
@@ -276,60 +388,6 @@ export const projectsEN: Project[] = [
           url: "projects/tuanpham-audio",
           alt: "Tuan Pham Audio",
           caption: "Premium product showcase website",
-        },
-      ],
-    },
-  },
-
-  {
-    id: "6",
-    title: "Parcel Locker System (Smart Box)",
-    description:
-      "UI/UX design for the admin dashboard of a smart parcel locker system at residential buildings",
-    tags: ["IoT", "On Hold"],
-    category: "startup",
-    detail: {
-      overview:
-        "Smart Box is a startup idea building a smart parcel locker system for residential buildings — inspired by the parcel locker model widely used in China, addressing the problem of failed deliveries when recipients aren't home. I designed the admin dashboard on desktop, serving the team responsible for managing the locker system operations. The project is on hold due to a lack of investment.",
-
-      responsibilities: [
-        "Researched the parcel locker model and similar systems",
-        "Designed the admin dashboard for desktop",
-        "Built user flows for locker management and transaction tracking operations",
-        "Collaborated with the team to align design with the product direction",
-      ],
-
-      contributions: [
-        "Designed the locker management dashboard with compartment status tracking",
-        "Built screens for monitoring and managing transactions",
-        "Designed user management and permission screens",
-        "Created wireframes and mockups for all core admin screens",
-      ],
-
-      impact: [
-        "Completed design for all core admin screens",
-        "Project put on hold at the design stage due to lack of investment",
-      ],
-
-      technologies: ["Figma"],
-
-      teamSize: "8 members",
-      myRole: "UI/UX Designer",
-
-      challenges:
-        "First time designing for an IoT system — needed to understand real operational workflows before jumping into design. Working in a pre-investment startup environment meant unclear product direction and frequent requirement changes.",
-
-      learnings: [
-        "Approaching design for IoT systems and physical operations",
-        "How to research an unfamiliar domain from scratch",
-        "Experience working in a startup at the pre-investment stage",
-      ],
-
-      images: [
-        {
-          url: "projects/smartbox-system",
-          alt: "Smart Box System",
-          caption: "Admin dashboard for locker system management",
         },
       ],
     },

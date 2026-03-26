@@ -1,68 +1,69 @@
 import { Project } from "@/types";
 
 export const projectsVI: Project[] = [
+  // {
+  //   id: "1",
+  //   title: "Hệ thống SaaS quản lý kho (InvoiceAI)",
+  //   description:
+  //     "Hệ thống quản lý kho tích hợp hóa đơn điện tử, phát triển từ dự án thực tế XTC, đang có người dùng sử dụng",
+  //   tags: ["SaaS", "Đã triển khai"],
+  //   category: "startup",
+  //   detail: {
+  //     overview:
+  //       "InvoiceAI là hệ thống SaaS quản lý kho tích hợp hóa đơn điện tử, nhắm đến các doanh nghiệp SME tại Việt Nam. Dự án được pivot từ hệ thống XTC — phần mềm quản lý kho cho xưởng sản xuất mà mình từng tham gia xây dựng trước đó. Khi client không tiếp tục, giảng viên hướng dẫn quyết định mở rộng sản phẩm, thêm nghiệp vụ hóa đơn điện tử theo nghị định mới của Việt Nam và chuyển sang mô hình SaaS. Mình đảm nhận toàn bộ mảng UI — từ thiết kế trong Figma đến implement frontend.",
+
+  //     responsibilities: [
+  //       "Lead UI/UX cho toàn bộ dự án: từ thiết kế đến review implementation",
+  //       "Redesign lại hệ thống cũ (XTC) sang giao diện SaaS mới",
+  //       "Tham gia phát triển frontend song song với thiết kế",
+  //       "Research các giải pháp hóa đơn điện tử trên thị trường để định hướng UX",
+  //       "Phối hợp chặt với backend để đảm bảo thiết kế khả thi",
+  //     ],
+
+  //     contributions: [
+  //       "Redesign UI từ hệ thống XTC cũ, kế thừa những gì hoạt động tốt",
+  //       "Redesign trang tạo đơn hàng — chia lại layout theo block rõ ràng (header, filter, table) để cải thiện khả năng đọc và thao tác",
+  //       "Dùng v0.dev để khám phá hướng UI cho các màn hình chính, sau đó tự implement lại bằng code",
+  //       "Thiết kế các module chính: dashboard, quản lý kho, hóa đơn điện tử, báo cáo",
+  //     ],
+
+  //     impact: [
+  //       "Hệ thống đang chạy thực tế và có người dùng sử dụng",
+  //       "Hoàn thành design và implement cho 20+ màn hình chính",
+  //       "UI mới nhận phản hồi tốt hơn rõ rệt so với phiên bản XTC cũ",
+  //     ],
+
+  //     technologies: ["Figma", "React", "TypeScript", "Ant Design"],
+
+  //     teamSize:
+  //       "6 (1 Lead/Backend, 1 UI/UX Designer, 2 Frontend Devs, 1 Backend Dev, 1 Tester)",
+  //     myRole: "UI/UX Designer & Frontend Developer",
+
+  //     challenges:
+  //       "Redesign một hệ thống đang chạy trong khi vẫn phải đảm bảo tiến độ phát triển. Nghiệp vụ hóa đơn điện tử khá phức tạp và đặc thù với quy định Việt Nam — cần thời gian để hiểu đủ sâu trước khi thiết kế. Cân bằng giữa vai trò designer và frontend dev trong cùng một dự án.",
+
+  //     learnings: [
+  //       "Hiểu thực tế về domain hóa đơn điện tử và nghiệp vụ kho hàng",
+  //       "Cách tích hợp AI tool (v0.dev) vào quy trình redesign thực tế",
+  //       "Giá trị của việc phân chia layout — chia block rõ ràng cải thiện đáng kể khả năng sử dụng",
+  //       "Làm quen với việc vừa design vừa code trong môi trường startup",
+  //       "Xử lý yêu cầu thay đổi liên tục khi sản phẩm đang pivot",
+  //     ],
+
+  //     images: [
+  //       {
+  //         url: "projects/invoiceai-dashboard",
+  //         alt: "InvoiceAI Dashboard",
+  //         caption: "Dashboard redesign và Quản lý hóa đơn điện tử",
+  //       },
+  //     ],
+  //   },
+  // },
+
   {
     id: "1",
-    title: "Hệ thống SaaS quản lý kho (InvoiceAI)",
-    description:
-      "Hệ thống quản lý kho tích hợp hóa đơn điện tử, phát triển từ dự án thực tế XTC, đang có người dùng sử dụng",
-    tags: ["SaaS", "Đã triển khai"],
-    category: "startup",
-    detail: {
-      overview:
-        "InvoiceAI là hệ thống SaaS quản lý kho tích hợp hóa đơn điện tử, nhắm đến các doanh nghiệp SME tại Việt Nam. Dự án được pivot từ hệ thống XTC — phần mềm quản lý kho cho xưởng sản xuất mà mình từng tham gia xây dựng trước đó. Khi client không tiếp tục, giảng viên hướng dẫn quyết định mở rộng sản phẩm, thêm nghiệp vụ hóa đơn điện tử theo nghị định mới của Việt Nam và chuyển sang mô hình SaaS. Mình đảm nhận toàn bộ mảng UI — từ thiết kế trong Figma đến implement frontend.",
-
-      responsibilities: [
-        "Lead UI/UX cho toàn bộ dự án: từ thiết kế đến review implementation",
-        "Redesign lại hệ thống cũ (XTC) sang giao diện SaaS mới",
-        "Tham gia phát triển frontend song song với thiết kế",
-        "Research các giải pháp hóa đơn điện tử trên thị trường để định hướng UX",
-        "Phối hợp chặt với backend để đảm bảo thiết kế khả thi",
-      ],
-
-      contributions: [
-        "Redesign UI từ hệ thống XTC cũ, kế thừa những gì hoạt động tốt",
-        "Redesign trang tạo đơn hàng — chia lại layout theo block rõ ràng (header, filter, table) để cải thiện khả năng đọc và thao tác",
-        "Dùng v0.dev để khám phá hướng UI cho các màn hình chính, sau đó tự implement lại bằng code",
-        "Thiết kế các module chính: dashboard, quản lý kho, hóa đơn điện tử, báo cáo",
-      ],
-
-      impact: [
-        "Hệ thống đang chạy thực tế và có người dùng sử dụng",
-        "Hoàn thành design và implement cho 20+ màn hình chính",
-        "UI mới nhận phản hồi tốt hơn rõ rệt so với phiên bản XTC cũ",
-      ],
-
-      technologies: ["Figma", "React", "TypeScript", "Ant Design"],
-
-      teamSize:
-        "6 (1 Lead/Backend, 1 UI/UX Designer, 2 Frontend Devs, 1 Backend Dev, 1 Tester)",
-      myRole: "UI/UX Designer & Frontend Developer",
-
-      challenges:
-        "Redesign một hệ thống đang chạy trong khi vẫn phải đảm bảo tiến độ phát triển. Nghiệp vụ hóa đơn điện tử khá phức tạp và đặc thù với quy định Việt Nam — cần thời gian để hiểu đủ sâu trước khi thiết kế. Cân bằng giữa vai trò designer và frontend dev trong cùng một dự án.",
-
-      learnings: [
-        "Hiểu thực tế về domain hóa đơn điện tử và nghiệp vụ kho hàng",
-        "Cách tích hợp AI tool (v0.dev) vào quy trình redesign thực tế",
-        "Giá trị của việc phân chia layout — chia block rõ ràng cải thiện đáng kể khả năng sử dụng",
-        "Làm quen với việc vừa design vừa code trong môi trường startup",
-        "Xử lý yêu cầu thay đổi liên tục khi sản phẩm đang pivot",
-      ],
-
-      images: [
-        {
-          url: "projects/invoiceai-dashboard",
-          alt: "InvoiceAI Dashboard",
-          caption: "Dashboard redesign và Quản lý hóa đơn điện tử",
-        },
-      ],
-    },
-  },
-
-  {
-    id: "2",
     title: "Quản lý kho (XTC)",
+    thumbnail: "projects/xtc-thumb",
     description:
       "Hệ thống quản lý kho hàng cho xưởng sản xuất ví da, bao gồm quản lý đơn hàng, tồn kho và sản phẩm",
     tags: ["Client", "Không triển khai"],
@@ -118,7 +119,7 @@ export const projectsVI: Project[] = [
   },
 
   {
-    id: "3",
+    id: "2",
     title: "Quản lý thư viện (Cao đẳng Viễn Đông)",
     description:
       "Số hóa hệ thống quản lý thư viện cho trường Cao đẳng Viễn Đông — dự án thực tế đầu tiên, hiện đang được sử dụng",
@@ -166,7 +167,32 @@ export const projectsVI: Project[] = [
 
       images: [
         {
-          url: "projects/library-system",
+          url: "projects/library-system1",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system2",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system3",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system4",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "projects/library-system5",
+          alt: "Library Management System",
+          caption: "Student portal và Admin dashboard",
+        },
+        {
+          url: "marquee/ui-4",
           alt: "Library Management System",
           caption: "Student portal và Admin dashboard",
         },
@@ -175,7 +201,7 @@ export const projectsVI: Project[] = [
   },
 
   {
-    id: "4",
+    id: "3",
     title: "Khu13 Website",
     description:
       "Website giới thiệu cho quán bar Khu13 tại TP.HCM — dự án freelance thực tế đầu tiên được khách hàng chốt",
@@ -226,15 +252,65 @@ export const projectsVI: Project[] = [
   },
 
   {
+    id: "4",
+    title: "SmartBox — Hệ thống tủ khóa thông minh",
+    thumbnail: "projects/smartbox-thumb",
+    description:
+      "Hệ thống tủ khóa giao hàng thông minh cho chung cư — shipper bỏ hàng vào tủ, người nhận lấy bằng mã QR. Không cần chờ, không còn giao hàng thất bại.",
+    tags: ["Startup", "Tạm hoãn"],
+    category: "startup",
+    detail: {
+      overview:
+        "SmartBox là startup xây dựng hệ thống tủ khóa giao hàng tại các chung cư Việt Nam, lấy cảm hứng từ mô hình locker phổ biến ở Trung Quốc — giải quyết bài toán giao hàng thất bại khi người nhận không có nhà. Thay vì shipper phải gọi điện và chờ khách ra lấy, họ chỉ cần bỏ hàng vào đúng ô tủ được chỉ định rồi đi. Người nhận nhận mã QR và ra lấy bất cứ lúc nào tiện. Em đảm nhận toàn bộ UI/UX cho 4 nền tảng: web quản lý cho chủ chung cư và admin, app di động cho shipper và người nhận hàng. Dự án tạm hoãn vô thời hạn sau khi team không tìm được nhà đầu tư.",
+
+      responsibilities: [
+        "Lead UI/UX cho toàn bộ sản phẩm: web admin dashboard và mobile app (luồng shipper + người nhận)",
+        "Xây dựng user flow cho 3 nhóm người dùng khác nhau: quản trị chung cư, shipper, và người nhận",
+        "Thiết kế dashboard quản lý tủ khóa cho chủ chung cư và admin hệ thống",
+        "Thiết kế trải nghiệm mobile cho shipper gán tủ và người nhận lấy hàng bằng mã QR",
+        "Phối hợp trong team 9 người gồm cả design và development",
+      ],
+
+      contributions: [
+        "Thiết kế toàn bộ web admin dashboard: trạng thái tủ, quản lý thuê tủ, lịch sử giao dịch, thiết lập giá, quản lý khách hàng",
+        "Thiết kế luồng mobile cho shipper: gán tủ, xác nhận bỏ hàng",
+        "Thiết kế luồng mobile cho người nhận: lấy hàng bằng QR, lịch sử thuê, trạng thái tủ thời gian thực",
+        "Xây dựng design system nhất quán dùng chung cho cả web và mobile",
+      ],
+
+      impact: [
+        "Hoàn thành UI/UX cho toàn bộ màn hình chính trên cả web và mobile",
+        "Dự án dừng ở giai đoạn thiết kế do không tìm được nhà đầu tư",
+        "Bộ thiết kế trở thành blueprint sản phẩm hoàn chỉnh cho hướng phát triển sau này",
+      ],
+
+      technologies: ["Figma"],
+
+      teamSize: "9 thành viên (Product, Design, Frontend, Backend, Business)",
+      myRole: "UI/UX Designer — Toàn bộ nền tảng",
+
+      challenges:
+        "Thiết kế cho 3 nhóm người dùng hoàn toàn khác nhau trong cùng một hệ sinh thái sản phẩm — mỗi nhóm có mental model, ngữ cảnh và thiết bị khác nhau. Admin dashboard cần xử lý trạng thái tủ phức tạp, trong khi luồng mobile phải đủ nhanh và trực quan cho shipper đang bận rộn.",
+
+      learnings: [
+        "Cách thiết kế sản phẩm đa nền tảng với logic nhất quán nhưng interaction pattern khác nhau",
+        "Tư duy về quản lý trạng thái tủ như một bài toán UI — trống, đang thuê, quá hạn, bị khóa",
+        "Làm việc trong môi trường startup thật — không có tiền lệ, không có user để test",
+        "Làm việc trong team lớn hơn, nơi quyết định thiết kế ảnh hưởng trực tiếp đến scope phát triển",
+      ],
+    },
+  },
+  {
     id: "5",
-    title: "Tuấn Phạm Audio Website",
+    title: "Website Tuấn Phạm Audio",
+    thumbnail: "projects/tuanpham-thumb",
     description:
       "Website giới thiệu sản phẩm thiết bị âm thanh cao cấp — thiết kế với AI-assisted workflow",
-    tags: ["Client", "Đang phát triển"],
+    tags: ["Client", "Đã bàn giao"],
     category: "client",
     detail: {
       overview:
-        "Tuấn Phạm Audio là đại lý thiết bị âm thanh cao cấp tại TP.HCM, chuyên các dòng loa và ampli premium. Website cần thể hiện đúng định vị thương hiệu và giúp khách hàng tìm hiểu sản phẩm trước khi liên hệ đặt hàng — không phải mua trực tiếp. Mình đảm nhận phần thiết kế: định nghĩa layout, màu sắc và component system cho trang chủ, sau đó dùng Figma Make để generate các trang còn lại.",
+        "Tuấn Phạm Audio là đại lý thiết bị âm thanh cao cấp tại TP.HCM, chuyên các dòng loa và ampli premium. Website cần thể hiện đúng định vị thương hiệu và giúp khách hàng tìm hiểu sản phẩm trước khi liên hệ đặt hàng — không phải mua trực tiếp. Em đảm nhận phần thiết kế: định nghĩa layout, màu sắc và component system cho trang chủ, sau đó dùng Figma Make để generate các trang còn lại.",
 
       responsibilities: [
         "Xác định visual direction phù hợp với định vị thương hiệu cao cấp",
@@ -257,7 +333,7 @@ export const projectsVI: Project[] = [
 
       technologies: ["Figma", "Figma Make", "Next.js", "Tailwind CSS"],
 
-      teamSize: "3 (1 Designer, 2 Developers)",
+      teamSize: "4 (1 Designer, 2 Developer, 1 Content Creator)",
       myRole: "UI/UX Designer (AI-assisted workflow)",
 
       challenges:
@@ -275,60 +351,6 @@ export const projectsVI: Project[] = [
           url: "projects/tuanpham-audio",
           alt: "Tuấn Phạm Audio",
           caption: "Website giới thiệu sản phẩm âm thanh cao cấp",
-        },
-      ],
-    },
-  },
-
-  {
-    id: "6",
-    title: "Hệ thống Parcel Locker (Smart Box)",
-    description:
-      "Thiết kế UI/UX cho hệ thống admin quản lý tủ giao hàng thông minh tại các chung cư",
-    tags: ["IoT", "Không triển khai"],
-    category: "startup",
-    detail: {
-      overview:
-        "Smart Box là ý tưởng startup xây dựng hệ thống tủ giao hàng thông minh tại các chung cư — lấy cảm hứng từ mô hình parcel locker phổ biến tại Trung Quốc, giải quyết bài toán giao hàng thất bại khi người nhận không có nhà. Mình tham gia thiết kế admin dashboard trên desktop, phục vụ nhóm quản lý vận hành hệ thống tủ. Dự án tạm hoãn do chưa tìm được nhà đầu tư.",
-
-      responsibilities: [
-        "Nghiên cứu mô hình parcel locker và các hệ thống tương tự",
-        "Thiết kế admin dashboard cho desktop",
-        "Xây dựng user flow cho các nghiệp vụ quản lý tủ và giao dịch",
-        "Phối hợp với team để đảm bảo thiết kế phù hợp với hướng phát triển sản phẩm",
-      ],
-
-      contributions: [
-        "Thiết kế dashboard quản lý tủ locker và trạng thái ô tủ",
-        "Xây dựng màn hình theo dõi và quản lý giao dịch",
-        "Thiết kế giao diện quản lý người dùng và phân quyền",
-        "Tạo wireframes và mockups cho các màn hình admin chính",
-      ],
-
-      impact: [
-        "Hoàn thành design cho các màn hình admin chính",
-        "Dự án tạm hoãn ở giai đoạn thiết kế do chưa có đầu tư",
-      ],
-
-      technologies: ["Figma"],
-
-      teamSize: "8 thành viên",
-      myRole: "UI/UX Designer",
-
-      challenges:
-        "Lần đầu thiết kế cho hệ thống IoT — cần hiểu nghiệp vụ vận hành thực tế trước khi thiết kế. Khó khăn khi làm việc trong môi trường startup chưa có product rõ ràng, yêu cầu thay đổi liên tục.",
-
-      learnings: [
-        "Tiếp cận thiết kế cho hệ thống IoT và vận hành thực địa",
-        "Cách research domain mới khi chưa có kinh nghiệm thực tế",
-        "Trải nghiệm làm việc trong startup giai đoạn pre-investment",
-      ],
-
-      images: [
-        {
-          url: "projects/smartbox-system",
-          alt: "Smart Box System",
-          caption: "Admin dashboard quản lý hệ thống tủ locker",
         },
       ],
     },

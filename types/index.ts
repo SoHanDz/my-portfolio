@@ -57,12 +57,14 @@ export interface ProjectDetail {
   }[];
   liveUrl?: string;
   demoUrl?: string;
+  figmaUrl?: string;
 }
 
 export interface Project {
   id: string;
   title: string;
   description: string;
+  thumbnail?: string; 
   image?: string;
   tags: string[];
   category: 'client' | 'startup' | 'internship' | 'shipped';

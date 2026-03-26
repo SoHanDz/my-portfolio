@@ -14,14 +14,16 @@ export const getCloudinaryUrl = (
     return '/images/placeholder.png'; // hoặc return null
   }
 
-  const transforms = [
-    options?.format ? `f_${options.format}` : 'f_auto',
-    options?.quality ? `q_${options.quality}` : 'q_auto',
+  const transformParts = [
+    options?.format && `f_${options.format}`,
+    options?.quality && `q_${options.quality}`,
     options?.width && `w_${options.width}`,
     options?.height && `h_${options.height}`,
-  ].filter(Boolean).join(',');
+  ].filter(Boolean);
 
-  return `https://res.cloudinary.com/${cloudName}/image/upload/${transforms}/${publicId}`;
+  const transforms = transformParts.length > 0 ? `${transformParts.join(',')}/` : '';
+
+  return `https://res.cloudinary.com/${cloudName}/image/upload/${transforms}${publicId}`;
 };
 
 export const IMAGE_SIZES = {

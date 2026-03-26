@@ -9,12 +9,12 @@ export const NAVIGATION_SECTIONS = [
 export const SOCIAL_LINKS = [
   {
     name: 'Email',
-    url: 'mailto:your@email.com',
+    url: 'sonhadaoquoc@email.com',
     icon: 'Mail',
   },
   {
     name: 'GitHub',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/SoHanDz',
     icon: 'Github',
   },
   {
