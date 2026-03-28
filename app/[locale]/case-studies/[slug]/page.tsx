@@ -1,9 +1,11 @@
 'use client';
 
+import { use } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getCaseStudy } from '@/data/case-studies/index';
 import { getCloudinaryUrl, IMAGE_SIZES } from '@/lib/cloudinary';
 import { notFound } from 'next/navigation';
@@ -32,18 +34,19 @@ const PHASES_XTC = [
 ];
 
 interface CaseStudyPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export default function CaseStudyPage({ params }: CaseStudyPageProps) {
+  const { slug } = use(params);
   const locale = useLocale();
   const t = useTranslations('caseStudyDetail');
-  const caseStudy = getCaseStudy(params.slug, locale);
+  const caseStudy = getCaseStudy(slug, locale);
 
   if (!caseStudy) notFound();
 
   const hasCloudinary = !!process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
-  const isXTC = params.slug === 'xtc-warehouse';
+  const isXTC = slug === 'xtc-warehouse';
 
   return (
     <main className="bg-background min-h-screen">
@@ -110,10 +113,12 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
       {hasCloudinary && caseStudy.coverImage && (
         <motion.div {...fadeUp(0.25)} className="max-w-5xl mx-auto px-6 md:px-10 mb-20">
           <div className="relative w-full rounded-2xl overflow-hidden bg-muted aspect-[16/7]">
-            <img
+            <Image
               src={getCloudinaryUrl(caseStudy.coverImage, { width: IMAGE_SIZES.hero })}
               alt={caseStudy.title}
-              className="w-full h-full object-cover object-top"
+              fill
+              className="object-cover object-top"
+              sizes="100vw"
             />
           </div>
         </motion.div>
@@ -223,10 +228,12 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                   style={{ aspectRatio: i === 0 ? '16/7' : '16/9' }}
                 >
                   {hasCloudinary ? (
-                    <img
+                    <Image
                       src={getCloudinaryUrl(img.url, { width: IMAGE_SIZES.card })}
                       alt={img.alt}
-                      className="w-full h-full object-cover object-top"
+                      fill
+                      className="object-cover object-top"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
