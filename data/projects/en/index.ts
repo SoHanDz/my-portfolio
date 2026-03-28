@@ -233,60 +233,60 @@ export const projectsEN: Project[] = [
     },
   },
 
-  {
-    id: "3",
-    title: "Khu13 Website",
-    thumbnail: "projects/khu13-thumb",
-    description:
-      "Website for Khu13 bar in Ho Chi Minh City — my first freelance project, wireframe approved by client",
-    tags: ["Freelance", "In Development"],
-    category: "client",
-    detail: {
-      overview:
-        "Khu13 is a bar in Ho Chi Minh City that needed a website to present their brand and space. I was brought in by a senior student acting as PM on the project to handle the UI/UX side. This was the first time I joined a project entirely outside of my university network. The wireframe has been completed and approved by the client — currently waiting on content from their side to continue.",
+  // {
+  //   id: "3",
+  //   title: "Khu13 Website",
+  //   thumbnail: "projects/khu13-thumb",
+  //   description:
+  //     "Website for Khu13 bar in Ho Chi Minh City — my first freelance project, wireframe approved by client",
+  //   tags: ["Freelance", "In Development"],
+  //   category: "client",
+  //   detail: {
+  //     overview:
+  //       "Khu13 is a bar in Ho Chi Minh City that needed a website to present their brand and space. I was brought in by a senior student acting as PM on the project to handle the UI/UX side. This was the first time I joined a project entirely outside of my university network. The wireframe has been completed and approved by the client — currently waiting on content from their side to continue.",
 
-      responsibilities: [
-        "Received and interpreted the brief from the PM",
-        "Designed wireframes for the full website",
-        "Presented the design direction for the PM to relay to the client",
-      ],
+  //     responsibilities: [
+  //       "Received and interpreted the brief from the PM",
+  //       "Designed wireframes for the full website",
+  //       "Presented the design direction for the PM to relay to the client",
+  //     ],
 
-      contributions: [
-        "Completed wireframes that were approved by the client",
-        "Defined content structure and user flow suited to a bar's context",
-      ],
+  //     contributions: [
+  //       "Completed wireframes that were approved by the client",
+  //       "Defined content structure and user flow suited to a bar's context",
+  //     ],
 
-      impact: [
-        "Wireframe signed off and approved by the client",
-        "Project ongoing — waiting on content from the client to proceed",
-      ],
+  //     impact: [
+  //       "Wireframe signed off and approved by the client",
+  //       "Project ongoing — waiting on content from the client to proceed",
+  //     ],
 
-      technologies: ["Figma"],
+  //     technologies: ["Figma"],
 
-      teamSize: "2 (1 PM, 1 Designer)",
-      myRole: "UI/UX Designer",
+  //     teamSize: "2 (1 PM, 1 Designer)",
+  //     myRole: "UI/UX Designer",
 
-      challenges:
-        "First time working in a real freelance setup — receiving the brief through a PM meant interpreting client needs without direct communication. Had to make design decisions based on second-hand information.",
+  //     challenges:
+  //       "First time working in a real freelance setup — receiving the brief through a PM meant interpreting client needs without direct communication. Had to make design decisions based on second-hand information.",
 
-      learnings: [
-        "Freelance workflow with a PM acting as the client bridge",
-        "How to extract design direction from an indirect brief",
-        "Presenting and justifying design decisions without direct client access",
-      ],
+  //     learnings: [
+  //       "Freelance workflow with a PM acting as the client bridge",
+  //       "How to extract design direction from an indirect brief",
+  //       "Presenting and justifying design decisions without direct client access",
+  //     ],
 
-      figmaUrl:
-        "https://www.figma.com/design/xyXNKvTA0ueuc9pGdGRBSe/KHU13?node-id=0-1&t=JLXiMsrISg2lcvH8-1",
+  //     figmaUrl:
+  //       "https://www.figma.com/design/xyXNKvTA0ueuc9pGdGRBSe/KHU13?node-id=0-1&t=JLXiMsrISg2lcvH8-1",
 
-      images: [
-        {
-          url: "projects/khu13-feed",
-          alt: "Khu13 Website",
-          caption: "Website wireframe for Khu13 bar",
-        },
-      ],
-    },
-  },
+  //     images: [
+  //       {
+  //         url: "projects/khu13-feed",
+  //         alt: "Khu13 Website",
+  //         caption: "Website wireframe for Khu13 bar",
+  //       },
+  //     ],
+  //   },
+  // },
 
   {
     id: "4",
@@ -382,6 +382,9 @@ export const projectsEN: Project[] = [
         "Designing for a premium product with high visual expectations",
         "UX for a product showcase model with a contact-to-order flow instead of direct purchase",
       ],
+
+      figmaUrl:
+        "https://www.figma.com/make/FunfLSANRaqEVqLlfCn744/E-commerce-Website-Structure?fullscreen=1&t=e2PxgBjaP2JdYZOD-1",
 
       images: [
         {

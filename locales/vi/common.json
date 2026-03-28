@@ -17,6 +17,42 @@
     "eyebrow": "Nghiên cứu thực tế",
     "title": "Case Studies Nổi Bật",
     "viewCaseStudy": "Xem Case Study"
+  }, 
+  "caseStudyDetail": {
+    "back": "Quay lại Case Studies",
+    "metaRole": "Vai trò",
+    "metaDuration": "Thời gian",
+    "metaClient": "Client",
+    "metaTech": "Công cụ",
+
+    "phasesLabel": "Hành trình 3 giai đoạn",
+    "phase1Label": "Giai đoạn 1 — XTC Client",
+    "phase1Desc": "Lead UI/UX cho xưởng sản xuất hàng da. Tham khảo Sapo POS và tinh giản lại. Thiết kế 15+ màn hình chính.",
+    "phase2Label": "Giai đoạn 2 — Pivot SaaS",
+    "phase2Desc": "Client không tiếp tục. Giảng viên quyết định pivot sang SaaS. Em rework UI và code module thu chi — đồng thời fix inconsistency do 3 frontend dev làm chung.",
+    "phase3Label": "Giai đoạn 3 — AI Rework",
+    "phase3Desc": "Rebuild toàn bộ UI bằng v0.dev. Iteration nhanh hơn, output chỉn chu hơn. Trở thành nền tảng cho InvoiceAI.",
+
+    "sitemapLabel": "Cấu trúc thông tin",
+    "sitemapRoot": "Hệ thống XTC",
+    "module1": "Dashboard",
+    "module2": "Đơn hàng",
+    "module3": "Tồn kho",
+    "module4": "Sản phẩm",
+    "module5": "Nhân viên",
+    "module6": "Thu chi",
+    "module7": "Hóa đơn điện tử",
+    "userAdmin": "Admin",
+    "userStaff": "Nhân viên (phân quyền)",
+
+    "problemLabel": "Vấn đề",
+    "problemTitle": "Quản lý thủ công.\nKhông có hệ thống.\nKhông có dữ liệu.",
+    "solutionLabel": "Hướng tiếp cận",
+    "solutionTitle": "Tham khảo, tinh chỉnh,\nrồi làm thành của mình.",
+    "galleryLabel": "Màn hình thiết kế",
+    "impactLabel": "Kết quả",
+    "reflectionLabel": "Nhìn lại",
+    "reflectionText": "Giai đoạn 1 còn quá an toàn — không dùng AI, màu sắc không nhất quán, layout chưa nổi bật. Đó cũng là lý do dẫn đến các lần rework. Giá trị thật sự không phải sản phẩm cuối — mà là học được cách lead design trong dự án thật, làm việc với developer, và điều chỉnh qua 3 lần khởi động lại."
   },
   "projects": {
     "eyebrow": "Dự án thực tế",

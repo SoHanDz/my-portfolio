@@ -4,7 +4,7 @@ import MarqueeSection from '@/components/sections/MarqueeSection';
 import AboutSection from '@/components/sections/AboutSection';
 
 const ProjectsSection = dynamic(() => import('@/components/sections/ProjectsSection'));
-// const CaseStudySection = dynamic(() => import('@/components/sections/CaseStudiesSection'));
+const CaseStudySection = dynamic(() => import('@/components/sections/CaseStudiesSection'));
 
 export default function HomePage() {
   return (
@@ -12,8 +12,8 @@ export default function HomePage() {
       <HeroSection />
       <MarqueeSection />
       <AboutSection />
+      <CaseStudySection />
       <ProjectsSection />
-      {/* <CaseStudySection /> */}
     </main>
   );
 }

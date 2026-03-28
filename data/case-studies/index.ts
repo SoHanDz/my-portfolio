@@ -1,20 +1,14 @@
 import { CaseStudy } from '@/types';
-import { invoiceaiEN } from './en/invoiceai';
-import { libraryEN } from './en/library-vien-dong';
-import { invoiceaiVI } from './vi/invoiceai';
-import { libraryVI } from './vi/library-vien-dong';
+import { xtcEN } from './en/en_xtc';
+import { xtcVI } from './vi/vi_xtc';
 
-export const getCaseStudies = (locale: string): CaseStudy[] => {
-  if (locale === 'vi') {
-    return [invoiceaiVI, libraryVI];
-  }
-  return [invoiceaiEN, libraryEN];
-};
+const caseStudiesEN: CaseStudy[] = [xtcEN];
+const caseStudiesVI: CaseStudy[] = [xtcVI];
 
-export const getCaseStudy = (slug: string, locale: string): CaseStudy | undefined => {
-  const studies = getCaseStudies(locale);
-  return studies.find(cs => cs.slug === slug);
-};
+export function getCaseStudies(locale: string): CaseStudy[] {
+  return locale === 'vi' ? caseStudiesVI : caseStudiesEN;
+}
 
-// For homepage - default to EN
-export const caseStudies = [invoiceaiEN, libraryEN];
+export function getCaseStudy(slug: string, locale: string): CaseStudy | undefined {
+  return getCaseStudies(locale).find((cs) => cs.slug === slug);
+}

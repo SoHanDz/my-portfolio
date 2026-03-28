@@ -200,56 +200,56 @@ export const projectsVI: Project[] = [
     },
   },
 
-  {
-    id: "3",
-    title: "Khu13 Website",
-    description:
-      "Website giới thiệu cho quán bar Khu13 tại TP.HCM — dự án freelance thực tế đầu tiên được khách hàng chốt",
-    tags: ["Freelance", "Tạm hoãn"],
-    category: "client",
-    detail: {
-      overview:
-        "Khu13 là một quán bar tại TP.HCM cần website để giới thiệu thương hiệu và không gian. Mình được anh khóa trên — người đang làm PM cho dự án — liên hệ để đảm nhận phần UI/UX. Đây là lần đầu mình tham gia dự án hoàn toàn từ bên ngoài, không qua giảng viên. Hiện tại đã hoàn thành wireframe, được khách hàng chốt và đang chờ nội dung từ phía quán để tiếp tục.",
+  // {
+  //   id: "3",
+  //   title: "Khu13 Website",
+  //   description:
+  //     "Website giới thiệu cho quán bar Khu13 tại TP.HCM — dự án freelance thực tế đầu tiên được khách hàng chốt",
+  //   tags: ["Freelance", "Tạm hoãn"],
+  //   category: "client",
+  //   detail: {
+  //     overview:
+  //       "Khu13 là một quán bar tại TP.HCM cần website để giới thiệu thương hiệu và không gian. Mình được anh khóa trên — người đang làm PM cho dự án — liên hệ để đảm nhận phần UI/UX. Đây là lần đầu mình tham gia dự án hoàn toàn từ bên ngoài, không qua giảng viên. Hiện tại đã hoàn thành wireframe, được khách hàng chốt và đang chờ nội dung từ phía quán để tiếp tục.",
 
-      responsibilities: [
-        "Nhận brief từ PM và xác định yêu cầu thiết kế",
-        "Thiết kế wireframe cho toàn bộ website",
-        "Present phương án thiết kế để PM trình với khách hàng",
-      ],
+  //     responsibilities: [
+  //       "Nhận brief từ PM và xác định yêu cầu thiết kế",
+  //       "Thiết kế wireframe cho toàn bộ website",
+  //       "Present phương án thiết kế để PM trình với khách hàng",
+  //     ],
 
-      contributions: [
-        "Hoàn thành wireframe được khách hàng approve",
-        "Xác định cấu trúc nội dung và user flow phù hợp với quán bar",
-      ],
+  //     contributions: [
+  //       "Hoàn thành wireframe được khách hàng approve",
+  //       "Xác định cấu trúc nội dung và user flow phù hợp với quán bar",
+  //     ],
 
-      impact: [
-        "Wireframe đã được khách hàng chốt và chấp thuận",
-        "Dự án đang tiếp tục — chờ nội dung từ phía khách hàng",
-      ],
+  //     impact: [
+  //       "Wireframe đã được khách hàng chốt và chấp thuận",
+  //       "Dự án đang tiếp tục — chờ nội dung từ phía khách hàng",
+  //     ],
 
-      technologies: ["Figma"],
+  //     technologies: ["Figma"],
 
-      teamSize: "2 (1 PM, 1 Designer)",
-      myRole: "UI/UX Designer",
+  //     teamSize: "2 (1 PM, 1 Designer)",
+  //     myRole: "UI/UX Designer",
 
-      challenges:
-        "Lần đầu làm việc trong môi trường freelance thật — nhận brief qua PM và phải hiểu đúng yêu cầu khách hàng chỉ qua thông tin được tổng hợp lại, không trực tiếp trao đổi với client.",
+  //     challenges:
+  //       "Lần đầu làm việc trong môi trường freelance thật — nhận brief qua PM và phải hiểu đúng yêu cầu khách hàng chỉ qua thông tin được tổng hợp lại, không trực tiếp trao đổi với client.",
 
-      learnings: [
-        "Quy trình làm việc freelance với PM làm cầu nối với khách hàng",
-        "Cách đọc và khai thác brief để ra quyết định thiết kế",
-        "Cách thuyết phục quyết định design khi không trực tiếp gặp client",
-      ],
+  //     learnings: [
+  //       "Quy trình làm việc freelance với PM làm cầu nối với khách hàng",
+  //       "Cách đọc và khai thác brief để ra quyết định thiết kế",
+  //       "Cách thuyết phục quyết định design khi không trực tiếp gặp client",
+  //     ],
 
-      images: [
-        {
-          url: "projects/khu13-feed",
-          alt: "Khu13 Website",
-          caption: "Wireframe website quán bar Khu13",
-        },
-      ],
-    },
-  },
+  //     images: [
+  //       {
+  //         url: "projects/khu13-feed",
+  //         alt: "Khu13 Website",
+  //         caption: "Wireframe website quán bar Khu13",
+  //       },
+  //     ],
+  //   },
+  // },
 
   {
     id: "4",
@@ -345,6 +345,9 @@ export const projectsVI: Project[] = [
         "Cách thiết kế cho sản phẩm premium với yêu cầu visual cao",
         "UX cho mô hình giới thiệu sản phẩm kết hợp liên hệ đặt hàng",
       ],
+
+      figmaUrl:
+        "https://www.figma.com/make/FunfLSANRaqEVqLlfCn744/E-commerce-Website-Structure?fullscreen=1&t=e2PxgBjaP2JdYZOD-1",
 
       images: [
         {

@@ -18,6 +18,44 @@
     "title": "Selected Case Studies",
     "viewCaseStudy": "View Case Study"
   },
+
+  "caseStudyDetail": {
+    "back": "Back to Case Studies",
+    "metaRole": "My Role",
+    "metaDuration": "Timeline",
+    "metaClient": "Client",
+    "metaTech": "Tools",
+
+    "phasesLabel": "How It Evolved",
+    "phase1Label": "Phase 1 — XTC Client",
+    "phase1Desc": "Led UI/UX design for a leather goods manufacturer. Referenced Sapo POS and adapted it for simplicity. Designed 15+ core screens.",
+    "phase2Label": "Phase 2 — SaaS Pivot",
+    "phase2Desc": "Client didn't proceed. Lecturer pivoted to SaaS. I reworked the UI and coded the income/expense module — fixing consistency across 3 frontend devs.",
+    "phase3Label": "Phase 3 — AI Rework",
+    "phase3Desc": "Full UI rebuild using v0.dev. Faster iteration, more polished output. Became the foundation for InvoiceAI.",
+
+    "sitemapLabel": "Information Architecture",
+    "sitemapRoot": "XTC System",
+    "module1": "Dashboard",
+    "module2": "Orders",
+    "module3": "Inventory",
+    "module4": "Products",
+    "module5": "Staff",
+    "module6": "Finance",
+    "module7": "E-Invoice",
+    "userAdmin": "Admin",
+    "userStaff": "Staff (Role-based)",
+
+    "problemLabel": "The Problem",
+    "problemTitle": "Manual tracking.\nNo system.\nNo visibility.",
+    "solutionLabel": "The Approach",
+    "solutionTitle": "Reference, adapt,\nthen make it your own.",
+    "galleryLabel": "Design Screens",
+    "impactLabel": "What Came Out Of It",
+    "reflectionLabel": "In Hindsight",
+    "reflectionText": "Phase 1 was too safe — no AI, inconsistent colors, layouts that played it too careful. That's also why the rework happened. The real value wasn't the final product; it was learning how to lead design on a real project, work with developers, and course-correct across three restarts."
+  },
+
   "projects": {
     "eyebrow": "Selected Work",
     "title": "Work & Real Projects",
@@ -121,35 +159,5 @@
     "ctaContact": "Say hello",
     "ctaCV": "View CV",
     "copyright": "© 2025 Son Ha. All rights reserved."
-  },
-  "libraryCaseStudy": {
-    "eyebrow": "Case Study",
-    "meta": {
-      "client": "Client",
-      "role": "Role",
-      "year": "Year",
-      "platforms": "Platforms"
-    },
-    "problem": {
-      "eyebrow": "The Problem",
-      "heading": "Managing with Excel, students had no way to browse books",
-      "before": "Before"
-    },
-    "research": {
-      "eyebrow": "Research",
-      "heading": "On-site visit at the library"
-    },
-    "solution": {
-      "eyebrow": "Solution",
-      "heading": "A 3-platform system"
-    },
-    "impact": {
-      "eyebrow": "Impact",
-      "heading": "Fully replaced the old process"
-    },
-    "gallery": {
-      "eyebrow": "Design",
-      "heading": "UI Screenshots"
-    }
   }
 }

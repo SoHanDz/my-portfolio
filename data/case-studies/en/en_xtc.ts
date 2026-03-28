@@ -1,0 +1,39 @@
+import { CaseStudy } from '@/types';
+
+export const xtcEN: CaseStudy = {
+  id: '1',
+  slug: 'xtc-warehouse',
+  title: 'XTC Warehouse System',
+  subtitle: 'From leather wallets to a SaaS platform — in 3 phases.',
+  description: 'A warehouse management system that started as a client project, got rejected, and eventually became the foundation of a SaaS product.',
+  thumbnail: 'case-studies/xtc-thumb-c',
+  coverImage: 'case-studies/xtc-hero',
+  tags: ['Web App', 'Redesign', '3 Phases'],
+  year: '2025 — Present',
+  client: 'XTC Logistics (Phase 1) → Internal SaaS (Phase 2–3)',
+  role: 'Lead UI/UX Designer & Frontend Developer',
+  duration: '2025 — Present · 3 restart phases',
+  problem: 'A classmate working at XTC — a leather goods manufacturer — brought the project to our lecturer, who assembled a team of strong students. The client needed to replace manual tracking with a proper system. I was chosen as lead designer because I had the strongest Figma skills in the class.',
+  solution: 'Designed the core UI referencing Sapo POS, then refined it for simplicity. When XTC didn\'t proceed, the project pivoted to a SaaS platform. I reworked the UI in Phase 2 (also coding the income/expense module and fixing inconsistency across 3 frontend devs), then rebuilt everything with AI in Phase 3 using v0.dev.',
+  impact: [
+    'Completed 15+ core screens across 3 phases',
+    'Coded income/expense module in Phase 2',
+    'Full UI rework with v0.dev in Phase 3',
+    'Design became foundation for InvoiceAI SaaS',
+  ],
+  images: [
+    { url: 'case-studies/xtc-dashboard', alt: 'Dashboard', caption: 'Dashboard — Phase 1' },
+    { url: 'case-studies/xtc-orders', alt: 'Order Management', caption: 'Order management' },
+    { url: 'case-studies/xtc-inventory', alt: 'Inventory', caption: 'Inventory tracking' },
+    { url: 'case-studies/xtc-products', alt: 'Products', caption: 'Product management' },
+    { url: 'case-studies/xtc-finance', alt: 'Finance', caption: 'Income & expense — Phase 2' },
+    { url: 'case-studies/xtc-v3', alt: 'Phase 3 Rework', caption: 'AI-assisted rework — Phase 3' },
+  ],
+  metrics: [
+    { label: 'Phases', value: '3' },
+    { label: 'Core Screens', value: '15+' },
+    { label: 'Modules', value: '6' },
+    { label: 'Team Size', value: '9' },
+  ],
+  technologies: ['Figma', 'React', 'TypeScript', 'Ant Design', 'v0.dev'],
+};
