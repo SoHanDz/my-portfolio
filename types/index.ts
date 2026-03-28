@@ -14,6 +14,7 @@ export interface CaseStudy {
   problem: string;
   solution: string;
   impact: string[];
+  sitemapImage?: string;
   images: {
     url: string;
     caption?: string;

@@ -17,16 +17,6 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.55, delay, ease: 'easeOut' as const },
 });
 
-const MODULES_XTC = [
-  'Dashboard',
-  'Orders',
-  'Inventory',
-  'Products',
-  'Staff',
-  'Finance',
-  'E-Invoice',
-];
-
 const PHASES_XTC = [
   { num: '01', labelKey: 'phase1Label', descKey: 'phase1Desc' },
   { num: '02', labelKey: 'phase2Label', descKey: 'phase2Desc' },
@@ -112,13 +102,13 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
       {/* ── COVER IMAGE ── */}
       {hasCloudinary && caseStudy.coverImage && (
         <motion.div {...fadeUp(0.25)} className="max-w-5xl mx-auto px-6 md:px-10 mb-20">
-          <div className="relative w-full rounded-2xl overflow-hidden bg-muted aspect-[16/7]">
+          <div className="w-full rounded-2xl overflow-hidden bg-muted">
             <Image
               src={getCloudinaryUrl(caseStudy.coverImage, { width: IMAGE_SIZES.hero })}
               alt={caseStudy.title}
-              fill
-              className="object-cover object-top"
-              sizes="100vw"
+              width={1200}
+              height={525}
+              className="w-full h-auto object-cover object-top"
             />
           </div>
         </motion.div>
@@ -169,34 +159,20 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         <section className="max-w-5xl mx-auto px-6 md:px-10 mb-20">
           <motion.div {...fadeUp(0)}>
             <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-8">{t('sitemapLabel')}</p>
-            <div className="border border-border/60 rounded-2xl p-8 bg-card">
-              <div className="flex flex-col items-center">
-                <div className="px-5 py-2.5 rounded-xl bg-orange-500 text-white text-xs font-bold mb-6">
-                  {t('sitemapRoot')}
-                </div>
-                <div className="w-px h-6 bg-border/60" />
-                <div className="relative w-full">
-                  <div className="absolute top-0 left-[5%] right-[5%] h-px bg-border/60" />
-                  <div className="grid grid-cols-4 md:grid-cols-7 gap-3 pt-6">
-                    {MODULES_XTC.map((_, i) => (
-                      <div key={i} className="flex flex-col items-center gap-0">
-                        <div className="w-px h-4 bg-border/60" />
-                        <div className="px-2 py-1.5 rounded-lg border border-border/60 bg-background text-[10px] font-semibold text-foreground text-center">
-                          {t(`module${i + 1}`)}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex gap-4 mt-8">
-                  {[t('userAdmin'), t('userStaff')].map((u) => (
-                    <div key={u} className="px-3 py-1.5 rounded-full border border-orange-500/30 text-[10px] font-semibold text-orange-500">
-                      {u}
-                    </div>
-                  ))}
-                </div>
+            {hasCloudinary && caseStudy.sitemapImage ? (
+              <div className="w-full rounded-2xl overflow-hidden bg-muted border border-border/60">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/${caseStudy.sitemapImage}`}
+                  alt="Information Architecture"
+                  className="w-full h-auto"
+                />
               </div>
-            </div>
+            ) : (
+              <div className="border border-border/60 rounded-2xl p-8 bg-card flex items-center justify-center min-h-[200px]">
+                <p className="text-xs text-muted-foreground/40 font-mono">sitemap image</p>
+              </div>
+            )}
           </motion.div>
         </section>
       )}
@@ -225,18 +201,17 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                   key={i}
                   {...fadeUp(0.06 + i * 0.05)}
                   className={`relative rounded-2xl overflow-hidden bg-muted border border-border/60 ${i === 0 ? 'md:col-span-2' : ''}`}
-                  style={{ aspectRatio: i === 0 ? '16/7' : '16/9' }}
                 >
                   {hasCloudinary ? (
                     <Image
                       src={getCloudinaryUrl(img.url, { width: IMAGE_SIZES.card })}
                       alt={img.alt}
-                      fill
-                      className="object-cover object-top"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      width={800}
+                      height={i === 0 ? 350 : 450}
+                      className="w-full h-auto object-cover object-top"
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-full h-48 flex items-center justify-center">
                       <p className="text-xs text-muted-foreground/40 font-mono">{img.alt}</p>
                     </div>
                   )}

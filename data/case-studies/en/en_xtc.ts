@@ -21,13 +21,14 @@ export const xtcEN: CaseStudy = {
     'Full UI rework with v0.dev in Phase 3',
     'Design became foundation for InvoiceAI SaaS',
   ],
+  sitemapImage: 'case-studies/xtc-sitemap',
   images: [
-    { url: 'case-studies/xtc-dashboard', alt: 'Dashboard', caption: 'Dashboard — Phase 1' },
+    { url: 'marquee/ui-1', alt: 'Dashboard', caption: 'Dashboard — Phase 1' },
     { url: 'case-studies/xtc-orders', alt: 'Order Management', caption: 'Order management' },
     { url: 'case-studies/xtc-inventory', alt: 'Inventory', caption: 'Inventory tracking' },
-    { url: 'case-studies/xtc-products', alt: 'Products', caption: 'Product management' },
-    { url: 'case-studies/xtc-finance', alt: 'Finance', caption: 'Income & expense — Phase 2' },
-    { url: 'case-studies/xtc-v3', alt: 'Phase 3 Rework', caption: 'AI-assisted rework — Phase 3' },
+    { url: 'case-studies/xtc-products-import', alt: 'Products', caption: 'Product management' },
+    { url: 'case-studies/xtc-employee-man', alt: 'Employee', caption: 'Employee management' },
+    { url: 'case-studies/xtc-v3', alt: 'Phase 3 Rework', caption: 'AI-assisted rework' },
   ],
   metrics: [
     { label: 'Phases', value: '3' },

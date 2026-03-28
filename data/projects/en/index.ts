@@ -116,32 +116,32 @@ export const projectsEN: Project[] = [
         {
           url: "marquee/ui-1",
           alt: "XTC Warehouse System",
-          caption: "Overview dashboard and order management screen",
+          caption: "Overview dashboard and order management",
         },
         {
           url: "projects/xtc-warehouse2",
           alt: "XTC Warehouse System",
-          caption: "Overview dashboard and order management screen",
+          caption: "Inbound receipt details",
         },
         {
           url: "projects/xtc-warehouse3",
           alt: "XTC Warehouse System",
-          caption: "Overview dashboard and order management screen",
+          caption: "Outbound stock transfer interface",
         },
         {
           url: "projects/xtc-warehouse4",
           alt: "XTC Warehouse System",
-          caption: "Overview dashboard and order management screen",
+          caption: "Employee management list",
         },
         {
           url: "projects/xtc-warehouse5",
           alt: "XTC Warehouse System",
-          caption: "Overview dashboard and order management screen",
+          caption: "Detailed role-based access control for staff",
         },
         {
           url: "projects/xtc-warehouse6",
           alt: "XTC Warehouse System",
-          caption: "Overview dashboard and order management screen",
+          caption: "Create new inbound receipt interface",
         },
       ],
     },
@@ -335,6 +335,34 @@ export const projectsEN: Project[] = [
         "Designing under real startup constraints — no established precedent, no existing users to test with",
         "Working in a larger team where design decisions had direct downstream impact on development scope",
       ],
+
+      images: [
+        {
+          url: "projects/smb-1",
+          alt: "Tuan Pham Audio",
+          caption: "Premium product showcase website",
+        },
+        {
+          url: "projects/smb-2",
+          alt: "Tuan Pham Audio",
+          caption: "Premium product showcase website",
+        },
+        {
+          url: "projects/smb-3",
+          alt: "Tuan Pham Audio",
+          caption: "Premium product showcase website",
+        },
+        {
+          url: "projects/smb-4",
+          alt: "Tuan Pham Audio",
+          caption: "Premium product showcase website",
+        },
+        {
+          url: "projects/smb-5",
+          alt: "Tuan Pham Audio",
+          caption: "Premium product showcase website",
+        },
+      ],
     },
   },
   {
@@ -385,14 +413,6 @@ export const projectsEN: Project[] = [
 
       figmaUrl:
         "https://www.figma.com/make/FunfLSANRaqEVqLlfCn744/E-commerce-Website-Structure?fullscreen=1&t=e2PxgBjaP2JdYZOD-1",
-
-      images: [
-        {
-          url: "projects/tuanpham-audio",
-          alt: "Tuan Pham Audio",
-          caption: "Premium product showcase website",
-        },
-      ],
     },
   },
 ];

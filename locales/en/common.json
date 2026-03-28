@@ -121,6 +121,10 @@
         "title": "Design",
         "items": "Figma · UX Research · Wireframing · Prototyping · Design Systems · Usability Testing"
       },
+      "softSkills": {
+        "title": "Soft Skills",
+        "items": "Adaptable · Self-learner · Team player · English B2 · Time management · Presentation"
+      },
       "frontend": {
         "title": "Frontend",
         "items": "React · Next.js · Tailwind CSS · Node.js · MySQL · Component Libraries"

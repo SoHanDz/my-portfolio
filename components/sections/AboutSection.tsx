@@ -15,13 +15,14 @@ export default function AboutSection() {
   const t = useTranslations("about");
 
   const stats = [
-    { value: "9+", label: t("stats.projects") },
-    { value: "3+", label: t("stats.clients") },
-    { value: "8.2", label: t("stats.gpa") },
+    { value: "7+", label: t("stats.projects") },
+    { value: "4+", label: t("stats.clients") },
+    { value: "3.2", label: t("stats.gpa") },
   ];
 
   const skills = [
     { key: "design", icon: "✦" },
+    { key: "softSkills", icon: "◎" },
     { key: "frontend", icon: "⌥" },
     { key: "creative", icon: "◈" },
     { key: "ai", icon: "⚡" },

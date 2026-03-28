@@ -9,183 +9,159 @@
   },
   "hero": {
     "badge": "Xin chào, em là Sơn Hà",
-    "title": "Em design UI <highlight>theo cách dev</highlight> thực sự <highlight>muốn build.</highlight>",
-    "description": "Bắt đầu từ frontend dev rồi chuyển sang design — nên em biết rõ spec tệ thì đau đầu thế nào. Em giữ cả hai góc nhìn để team Anh chị ship nhanh hơn, ít ma sát hơn.",
-    "cta": "Xem Portfolio"
+    "title": "Em thiết kế UI <highlight>theo cách mà lập trình viên</highlight> thực sự <highlight>muốn xây dựng.</highlight>",
+    "description": "Xuất phát điểm là một Frontend Developer trước khi chuyển sang Design — và chưa bao giờ quên cảm giác khó chịu khi nhận một bản spec thiếu thực tế. Em giữ cả hai góc nhìn để team của anh chị triển khai nhanh hơn và ít ma sát hơn.",
+    "cta": "Khám phá dự án"
   },
   "caseStudies": {
-    "eyebrow": "Nghiên cứu thực tế",
+    "eyebrow": "Dự án tiêu biểu",
     "title": "Case Studies Nổi Bật",
-    "viewCaseStudy": "Xem Case Study"
-  }, 
+    "viewCaseStudy": "Xem chi tiết"
+  },
+
   "caseStudyDetail": {
-    "back": "Quay lại Case Studies",
+    "back": "Quay lại danh sách",
     "metaRole": "Vai trò",
     "metaDuration": "Thời gian",
-    "metaClient": "Client",
+    "metaClient": "Đối tác",
     "metaTech": "Công cụ",
 
     "phasesLabel": "Hành trình 3 giai đoạn",
-    "phase1Label": "Giai đoạn 1 — XTC Client",
-    "phase1Desc": "Lead UI/UX cho xưởng sản xuất hàng da. Tham khảo Sapo POS và tinh giản lại. Thiết kế 15+ màn hình chính.",
-    "phase2Label": "Giai đoạn 2 — Pivot SaaS",
-    "phase2Desc": "Client không tiếp tục. Giảng viên quyết định pivot sang SaaS. Em rework UI và code module thu chi — đồng thời fix inconsistency do 3 frontend dev làm chung.",
-    "phase3Label": "Giai đoạn 3 — AI Rework",
-    "phase3Desc": "Rebuild toàn bộ UI bằng v0.dev. Iteration nhanh hơn, output chỉn chu hơn. Trở thành nền tảng cho InvoiceAI.",
+    "phase1Label": "Giai đoạn 1 — Dự án XTC",
+    "phase1Desc": "Đảm nhiệm Lead UI/UX cho xưởng sản xuất đồ da. Nghiên cứu giải pháp từ Sapo POS để tinh giản quy trình và hoàn thiện hơn 15 màn hình chính.",
+    "phase2Label": "Giai đoạn 2 — Chuyển hướng SaaS",
+    "phase2Desc": "Khi khách hàng dừng dự án, em cùng giảng viên chuyển hướng sang mô hình SaaS. Em tái thiết kế giao diện, trực tiếp lập trình module thu chi và xử lý sự thiếu nhất quán giữa các thành viên frontend.",
+    "phase3Label": "Giai đoạn 3 — Tối ưu với AI",
+    "phase3Desc": "Xây dựng lại toàn bộ giao diện bằng v0.dev giúp tăng tốc độ thử nghiệm và nâng cao chất lượng đầu ra. Đây chính là tiền thân của nền tảng InvoiceAI.",
 
-    "sitemapLabel": "Cấu trúc thông tin",
+    "sitemapLabel": "Cấu trúc hệ thống",
     "sitemapRoot": "Hệ thống XTC",
-    "module1": "Dashboard",
+    "module1": "Bảng điều khiển",
     "module2": "Đơn hàng",
-    "module3": "Tồn kho",
+    "module3": "Kho hàng",
     "module4": "Sản phẩm",
-    "module5": "Nhân viên",
-    "module6": "Thu chi",
+    "module5": "Nhân sự",
+    "module6": "Tài chính",
     "module7": "Hóa đơn điện tử",
-    "userAdmin": "Admin",
-    "userStaff": "Nhân viên (phân quyền)",
+    "userAdmin": "Quản trị viên",
+    "userStaff": "Nhân viên (Phân quyền)",
 
-    "problemLabel": "Vấn đề",
-    "problemTitle": "Quản lý thủ công.\nKhông có hệ thống.\nKhông có dữ liệu.",
-    "solutionLabel": "Hướng tiếp cận",
-    "solutionTitle": "Tham khảo, tinh chỉnh,\nrồi làm thành của mình.",
-    "galleryLabel": "Màn hình thiết kế",
-    "impactLabel": "Kết quả",
-    "reflectionLabel": "Nhìn lại",
-    "reflectionText": "Giai đoạn 1 còn quá an toàn — không dùng AI, màu sắc không nhất quán, layout chưa nổi bật. Đó cũng là lý do dẫn đến các lần rework. Giá trị thật sự không phải sản phẩm cuối — mà là học được cách lead design trong dự án thật, làm việc với developer, và điều chỉnh qua 3 lần khởi động lại."
+    "problemLabel": "Thách thức",
+    "problemTitle": "Quy trình thủ công.\nHệ thống rời rạc.\nDữ liệu thiếu minh bạch.",
+    "solutionLabel": "Giải pháp",
+    "solutionTitle": "Nghiên cứu, kế thừa\nvà tối ưu hóa trải nghiệm.",
+    "galleryLabel": "Giao diện thiết kế",
+    "impactLabel": "Kết quả đạt được",
+    "reflectionLabel": "Nhìn lại dự án",
+    "reflectionText": "Nhìn lại giai đoạn đầu, em thấy mình còn khá an toàn khi chưa áp dụng AI và quản lý màu sắc chưa chặt chẽ. Tuy nhiên, giá trị lớn nhất em nhận được không chỉ là sản phẩm cuối cùng, mà là kinh nghiệm điều phối thiết kế trong dự án thực tế, cách phối hợp với lập trình viên và khả năng thích nghi qua 3 lần tái cấu trúc."
   },
+
   "projects": {
-    "eyebrow": "Dự án thực tế",
-    "title": "Dự Án & Công Việc Thực Tế",
+    "eyebrow": "Sản phẩm thực tế",
+    "title": "Dự Án Đã Triển Khai",
     "filters": {
       "all": "Tất cả",
-      "client": "Client",
-      "startup": "Startup",
+      "client": "Khách hàng",
+      "startup": "Khởi nghiệp",
       "internship": "Thực tập",
-      "shipped": "Đã hoàn thành"
+      "shipped": "Đã bàn giao"
     }
   },
   "project": {
-    "viewDetails": "Xem Chi Tiết",
-    "projectOverview": "Tổng Quan Dự Án",
-    "myRole": "Vai Trò Của Em",
-    "teamSize": "Quy Mô Team",
-    "keyResponsibilities": "Trách Nhiệm Chính",
-    "myContributions": "Đóng Góp Của Em",
-    "impactResults": "Tác Động & Kết Quả",
-    "technologiesTools": "Công Nghệ & Công Cụ",
-    "challengesSolutions": "Thách Thức & Giải Pháp",
-    "keyLearnings": "Bài Học Chính",
-    "projectVisuals": "Hình Ảnh Dự Án",
-    "live": "Xem Trực Tiếp",
-    "private": "Private / NDA"
+    "viewDetails": "Xem chi tiết",
+    "projectOverview": "Tổng quan dự án",
+    "myRole": "Vai trò của em",
+    "teamSize": "Quy mô đội ngũ",
+    "keyResponsibilities": "Trách nhiệm chính",
+    "myContributions": "Đóng góp cá nhân",
+    "impactResults": "Tác động & Kết quả",
+    "technologiesTools": "Công nghệ & Công cụ",
+    "challengesSolutions": "Khó khăn & Giải pháp",
+    "keyLearnings": "Bài học rút ra",
+    "projectVisuals": "Hình ảnh thực tế",
+    "live": "Xem trực tuyến",
+    "private": "Dự án bảo mật (NDA)"
   },
   "about": {
-    "eyebrow": "Về Em",
-    "tagline": "Gốc Dev,\nTư Duy Designer.",
-    "bio1": "Em là UI/UX Designer với nền tảng lập trình frontend — hiện là sinh viên năm 3 tại Cao đẳng Viễn Đông, dự kiến tốt nghiệp cuối năm 2025. Từ năm 2, Em đã tham gia các dự án thực tế thông qua giảng viên, tức là Em đã có sản phẩm thật được triển khai thực tế.",
-    "bio2": "Vì xuất phát từ dev, Em thiết kế với tư duy code. Mỗi layout đều sẵn sàng để component hóa, mỗi khoảng cách đều có chủ đích, mỗi tương tác đều khả thi về mặt kỹ thuật — để team Anh chị tốn ít thời gian re-spec hơn và ship nhanh hơn.",
+    "eyebrow": "Về em",
+    "tagline": "Gốc lập trình,\nTư duy thiết kế.",
+    "bio1": "Em là một UI/UX Designer có nền tảng vững chắc về lập trình Frontend, hiện đang theo học năm cuối tại Cao đẳng Viễn Đông. Ngay từ năm thứ hai, em đã may mắn được tham gia vào các dự án thực tế và có sản phẩm được đưa vào vận hành chính thức.",
+    "bio2": "Nhờ kinh nghiệm viết code, em thiết kế với tư duy hệ thống: mọi layout đều có khả năng đóng gói thành component, mọi thông số khoảng cách đều có quy luật và mọi tương tác đều đảm bảo tính khả thi về mặt kỹ thuật. Điều này giúp đội ngũ của anh chị tiết kiệm thời gian chỉnh sửa và triển khai sản phẩm mượt mà hơn.",
     "stats": {
-      "projects": "Dự Án",
-      "clients": "Khách Hàng Thật",
-      "gpa": "GPA / 10"
+      "projects": "Dự án hoàn thành",
+      "clients": "Đối tác tin tưởng",
+      "gpa": "GPA tích lũy"
     },
     "process": {
-      "eyebrow": "Cách Em Làm Việc",
-      "title": "Quy trình",
-      "titleAccent": "xây dựng sản phẩm.",
+      "eyebrow": "Quy trình làm việc",
+      "title": "Cách em",
+      "titleAccent": "tạo ra sản phẩm.",
       "steps": {
         "discover": {
-          "title": "Khám phá",
-          "description": "Phỏng vấn trực tiếp khách hàng — để hiểu cách họ thực sự nghĩ về sản phẩm, không chỉ gom list tính năng."
+          "title": "Thấu hiểu",
+          "description": "Trao đổi trực tiếp với khách hàng để nắm bắt nhu cầu thực tế và mục tiêu cốt lõi, thay vì chỉ liệt kê các tính năng bề nổi."
         },
         "research": {
-          "title": "Nghiên cứu",
-          "description": "Tìm hiểu đối thủ và tham khảo — chọn lọc những gì thực sự hiệu quả, không chỉ trông đẹp trên Dribbble."
+          "title": "Phân tích",
+          "description": "Nghiên cứu thị trường và đối thủ để chọn lọc những giải pháp hiệu quả nhất, đảm bảo tính ứng dụng cao thay vì chỉ chạy theo xu hướng."
         },
         "design": {
           "title": "Thiết kế",
-          "description": "Brief hướng đi với khách hàng trước, rồi mới build toàn bộ màn hình — nhất quán và luôn nghĩ đến handoff từ đầu."
+          "description": "Thống nhất định hướng với khách hàng trước khi xây dựng chi tiết, đảm bảo tính nhất quán và tối ưu cho việc bàn giao (handoff)."
         },
         "deliver": {
           "title": "Bàn giao",
-          "description": "Bàn giao file design hoàn chỉnh hoặc prototype — cái nào giúp team ship nhanh hơn thì dùng cái đó."
+          "description": "Cung cấp file thiết kế hoặc bản mẫu prototype hoàn chỉnh, ưu tiên những gì giúp đội ngũ lập trình triển khai nhanh nhất."
         }
       }
     },
     "skills": {
-      "eyebrow": "Kỹ Năng & Công Cụ",
+      "eyebrow": "Kỹ năng & Công cụ",
       "design": {
-        "title": "Thiết Kế",
+        "title": "Thiết kế",
         "items": "Figma · UX Research · Wireframing · Prototyping · Design Systems · Usability Testing"
       },
+      "softSkills": {
+        "title": "Kỹ năng mềm",
+        "items": "Thích nghi nhanh · Tự học · Làm việc nhóm · Tiếng Anh B2 · Quản lý thời gian · Thuyết trình"
+      },
       "frontend": {
-        "title": "Frontend",
-        "items": "React · Next.js · Tailwind CSS · Node.js · MySQL · Thư viện Component"
+        "title": "Lập trình",
+        "items": "React · Next.js · Tailwind CSS · Node.js · MySQL · Component Libraries"
       },
       "creative": {
-        "title": "Công Cụ Sáng Tạo",
-        "items": "Illustrator · Photoshop · Premiere Pro (cơ bản)"
+        "title": "Công cụ",
+        "items": "Figma · Illustrator · Photoshop · Premiere Pro (Cơ bản)"
       },
       "ai": {
-        "title": "AI & Công Cụ Hiện Đại",
+        "title": "Công nghệ AI",
         "items": "Cursor · v0 · Claude · Midjourney · Prompt Engineering"
       }
     },
     "experience": {
-      "eyebrow": "Kinh Nghiệm",
-      "internship": "Thực Tập",
+      "eyebrow": "Kinh nghiệm",
+      "internship": "Thực tập",
       "duration": "3 tháng",
       "company": "VNMentors",
       "role": "UI/UX Designer",
       "period": "Tháng 10/2025 – 01/2026",
-      "description": "Tham gia team chính với vị trí Designer. Thiết kế ấn phẩm marketing 2D cho 990TOEIC và logo cho cả 990TOEIC lẫn VNMentors."
+      "description": "Đóng vai trò Designer chính trong đội ngũ. Thiết kế các ấn phẩm truyền thông cho 990TOEIC và xây dựng bộ nhận diện logo cho VNMentors."
     },
     "education": {
-      "eyebrow": "Học Vấn",
-      "degree": "Công Nghệ Thông Tin",
+      "eyebrow": "Học vấn",
+      "degree": "Công nghệ Thông tin",
       "school": "Cao đẳng Viễn Đông",
       "period": "2023 – 2025",
       "gpa": "GPA 8.2 / 10",
-      "note": "Năm 3 · Tốt nghiệp cuối 2025"
+      "note": "Dự kiến tốt nghiệp cuối năm 2025"
     }
   },
   "footer": {
-    "eyebrow": "Cảm ơn anh chị đã ghé qua",
-    "heading": "Anh chị đã xem đến tận đây rồi.",
-    "subtext": "Điều đó thực sự có ý nghĩa với em. Nếu có điều gì đó thu hút anh chị — hoặc đơn giản chỉ muốn chào hỏi — Em rất vui được nghe từ anh chị. Em đang tìm kiếm vị trí UI/UX fresher.",
-    "ctaContact": "Liên hệ",
-    "ctaCV": "Xem CV",
-    "copyright": "© 2025 Sơn Hà. All rights reserved."
-  },
-  "libraryCaseStudy": {
-    "eyebrow": "Case Study",
-    "meta": {
-      "client": "Khách hàng",
-      "role": "Vai trò",
-      "year": "Năm",
-      "platforms": "Nền tảng"
-    },
-    "problem": {
-      "eyebrow": "Vấn đề",
-      "heading": "Quản lý bằng Excel, sinh viên không biết sách gì có",
-      "before": "Trước đây"
-    },
-    "research": {
-      "eyebrow": "Research",
-      "heading": "Khảo sát thực tế tại thư viện"
-    },
-    "solution": {
-      "eyebrow": "Giải pháp",
-      "heading": "Hệ thống 3 nền tảng"
-    },
-    "impact": {
-      "eyebrow": "Kết quả",
-      "heading": "Thay thế hoàn toàn quy trình cũ"
-    },
-    "gallery": {
-      "eyebrow": "Thiết kế",
-      "heading": "Hình ảnh UI"
-    }
+    "eyebrow": "Lời cảm ơn",
+    "heading": "Cảm ơn anh chị đã dành thời gian.",
+    "subtext": "Sự quan tâm của anh chị là động lực lớn đối với em. Nếu anh chị thấy ấn tượng hoặc chỉ đơn giản muốn kết nối, em luôn sẵn lòng học hỏi. Em hiện đang tìm kiếm cơ hội ở vị trí UI/UX Fresher.",
+    "ctaContact": "Liên hệ ngay",
+    "ctaCV": "Tải xuống CV",
+    "copyright": "© 2025 Sơn Hà. Bản quyền thuộc về tác giả."
   }
 }
