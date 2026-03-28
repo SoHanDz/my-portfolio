@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Mail, Github, Linkedin, ArrowUpRight } from 'lucide-react';
@@ -10,7 +10,6 @@ const iconMap = { Mail, Github, Linkedin };
 
 export default function Footer() {
   const t = useTranslations('footer');
-  const locale = useLocale();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
@@ -60,14 +59,16 @@ export default function Footer() {
           className="flex flex-wrap gap-3 mb-20"
         >
           <a
-            href="mailto:sonha@email.com"
+            href="mailto:sonhadaoquoc@email.com"
             className="group inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white text-sm font-semibold rounded-full hover:bg-orange-600 transition-colors duration-200"
           >
             {t('ctaContact')}
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
           <a
-            href={`/${locale}/cv`}
+            href="https://drive.google.com/file/d/1GyGGyR-T0zezthsynopirfQ93MaZM_2q/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-6 py-3 border border-border text-foreground text-sm font-semibold rounded-full hover:border-orange-500/60 hover:text-orange-500 transition-colors duration-200"
           >
             {t('ctaCV')}
