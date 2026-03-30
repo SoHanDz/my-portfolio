@@ -38,12 +38,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
           {/* Image area */}
           <div className="relative w-full bg-muted overflow-hidden aspect-[16/9]">
             {thumbnail && process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME ? (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 src={getCloudinaryUrl(thumbnail, { width: IMAGE_SIZES.card })}
                 alt={project.title}
-                fill
-                className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
               />
             ) : (
               <div

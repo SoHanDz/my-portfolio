@@ -206,7 +206,8 @@ export default function ProjectDetailDialog({ project, open, onOpenChange }: Pro
                         <button key={i} onClick={() => setActiveImg(i)}
                           className={`rounded-lg overflow-hidden shrink-0 transition-all duration-200 ${i === activeImg ? 'ring-2 ring-orange-500 opacity-100' : 'opacity-50 hover:opacity-80'}`}
                           style={{ width: 56, height: 36 }}>
-                          <Image src={getCloudinaryUrl(img.url, { width: 200 })} alt={img.alt} width={56} height={36} className="w-full h-full object-cover" />
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={getCloudinaryUrl(img.url, { width: 200 })} alt={img.alt} className="w-full h-full object-cover" />
                         </button>
                       ))}
                     </div>

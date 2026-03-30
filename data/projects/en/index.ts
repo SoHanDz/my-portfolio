@@ -339,43 +339,45 @@ export const projectsEN: Project[] = [
       images: [
         {
           url: "projects/smb-1",
-          alt: "Tuan Pham Audio",
-          caption: "Premium product showcase website",
+          alt: "SmartBox Parcel Locker",
+          caption: "Admin dashboard — locker grid and status overview",
         },
         {
           url: "projects/smb-2",
-          alt: "Tuan Pham Audio",
-          caption: "Premium product showcase website",
+          alt: "SmartBox Parcel Locker",
+          caption: "Rental management and transaction history",
         },
         {
           url: "projects/smb-3",
-          alt: "Tuan Pham Audio",
-          caption: "Premium product showcase website",
+          alt: "SmartBox Parcel Locker",
+          caption: "Shipper mobile flow — locker assignment",
         },
         {
           url: "projects/smb-4",
-          alt: "Tuan Pham Audio",
-          caption: "Premium product showcase website",
+          alt: "SmartBox Parcel Locker",
+          caption: "Resident mobile flow — QR code retrieval",
         },
         {
           url: "projects/smb-5",
-          alt: "Tuan Pham Audio",
-          caption: "Premium product showcase website",
+          alt: "SmartBox Parcel Locker",
+          caption: "Pricing setup and customer management",
         },
       ],
     },
   },
+
+  // ─── UPDATED: Tuan Pham — "Shipped" → "In Development" ───────────────────
   {
     id: "5",
     title: "Tuan Pham Audio Website",
     thumbnail: "projects/tuanpham-thumb",
     description:
-      "Product showcase website for a premium audio equipment brand — designed with an AI-assisted workflow",
-    tags: ["Client", "Shipped"],
+      "Product showcase website for a premium audio equipment brand — designed with an AI-assisted workflow. Design complete, dev team currently building.",
+    tags: ["Client", "In Development"],
     category: "client",
     detail: {
       overview:
-        "Tuan Pham Audio is a premium audio equipment dealer in Ho Chi Minh City specializing in high-end speakers and amplifiers. The website needed to reflect the brand's premium positioning and help customers explore products before reaching out to place an order — not a direct e-commerce purchase flow. I handled the design side: defining the layout, color direction, and component system for the homepage, then used Figma Make to generate the remaining pages.",
+        "Tuan Pham Audio is a premium audio equipment dealer in Ho Chi Minh City specializing in high-end speakers and amplifiers. The website needed to reflect the brand's premium positioning and help customers explore products before reaching out to place an order — not a direct e-commerce purchase flow. I handled the design side: defining the layout, color direction, and component system for the homepage, then used Figma Make to generate the remaining pages. Design is now finalized and handed off — the development team is currently building it.",
 
       responsibilities: [
         "Defined the visual direction to match the brand's premium positioning",
@@ -392,7 +394,8 @@ export const projectsEN: Project[] = [
       ],
 
       impact: [
-        "Website delivered and live",
+        "Design complete and handed off to the dev team",
+        "Dev team currently building — in active development",
         "Visual presentation accurately reflects the brand's premium positioning",
       ],
 
@@ -413,6 +416,210 @@ export const projectsEN: Project[] = [
 
       figmaUrl:
         "https://www.figma.com/make/FunfLSANRaqEVqLlfCn744/E-commerce-Website-Structure?fullscreen=1&t=e2PxgBjaP2JdYZOD-1",
+    },
+  },
+
+  // ─── NEW: 990TOEIC Marketing Posters ─────────────────────────────────────
+  {
+    id: "6",
+    title: "990TOEIC — Marketing Posters",
+    thumbnail: "projects/990toeic-poster-thumb",
+    description:
+      "2D marketing assets designed during my internship at VNMentors — promotional posters for 990TOEIC, a TOEIC prep web app.",
+    tags: ["Internship", "Graphic Design"],
+    category: "internship",
+    detail: {
+      overview:
+        "During my internship at VNMentors (Oct 2025 – Jan 2026), I created a series of 2D marketing posters for 990TOEIC — a TOEIC preparation web application. The work covered social media banners, promotional campaigns, and course launch visuals. Each piece had to balance the brand's identity with clear messaging for their target audience.",
+
+      responsibilities: [
+        "Designed 2D marketing assets for social media and digital campaigns",
+        "Maintained brand consistency across all poster formats and sizes",
+        "Iterated based on feedback from the marketing team",
+      ],
+
+      contributions: [
+        "Delivered a series of polished marketing posters used in live campaigns",
+        "Maintained consistent visual identity across all 990TOEIC promotional materials",
+      ],
+
+      impact: [
+        "Assets used in active marketing campaigns",
+        "Supported 990TOEIC's brand presence across social platforms",
+      ],
+
+      technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+
+      teamSize: "Core team at VNMentors",
+      myRole: "Graphic Designer",
+
+      challenges:
+        "Designing marketing assets that stay on-brand while being visually engaging enough to stop the scroll — required balancing brand guidelines with creative flexibility.",
+
+      learnings: [
+        "Workflow for producing marketing assets in a real company environment",
+        "Designing within an established brand system",
+        "Iterating quickly based on team feedback under tight turnarounds",
+      ],
+
+      images: [
+        {
+          url: "projects/990toeic-poster-1",
+          alt: "990TOEIC Marketing Poster",
+          caption: "Social media promotional poster",
+        },
+        {
+          url: "projects/990toeic-poster-2",
+          alt: "990TOEIC Marketing Poster",
+          caption: "Course launch campaign visual",
+        },
+        {
+          url: "projects/990toeic-poster-3",
+          alt: "990TOEIC Marketing Poster",
+          caption: "Promotional banner design",
+        },
+        {
+          url: "projects/990toeic-poster-4",
+          alt: "990TOEIC Marketing Poster",
+          caption: "Social media promotional poster",
+        },
+        {
+          url: "projects/990toeic-poster-5",
+          alt: "990TOEIC Marketing Poster",
+          caption: "Campaign visual",
+        },
+        {
+          url: "projects/990toeic-poster-6",
+          alt: "990TOEIC Marketing Poster",
+          caption: "Promotional banner design",
+        },
+      ],
+    },
+  },
+
+  // ─── NEW: 990TOEIC Logo Design ────────────────────────────────────────────
+  {
+    id: "7",
+    title: "990TOEIC — Logo Design",
+    thumbnail: "projects/990toeic-logo-thumb",
+    description:
+      "Brand identity design for 990TOEIC — a TOEIC prep web app by VNMentors. Designed as part of a brand refresh during my internship.",
+    tags: ["Internship", "Logo Design", "Brand Identity"],
+    category: "internship",
+    detail: {
+      overview:
+        "Designed the logo and brand identity for 990TOEIC, VNMentors' TOEIC preparation web application. The design aimed to be bold, academic, and immediately recognizable — using a circular mark with a graduation cap motif integrated into the numeral styling. Created as part of a brand refresh initiative during my internship.",
+
+      responsibilities: [
+        "Developed logo concept and visual direction",
+        "Created logo variations: full lockup, icon-only, dark and light versions",
+        "Ensured brand consistency within the broader VNMentors ecosystem",
+      ],
+
+      contributions: [
+        "Delivered the final logo and brand mark",
+        "Produced a complete asset package for digital and print use",
+      ],
+
+      impact: [
+        "Logo adopted as the official 990TOEIC brand mark",
+        "Used across web, social media, and marketing materials",
+      ],
+
+      technologies: ["Adobe Illustrator"],
+
+      teamSize: "Core team at VNMentors",
+      myRole: "Graphic Designer",
+
+      challenges:
+        "Designing a logo that communicates academic achievement and TOEIC specificity while remaining clean and versatile across digital formats.",
+
+      learnings: [
+        "Logo design for an edtech product with a specific score-target positioning",
+        "Creating a mark that works at multiple sizes and across contexts",
+        "Collaborating within a brand refresh process in a company setting",
+      ],
+
+      images: [
+        {
+          url: "projects/990toeic-logo-1",
+          alt: "990TOEIC Logo",
+          caption: "Final logo — full color version",
+        },
+        {
+          url: "projects/990toeic-logo-2",
+          alt: "990TOEIC Logo",
+          caption: "Logo variations and usage",
+        },
+        {
+          url: "projects/990toeic-logo-3",
+          alt: "990TOEIC Logo",
+          caption: "Logo on brand context",
+        },
+      ],
+    },
+  },
+
+  // ─── NEW: VNMentors Academy Logo Design ───────────────────────────────────
+  {
+    id: "8",
+    title: "VNMentors Academy — Logo Design",
+    thumbnail: "projects/vnmentors-logo-thumb",
+    description:
+      "Brand identity design for VNMentors Academy — an education ecosystem by VNMentors. Designed during my internship as part of a brand refresh. Now rebranded to IELTS9S.",
+    tags: ["Internship", "Logo Design", "Brand Identity"],
+    category: "internship",
+    detail: {
+      overview:
+        "Designed the logo for VNMentors Academy, the education arm of VNMentors. The logomark — a stylized V formed from layered diamond shapes with a graduation cap tassel — represents expertise and academic achievement. The design was created as part of a broader brand refresh initiative during my internship. VNMentors Academy has since rebranded to IELTS9S.",
+
+      responsibilities: [
+        "Developed brand identity concept for VNMentors Academy",
+        "Designed the logomark and wordmark",
+        "Created usage guidelines and asset variations",
+      ],
+
+      contributions: [
+        "Delivered the official VNMentors Academy logo",
+        "Full brand asset package for digital and print use",
+      ],
+
+      impact: [
+        "Logo used as the official brand mark during the VNMentors Academy era",
+        "Brand has since evolved — now operating as IELTS9S",
+      ],
+
+      technologies: ["Adobe Illustrator"],
+
+      teamSize: "Core team at VNMentors",
+      myRole: "Graphic Designer",
+
+      challenges:
+        "Creating a mark that felt academic and trustworthy while being distinct within a competitive edtech landscape. Balancing the logomark complexity with scalability across small digital sizes.",
+
+      learnings: [
+        "Designing brand identity for an education institution",
+        "How brand marks evolve — and how to design with future flexibility in mind",
+        "Working within a company rebrand process",
+      ],
+
+      images: [
+        {
+          url: "projects/vnmentors-logo-1",
+          alt: "VNMentors Academy Logo",
+          caption: "Final logo — full lockup",
+        },
+        {
+          url: "projects/vnmentors-logo-2",
+          alt: "VNMentors Academy Logo",
+          caption: "Logomark variations",
+        },
+        {
+          url: "projects/vnmentors-logo-3",
+          alt: "VNMentors Academy Logo",
+          caption: "Logo on brand context",
+        },
+      ],
     },
   },
 ];
