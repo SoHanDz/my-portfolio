@@ -8,7 +8,7 @@ export const projectsVI: Project[] = [
     description:
       "Hệ thống quản lý kho cho xưởng sản xuất đồ da, bao gồm quản lý đơn hàng, tồn kho và sản phẩm.",
     tags: ["Dự án Khách hàng", "Redesign", "3 Giai đoạn"],
-    category: "client",
+    category: "uiux",
     detail: {
       overview:
         "XTC là hệ thống quản lý kho được xây dựng cho Xưởng Trường Chinh — một đơn vị sản xuất ví da tại TP.HCM. Mục tiêu là thay thế quy trình quản lý thủ công bằng phần mềm để theo dõi đơn hàng và tồn kho chính xác hơn. Em tham gia với vai trò vừa thiết kế UI/UX vừa lập trình frontend. Dù khách hàng không tiếp tục triển khai, toàn bộ thiết kế và mã nguồn này đã trở thành nền tảng quan trọng để phát triển sản phẩm SaaS InvoiceAI sau này.",
@@ -84,7 +84,7 @@ export const projectsVI: Project[] = [
     description:
       "Số hóa hệ thống quản lý thư viện cho trường Cao đẳng Viễn Đông. Đây là dự án thực tế đầu tiên và hiện đang được đưa vào sử dụng.",
     tags: ["Dự án Khách hàng", "Đã hoàn thành"],
-    category: "client",
+    category: "uiux",
     detail: {
       overview:
         "Thư viện Cao đẳng Viễn Đông trước đây vận hành hoàn toàn thủ công bằng giấy tờ. Em đảm nhận vai trò Designer chính để thiết kế hệ thống số hóa, phục vụ hai nhóm đối tượng: sinh viên/giảng viên (tra cứu, mượn sách) và thủ thư (quản lý vận hành). Hệ thống đã được nhà trường phê duyệt và hiện đang hoạt động thực tế tại thư viện.",
@@ -159,7 +159,7 @@ export const projectsVI: Project[] = [
     description:
       "Giải pháp tủ khóa giao hàng thông minh cho chung cư, giúp shipper và người nhận chủ động hơn trong việc giao nhận hàng hóa.",
     tags: ["Startup", "Đa nền tảng"],
-    category: "startup",
+    category: "uiux",
     detail: {
       overview:
         "SmartBox là một dự án khởi nghiệp nhằm giải quyết vấn đề giao hàng thất bại tại các chung cư. Em đảm nhiệm thiết kế toàn bộ hệ sinh thái sản phẩm trên 4 nền tảng: Ứng dụng di động (cho Shipper & Người nhận) và Hệ thống quản lý Web (cho Admin & Chủ chung cư). Dự án hiện đang tạm dừng ở giai đoạn hoàn thiện thiết kế.",
@@ -228,7 +228,7 @@ export const projectsVI: Project[] = [
     description:
       "Website trưng bày thiết bị âm thanh cao cấp, được thực hiện với quy trình thiết kế tối ưu hóa bằng AI. Thiết kế hoàn thiện, team dev đang triển khai.",
     tags: ["Dự án Khách hàng", "AI-Assisted", "Đang phát triển"],
-    category: "client",
+    category: "uiux",
     detail: {
       overview:
         "Tuấn Phạm Audio là đơn vị kinh doanh thiết bị âm thanh Premium tại TP.HCM. Website được thiết kế để nâng tầm thương hiệu và hỗ trợ khách hàng tìm hiểu sản phẩm chuyên sâu. Em đã áp dụng quy trình làm việc mới: tự tay thiết kế các trang cốt lõi và hệ thống component, sau đó sử dụng công cụ AI (Figma Make) để hỗ trợ mở rộng các trang phụ. Thiết kế đã hoàn thiện và bàn giao — team dev đang tiến hành xây dựng.",
@@ -272,7 +272,7 @@ export const projectsVI: Project[] = [
     description:
       "Thiết kế ấn phẩm marketing 2D trong thời gian thực tập tại VNMentors — poster quảng bá cho 990TOEIC, ứng dụng luyện thi TOEIC.",
     tags: ["Thực tập", "Thiết kế đồ họa"],
-    category: "internship",
+    category: "uiux",
     detail: {
       overview:
         "Trong thời gian thực tập tại VNMentors (10/2025 – 01/2026), em thiết kế series poster marketing 2D cho 990TOEIC — ứng dụng web luyện thi TOEIC. Công việc bao gồm banner mạng xã hội, chiến dịch quảng bá và visual ra mắt khóa học. Mỗi ấn phẩm phải cân bằng giữa nhận diện thương hiệu và thông điệp truyền thông rõ ràng đến đúng đối tượng mục tiêu.",
@@ -342,7 +342,7 @@ export const projectsVI: Project[] = [
     description:
       "Thiết kế nhận diện thương hiệu cho 990TOEIC — ứng dụng luyện thi TOEIC của VNMentors. Thực hiện trong thời gian thực tập, phục vụ mục đích làm mới bộ nhận diện.",
     tags: ["Thực tập", "Thiết kế Logo", "Brand Identity"],
-    category: "internship",
+    category: "uiux",
     detail: {
       overview:
         "Thiết kế logo và nhận diện thương hiệu cho 990TOEIC, ứng dụng luyện thi TOEIC của VNMentors. Thiết kế hướng đến phong cách mạnh mẽ, học thuật và dễ nhận diện — sử dụng logo hình tròn kết hợp hình ảnh mũ tốt nghiệp tích hợp vào kiểu chữ số. Thực hiện trong khuôn khổ chiến dịch làm mới bộ nhận diện thương hiệu khi em đang thực tập.",
@@ -397,7 +397,7 @@ export const projectsVI: Project[] = [
     description:
       "Thiết kế nhận diện thương hiệu cho VNMentors Academy — hệ sinh thái giáo dục của VNMentors. Thực hiện trong thời gian thực tập. Thương hiệu đã đổi tên thành IELTS9S.",
     tags: ["Thực tập", "Thiết kế Logo", "Brand Identity"],
-    category: "internship",
+    category: "uiux",
     detail: {
       overview:
         "Thiết kế logo cho VNMentors Academy, nhánh giáo dục của VNMentors. Logomark — chữ V cách điệu từ các lớp hình thoi kết hợp dây mũ tốt nghiệp — thể hiện chuyên môn và thành tựu học thuật. Thực hiện trong khuôn khổ chiến dịch làm mới bộ nhận diện thương hiệu. Lưu ý: VNMentors Academy đã đổi tên thành IELTS9S.",

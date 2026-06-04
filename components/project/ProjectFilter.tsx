@@ -3,14 +3,14 @@
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 
-type FilterType = 'all' | 'client' | 'startup';
+type FilterType = 'all' | 'frontend' | 'uiux';
 
 interface ProjectFilterProps {
   activeFilter: FilterType;
   onFilterChange: (filter: FilterType) => void;
 }
 
-const filters: FilterType[] = ['all', 'client', 'startup'];
+const filters: FilterType[] = ['all', 'frontend', 'uiux'];
 
 export default function ProjectFilter({ activeFilter, onFilterChange }: ProjectFilterProps) {
   const t = useTranslations('projects.filters');

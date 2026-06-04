@@ -69,7 +69,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             {/* Category pill */}
             <div className="absolute top-3 left-3 z-10">
               <span className="text-[10px] uppercase tracking-widest font-semibold text-muted-foreground/70 bg-background/80 backdrop-blur-sm px-2.5 py-1 rounded-full border border-border/40">
-                {project.category}
+                {project.category === 'uiux' ? 'UI/UX' : project.category}
               </span>
             </div>
 

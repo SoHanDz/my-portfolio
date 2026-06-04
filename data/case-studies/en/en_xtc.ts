@@ -24,7 +24,7 @@ export const xtcEN: CaseStudy = {
   sitemapImage: 'case-studies/xtc-sitemap',
   images: [
     { url: 'marquee/ui-1', alt: 'Dashboard', caption: 'Dashboard — Phase 1' },
-    { url: 'case-studies/xtc-orders', alt: 'Order Management', caption: 'Order management' },
+    { url: 'case-studies/xtc-orders', alt: 'Order Management', caption: 'Order management' },         
     { url: 'case-studies/xtc-inventory', alt: 'Inventory', caption: 'Inventory tracking' },
     { url: 'case-studies/xtc-products-import', alt: 'Products', caption: 'Product management' },
     { url: 'case-studies/xtc-employee-man', alt: 'Employee', caption: 'Employee management' },

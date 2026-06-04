@@ -68,7 +68,7 @@ export interface Project {
   thumbnail?: string; 
   image?: string;
   tags: string[];
-  category: 'client' | 'startup' | 'internship' | 'shipped';
+  category: 'frontend' | 'uiux';
   link?: string;
   detail?: ProjectDetail; // ← Thêm field này
 }

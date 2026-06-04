@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: 'E-commerce Platform',
     description: 'Complete redesign of checkout flow, reducing cart abandonment by 23%',
     tags: ['Client', 'Shipped'],
-    category: 'client',
+    category: 'uiux',
     detail: {
       overview: 'Led the UI/UX redesign of the checkout flow for a mid-sized e-commerce platform serving 50K+ monthly users. Focused on reducing friction and improving conversion rates.',
       
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     title: 'Fintech Mobile App',
     description: 'Onboarding experience and personal finance dashboard',
     tags: ['Startup', 'Shipped'],
-    category: 'startup',
+    category: 'uiux',
     detail: {
       overview: 'Designed the onboarding flow and main dashboard for a personal finance app targeting millennials. Focus on making financial management approachable and engaging.',
       
@@ -103,7 +103,7 @@ export const projects: Project[] = [
     title: 'Internal CRM Tool',
     description: 'Enterprise tool for sales team workflow optimization',
     tags: ['Client', 'Shipped'],
-    category: 'client',
+    category: 'uiux',
     // Không có detail → sẽ không có button "View Details"
   },
   
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     title: 'Marketing Website',
     description: 'Landing pages and marketing materials for B2B SaaS product',
     tags: ['Internship'],
-    category: 'internship',
+    category: 'uiux',
     // Không có detail
   },
 ];

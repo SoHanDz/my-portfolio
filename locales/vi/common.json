@@ -61,10 +61,8 @@
     "title": "Dự Án Đã Triển Khai",
     "filters": {
       "all": "Tất cả",
-      "client": "Khách hàng",
-      "startup": "Khởi nghiệp",
-      "internship": "Thực tập",
-      "shipped": "Đã bàn giao"
+      "frontend": "Frontend",
+      "uiux": "UI/UX"
     }
   },
   "project": {
@@ -152,7 +150,7 @@
       "degree": "Công nghệ Thông tin",
       "school": "Cao đẳng Viễn Đông",
       "period": "2023 – 2026",
-      "gpa": "GPA 3.2 / 4.0",
+      "gpa": "GPA 3.8 / 4.0",
       "note": "Dự kiến tốt nghiệp cuối năm 2026"
     }
   },

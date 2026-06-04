@@ -61,10 +61,8 @@
     "title": "Work & Real Projects",
     "filters": {
       "all": "All",
-      "client": "Client",
-      "startup": "Startup",
-      "internship": "Internship",
-      "shipped": "Shipped"
+      "frontend": "Frontend",
+      "uiux": "UI/UX"
     }
   },
   "project": {
@@ -136,6 +134,21 @@
       "ai": {
         "title": "AI & Modern Tools",
         "items": "Cursor · v0 · Claude · Midjourney · Prompt Engineering"
+      }
+    },
+    "journey": {
+      "eyebrow": "My Journey",
+      "experience": {
+        "year": "Oct 2025 – Jan 2026",
+        "role": "UI/UX Designer",
+        "company": "VNMentors · Internship · 3 months",
+        "description": "Joined the core team as Designer. Designed 2D marketing assets for 990TOEIC and created logos for both 990TOEIC and VNMentors."
+      },
+      "education": {
+        "year": "2023 – 2026",
+        "degree": "Information Technology",
+        "school": "Vien Dong College",
+        "note": "GPA 3.2 / 4.0 · Year 3 · Graduating late 2026"
       }
     },
     "experience": {

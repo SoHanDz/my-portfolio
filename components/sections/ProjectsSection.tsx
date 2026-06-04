@@ -7,7 +7,7 @@ import { getProjects } from '@/data/projects/index';
 import ProjectCard from '@/components/project/ProjectCard';
 import ProjectFilter from '@/components/project/ProjectFilter';
 
-type FilterType = 'all' | 'client' | 'startup';
+type FilterType = 'all' | 'frontend' | 'uiux';
 
 export default function ProjectsSection() {
   const t = useTranslations('projects');

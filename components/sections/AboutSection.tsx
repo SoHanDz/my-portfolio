@@ -11,6 +11,47 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.55, delay, ease: "easeOut" as const },
 });
 
+// Skills data với tags riêng thay vì string
+const skillsData = [
+  {
+    key: "design",
+    icon: "✦",
+    title: "Design",
+    tags: ["Figma", "UX Research", "Wireframing", "Prototyping", "Design Systems", "Usability Testing"],
+  },
+  {
+    key: "frontend",
+    icon: "⌥",
+    title: "Frontend",
+    tags: ["React", "Next.js", "Tailwind CSS", "Node.js", "MySQL", "Component Libraries"],
+  },
+  {
+    key: "ai",
+    icon: "⚡",
+    title: "AI & Modern Tools",
+    tags: ["Cursor", "v0", "Claude", "Midjourney", "Prompt Engineering"],
+  },
+  {
+    key: "creative",
+    icon: "◈",
+    title: "Creative Tools",
+    tags: ["Illustrator", "Photoshop", "Premiere Pro"],
+  },
+  {
+    key: "softSkills",
+    icon: "◎",
+    title: "Soft Skills",
+    tags: ["Adaptable", "Self-learner", "Team player", "English B2", "Time management", "Presentation"],
+  },
+] as const;
+
+const processSteps = [
+  { num: "01", key: "discover" },
+  { num: "02", key: "research" },
+  { num: "03", key: "design" },
+  { num: "04", key: "deliver" },
+] as const;
+
 export default function AboutSection() {
   const t = useTranslations("about");
 
@@ -19,21 +60,6 @@ export default function AboutSection() {
     { value: "4+", label: t("stats.clients") },
     { value: "3.2", label: t("stats.gpa") },
   ];
-
-  const skills = [
-    { key: "design", icon: "✦" },
-    { key: "softSkills", icon: "◎" },
-    { key: "frontend", icon: "⌥" },
-    { key: "creative", icon: "◈" },
-    { key: "ai", icon: "⚡" },
-  ] as const;
-
-  const processSteps = [
-    { num: "01", key: "discover" },
-    { num: "02", key: "research" },
-    { num: "03", key: "design" },
-    { num: "04", key: "deliver" },
-  ] as const;
 
   return (
     <section id="about" className="relative py-24 md:py-32 bg-background overflow-hidden">
@@ -52,7 +78,6 @@ export default function AboutSection() {
           <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-4">
             {t("eyebrow")}
           </p>
-          {/* Asymmetric: tagline left, bio right */}
           <div className="grid md:grid-cols-[1fr_1fr] gap-8 md:gap-16 items-end">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.08] text-foreground whitespace-pre-line">
               {t("tagline")}
@@ -113,7 +138,6 @@ export default function AboutSection() {
                 strokeDasharray="6 8"
                 strokeLinecap="round"
               />
-              {/* Dots */}
               {[
                 { cx: 80, cy: 280 },
                 { cx: 330, cy: 120 },
@@ -127,12 +151,11 @@ export default function AboutSection() {
               ))}
             </svg>
 
-            {/* Step labels — positioned to match dots */}
             {[
-              { left: '0%',  top: '72%', align: 'left' },
-              { left: '30%', top: '25%', align: 'left' },
-              { left: '54%', top: '42%', align: 'left' },
-              { left: '78%', top: '8%',  align: 'left' },
+              { left: '0%',  top: '72%' },
+              { left: '30%', top: '25%' },
+              { left: '54%', top: '42%' },
+              { left: '78%', top: '8%'  },
             ].map((pos, i) => (
               <motion.div
                 key={i}
@@ -140,7 +163,6 @@ export default function AboutSection() {
                 className="absolute"
                 style={{ left: pos.left, top: pos.top, transform: 'translate(-8px, 20px)' }}
               >
-                {/* Ghost number */}
                 <span className="absolute -top-20 -left-3 text-[110px] font-black text-foreground/[0.05] leading-none select-none pointer-events-none">
                   {i + 1}
                 </span>
@@ -162,7 +184,6 @@ export default function AboutSection() {
                 {...fadeUp(0.14 + i * 0.06)}
                 className="flex gap-4 pb-8 relative"
               >
-                {/* Dashed vertical line */}
                 {i < processSteps.length - 1 && (
                   <div
                     className="absolute left-[17px] top-9 bottom-0 w-px"
@@ -188,120 +209,91 @@ export default function AboutSection() {
           </div>
         </motion.div>
 
-        {/* ── MAIN GRID: Skills (left-wide) + Experience & Education (right) ── */}
-        <div className="grid md:grid-cols-[3fr_2fr] gap-10 md:gap-14">
+        {/* ── SKILLS — full width ── */}
+        <motion.div {...fadeUp(0.15)} className="mb-16 md:mb-20">
+          <div className="flex items-center gap-3 mb-8">
+            <Wrench className="w-4 h-4 text-orange-500" />
+            <span className="text-xs font-semibold tracking-[0.15em] uppercase text-muted-foreground">
+              {t("skills.eyebrow")}
+            </span>
+          </div>
 
-          {/* LEFT — Skills */}
-          <motion.div {...fadeUp(0.15)}>
-            <div className="flex items-center gap-3 mb-8">
-              <Wrench className="w-4 h-4 text-orange-500" />
-              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-muted-foreground">
-                {t("skills.eyebrow")}
-              </span>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              {skills.map(({ key, icon }, i) => (
-                <motion.div
-                  key={key}
-                  {...fadeUp(0.18 + i * 0.06)}
-                  className="group relative border border-border/70 rounded-2xl p-5 bg-card hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10 transition-all duration-300"
-                >
-                  {/* Top row */}
-                  <div className="flex items-start justify-between mb-3">
-                    <span className="text-lg text-orange-500 leading-none">{icon}</span>
-                    <span className="text-[10px] font-bold tracking-[0.12em] uppercase text-muted-foreground/50">
-                      0{i + 1}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {skillsData.map(({ key, icon, title, tags }, i) => (
+              <motion.div
+                key={key}
+                {...fadeUp(0.18 + i * 0.06)}
+                className="group border border-border/70 rounded-2xl p-5 bg-card hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10 transition-all duration-300"
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-base text-orange-500 leading-none">{icon}</span>
+                  <p className="text-base font-bold text-foreground">{title}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-3 py-1 rounded-full border border-border/70 bg-background text-muted-foreground"
+                    >
+                      {tag}
                     </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ── JOURNEY — full width ── */}
+        <motion.div {...fadeUp(0.2)}>
+          <div className="flex items-center gap-3 mb-8">
+            <Briefcase className="w-4 h-4 text-orange-500" />
+            <span className="text-xs font-semibold tracking-[0.15em] uppercase text-muted-foreground">
+              {t("journey.eyebrow")}
+            </span>
+          </div>
+
+          <div className="relative">
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-orange-500/20" />
+
+            <div className="flex flex-col gap-6">
+              {[
+                {
+                  key: "experience",
+                  icon: <Briefcase className="w-4 h-4 text-orange-500" />,
+                  year: t("journey.experience.year"),
+                  title: t("journey.experience.role"),
+                  sub: t("journey.experience.company"),
+                  desc: t("journey.experience.description"),
+                },
+                {
+                  key: "education",
+                  icon: <GraduationCap className="w-4 h-4 text-orange-500" />,
+                  year: t("journey.education.year"),
+                  title: t("journey.education.degree"),
+                  sub: t("journey.education.school"),
+                  desc: t("journey.education.note"),
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.key}
+                  {...fadeUp(0.22 + i * 0.08)}
+                  className="flex gap-5"
+                >
+                  <div className="relative z-10 w-10 h-10 rounded-full bg-orange-500/10 border border-orange-500/40 flex items-center justify-center shrink-0">
+                    {item.icon}
                   </div>
-                  <p className="text-sm font-semibold text-foreground mb-2">
-                    {t(`skills.${key}.title`)}
-                  </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    {t(`skills.${key}.items`)}
-                  </p>
+                  <div className="flex-1 border border-border/70 rounded-2xl p-5 bg-card hover:border-orange-500/40 transition-colors duration-300" style={{ borderTopColor: 'rgb(249 115 22 / 0.5)' }}>
+                    <p className="text-xs text-muted-foreground mb-1 tabular-nums">{item.year}</p>
+                    <p className="text-base font-bold text-foreground mb-1">{item.title}</p>
+                    <p className="text-sm text-orange-500 mb-3">{item.sub}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
-
-          {/* RIGHT — Experience + Education stacked */}
-          <div className="flex flex-col gap-8">
-
-            {/* Experience */}
-            <motion.div {...fadeUp(0.2)}>
-              <div className="flex items-center gap-3 mb-6">
-                <Briefcase className="w-4 h-4 text-orange-500" />
-                <span className="text-xs font-semibold tracking-[0.15em] uppercase text-muted-foreground">
-                  {t("experience.eyebrow")}
-                </span>
-              </div>
-
-              <div className="relative pl-5 border-l-2 border-orange-500/20">
-                {/* Timeline dot */}
-                <div className="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-orange-500 ring-4 ring-background" />
-
-                <div className="mb-1 flex flex-wrap items-center gap-2">
-                  <span className="text-base font-bold text-foreground">
-                    {t("experience.role")}
-                  </span>
-                  <span className="inline-block text-[10px] font-semibold tracking-widest uppercase bg-orange-500/10 text-orange-500 px-2 py-0.5 rounded-full">
-                    {t("experience.internship")}
-                  </span>
-                </div>
-
-                <p className="text-sm font-semibold text-orange-500 mb-1">
-                  {t("experience.company")}
-                </p>
-
-                <p className="text-xs text-muted-foreground mb-3">
-                  {t("experience.period")} · {t("experience.duration")}
-                </p>
-
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {t("experience.description")}
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Divider */}
-            <div className="h-px bg-border/60" />
-
-            {/* Education */}
-            <motion.div {...fadeUp(0.25)}>
-              <div className="flex items-center gap-3 mb-6">
-                <GraduationCap className="w-4 h-4 text-orange-500" />
-                <span className="text-xs font-semibold tracking-[0.15em] uppercase text-muted-foreground">
-                  {t("education.eyebrow")}
-                </span>
-              </div>
-
-              <div className="relative pl-5 border-l-2 border-orange-500/20">
-                <div className="absolute -left-[5px] top-1 w-2.5 h-2.5 rounded-full bg-orange-500/50 ring-4 ring-background" />
-
-                <p className="text-base font-bold text-foreground mb-1">
-                  {t("education.degree")}
-                </p>
-                <p className="text-sm font-semibold text-orange-500 mb-1">
-                  {t("education.school")}
-                </p>
-                <p className="text-xs text-muted-foreground mb-3">
-                  {t("education.period")}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  <span className="inline-block text-xs font-semibold bg-card border border-border/70 text-foreground px-3 py-1 rounded-full">
-                    {t("education.gpa")}
-                  </span>
-                  <span className="inline-block text-xs text-muted-foreground bg-card border border-border/70 px-3 py-1 rounded-full">
-                    {t("education.note")}
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
