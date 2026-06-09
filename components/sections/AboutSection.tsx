@@ -58,7 +58,7 @@ export default function AboutSection() {
   const stats = [
     { value: "7+", label: t("stats.projects") },
     { value: "4+", label: t("stats.clients") },
-    { value: "3.2", label: t("stats.gpa") },
+    { value: "3.7", label: t("stats.gpa") },
   ];
 
   return (
