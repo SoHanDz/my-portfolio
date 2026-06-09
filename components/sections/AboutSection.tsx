@@ -118,95 +118,83 @@ export default function AboutSection() {
           <p className="text-xs font-semibold tracking-[0.18em] uppercase text-orange-500 mb-6">
             {t("process.eyebrow")}
           </p>
-          <h3 className="text-2xl md:text-3xl font-black text-foreground mb-10 leading-tight">
+          <h3 className="text-2xl md:text-3xl font-black text-foreground mb-12 leading-tight">
             {t("process.title")} <span className="text-orange-500">{t("process.titleAccent")}</span>
           </h3>
 
-          {/* Desktop — curved SVG path */}
-          <div className="hidden md:block relative" style={{ height: '380px' }}>
-            <svg
-              viewBox="0 0 900 340"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute inset-0 w-full h-full overflow-visible"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M 80 280 C 160 280, 230 140, 330 120 C 430 100, 460 210, 530 185 C 600 160, 650 70, 760 55"
-                fill="none"
-                stroke="#F0503D"
-                strokeWidth="2"
-                strokeDasharray="6 8"
-                strokeLinecap="round"
-              />
-              {[
-                { cx: 80, cy: 280 },
-                { cx: 330, cy: 120 },
-                { cx: 530, cy: 185 },
-                { cx: 760, cy: 55 },
-              ].map((pos, i) => (
-                <g key={i}>
-                  <circle cx={pos.cx} cy={pos.cy} r={8} fill="#F0503D" opacity={0.15} />
-                  <circle cx={pos.cx} cy={pos.cy} r={4} fill="#F0503D" />
-                </g>
-              ))}
-            </svg>
+          {(() => {
+            const steps = [
+              { num: "1", title: "Discover",   tag: "UI/UX",    desc: "Interview the client directly to understand how they actually think about their product." },
+              { num: "2", title: "Research",   tag: "UI/UX",    desc: "Study competitors and references — picking what actually works, not just what looks good." },
+              { num: "3", title: "Design",     tag: "UI/UX",    desc: "Brief client on direction first, then build all screens consistently with handoff in mind." },
+              { num: "4", title: "Build",      tag: "Frontend", desc: "Develop features iteratively — pixel-perfect to design specs, mobile-first always." },
+              { num: "5", title: "Ship",       tag: "Frontend", desc: "Deploy and hand off polished files or working prototype — whichever gets the team shipping fastest." },
+            ];
 
-            {[
-              { left: '0%',  top: '72%' },
-              { left: '30%', top: '25%' },
-              { left: '54%', top: '42%' },
-              { left: '78%', top: '8%'  },
-            ].map((pos, i) => (
-              <motion.div
-                key={i}
-                {...fadeUp(0.16 + i * 0.07)}
-                className="absolute"
-                style={{ left: pos.left, top: pos.top, transform: 'translate(-8px, 20px)' }}
-              >
-                <span className="absolute -top-20 -left-3 text-[110px] font-black text-foreground/[0.05] leading-none select-none pointer-events-none">
-                  {i + 1}
-                </span>
-                <p className="text-sm font-bold text-foreground mb-1">
-                  {t(`process.steps.${processSteps[i].key}.title`)}
-                </p>
-                <p className="text-xs text-muted-foreground leading-relaxed" style={{ maxWidth: '160px' }}>
-                  {t(`process.steps.${processSteps[i].key}.description`)}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+            return (
+              <>
+                {/* Desktop horizontal */}
+                <div className="hidden md:block">
+                  <div className="relative">
+                    <div className="absolute top-[52px] left-0 right-0 h-px bg-border/60" />
+                    <div className="grid grid-cols-5 gap-2">
+                      {steps.map((step, i) => {
+                        const isAbove = i % 2 === 0;
+                        return (
+                          <div key={step.num} className="flex flex-col items-center">
+                            <div className={`h-[100px] flex flex-col justify-end pb-3 text-center ${isAbove ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
+                              <span className={`text-[9px] font-bold tracking-widest uppercase mb-1 ${step.tag === "UI/UX" ? "text-orange-500" : "text-blue-400"}`}>{step.tag}</span>
+                              <p className="text-xs font-bold text-foreground mb-1">{step.title}</p>
+                              <p className="text-[10px] text-muted-foreground leading-relaxed px-1">{step.desc}</p>
+                            </div>
+                            <div className={`relative z-10 w-[42px] h-[42px] rounded-full flex items-center justify-center border-2 font-black text-sm shrink-0 transition-colors
+                              ${step.tag === "UI/UX"
+                                ? "bg-orange-500/10 border-orange-500/60 text-orange-500"
+                                : "bg-blue-400/10 border-blue-400/60 text-blue-400"
+                              }`}
+                            >
+                              {step.num}
+                            </div>
+                            <div className={`h-[100px] flex flex-col justify-start pt-3 text-center ${!isAbove ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
+                              <span className={`text-[9px] font-bold tracking-widest uppercase mb-1 ${step.tag === "UI/UX" ? "text-orange-500" : "text-blue-400"}`}>{step.tag}</span>
+                              <p className="text-xs font-bold text-foreground mb-1">{step.title}</p>
+                              <p className="text-[10px] text-muted-foreground leading-relaxed px-1">{step.desc}</p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  {/* Legend */}
+                  <div className="flex items-center gap-6 mt-8 justify-center">
+                    <span className="flex items-center gap-2 text-xs text-muted-foreground"><span className="w-2 h-2 rounded-full bg-orange-500 inline-block" />UI/UX Design</span>
+                    <span className="flex items-center gap-2 text-xs text-muted-foreground"><span className="w-2 h-2 rounded-full bg-blue-400 inline-block" />Frontend Dev</span>
+                  </div>
+                </div>
 
-          {/* Mobile — vertical timeline */}
-          <div className="md:hidden flex flex-col gap-0">
-            {processSteps.map(({ num, key }, i) => (
-              <motion.div
-                key={key}
-                {...fadeUp(0.14 + i * 0.06)}
-                className="flex gap-4 pb-8 relative"
-              >
-                {i < processSteps.length - 1 && (
-                  <div
-                    className="absolute left-[17px] top-9 bottom-0 w-px"
-                    style={{
-                      backgroundImage:
-                        'repeating-linear-gradient(180deg, #F0503D 0, #F0503D 5px, transparent 5px, transparent 11px)',
-                    }}
-                  />
-                )}
-                <div className="w-9 h-9 rounded-full border-2 border-orange-500 flex items-center justify-center shrink-0 bg-background z-10">
-                  <span className="text-[10px] font-bold text-orange-500">{num}</span>
+                {/* Mobile vertical */}
+                <div className="md:hidden flex flex-col gap-0">
+                  {steps.map((step, i) => (
+                    <div key={step.num} className="flex gap-4 pb-7 relative">
+                      {i < steps.length - 1 && (
+                        <div className="absolute left-[17px] top-9 bottom-0 w-px bg-border/50" />
+                      )}
+                      <div className={`w-9 h-9 rounded-full border-2 flex items-center justify-center shrink-0 font-bold text-xs z-10
+                        ${step.tag === "UI/UX" ? "bg-orange-500/10 border-orange-500/60 text-orange-500" : "bg-blue-400/10 border-blue-400/60 text-blue-400"}`}
+                      >
+                        {step.num}
+                      </div>
+                      <div className="pt-1">
+                        <span className={`text-[9px] font-bold tracking-widest uppercase ${step.tag === "UI/UX" ? "text-orange-500" : "text-blue-400"}`}>{step.tag}</span>
+                        <p className="text-sm font-bold text-foreground mb-1">{step.title}</p>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{step.desc}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-                <div className="pt-1">
-                  <p className="text-sm font-bold text-foreground mb-1">
-                    {t(`process.steps.${key}.title`)}
-                  </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    {t(`process.steps.${key}.description`)}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+              </>
+            );
+          })()}
         </motion.div>
 
         {/* ── SKILLS — full width ── */}
