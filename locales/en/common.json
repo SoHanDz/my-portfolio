@@ -62,7 +62,8 @@
     "filters": {
       "all": "All",
       "frontend": "Frontend",
-      "uiux": "UI/UX"
+      "uiux": "UI/UX",
+      "other": "Other"
     }
   },
   "project": {

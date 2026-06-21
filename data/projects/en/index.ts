@@ -68,7 +68,7 @@ export const projectsEN: Project[] = [
     description:
       "Warehouse management system for a leather wallet manufacturing workshop, covering order management, inventory, and products",
     tags: ["Client", "Not Deployed"],
-    category: "uiux",
+    category: "both",
     detail: {
       overview:
         "XTC is a warehouse management system built for Xuong Truong Chinh — a leather wallet manufacturing workshop in Ho Chi Minh City. The problem was straightforward: replace manual tracking with a proper system for orders, inventory, and products. I took on both the UI/UX design and frontend development roles. The project was completed but the client did not proceed with deployment; the design and codebase were later reused as the foundation for InvoiceAI.",
@@ -154,7 +154,7 @@ export const projectsEN: Project[] = [
     description:
       "Digitizing the library management system for Vien Dong College — my first real-world project, currently live",
     tags: ["Client", "Shipped"],
-    category: "uiux",
+    category: "both",
     detail: {
       overview:
         "The library at Vien Dong College was running entirely on manual processes — book borrowing and returning was handled on paper with no tracking system. My lecturer proposed a digitization project that was approved by the college principal. I was the lead UI/UX designer, responsible for all desktop interfaces covering two user groups: students and lecturers for searching and borrowing, and librarians for daily operations. The system is currently deployed and in active use at the library.",
@@ -427,7 +427,7 @@ export const projectsEN: Project[] = [
     description:
       "2D marketing assets designed during my internship at VNMentors — promotional posters for 990TOEIC, a TOEIC prep web app.",
     tags: ["Internship", "Graphic Design"],
-    category: "uiux",
+    category: "graphic",
     detail: {
       overview:
         "During my internship at VNMentors (Oct 2025 – Jan 2026), I created a series of 2D marketing posters for 990TOEIC — a TOEIC preparation web application. The work covered social media banners, promotional campaigns, and course launch visuals. Each piece had to balance the brand's identity with clear messaging for their target audience.",
@@ -505,7 +505,7 @@ export const projectsEN: Project[] = [
     description:
       "Brand identity design for 990TOEIC — a TOEIC prep web app by VNMentors. Designed as part of a brand refresh during my internship.",
     tags: ["Internship", "Logo Design", "Brand Identity"],
-    category: "uiux",
+    category: "graphic",
     detail: {
       overview:
         "Designed the logo and brand identity for 990TOEIC, VNMentors' TOEIC preparation web application. The design aimed to be bold, academic, and immediately recognizable — using a circular mark with a graduation cap motif integrated into the numeral styling. Created as part of a brand refresh initiative during my internship.",
@@ -568,7 +568,7 @@ export const projectsEN: Project[] = [
     description:
       "Brand identity design for VNMentors Academy — an education ecosystem by VNMentors. Designed during my internship as part of a brand refresh. Now rebranded to IELTS9S.",
     tags: ["Internship", "Logo Design", "Brand Identity"],
-    category: "uiux",
+    category: "graphic",
     detail: {
       overview:
         "Designed the logo for VNMentors Academy, the education arm of VNMentors. The logomark — a stylized V formed from layered diamond shapes with a graduation cap tassel — represents expertise and academic achievement. The design was created as part of a broader brand refresh initiative during my internship. VNMentors Academy has since rebranded to IELTS9S.",

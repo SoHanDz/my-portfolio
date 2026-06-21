@@ -11,9 +11,9 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <MarqueeSection />
-      <AboutSection />
       <CaseStudySection />
       <ProjectsSection />
+      <AboutSection />
     </main>
   );
 }

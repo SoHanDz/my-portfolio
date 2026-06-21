@@ -7,7 +7,7 @@ import { getProjects } from '@/data/projects/index';
 import ProjectCard from '@/components/project/ProjectCard';
 import ProjectFilter from '@/components/project/ProjectFilter';
 
-type FilterType = 'all' | 'frontend' | 'uiux';
+type FilterType = 'all' | 'uiux' | 'frontend' | 'other';
 
 export default function ProjectsSection() {
   const t = useTranslations('projects');
@@ -18,7 +18,10 @@ export default function ProjectsSection() {
 
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === 'all') return true;
-    return project.category === activeFilter;
+    if (activeFilter === 'uiux') return project.category === 'uiux' || project.category === 'both';
+    if (activeFilter === 'frontend') return project.category === 'frontend' || project.category === 'both';
+    if (activeFilter === 'other') return project.category === 'graphic';
+    return false;
   });
 
   // Split into 2 columns for masonry

@@ -18,14 +18,12 @@
     "title": "Case Studies Nổi Bật",
     "viewCaseStudy": "Xem chi tiết"
   },
-
   "caseStudyDetail": {
     "back": "Quay lại danh sách",
     "metaRole": "Vai trò",
     "metaDuration": "Thời gian",
     "metaClient": "Đối tác",
     "metaTech": "Công cụ",
-
     "phasesLabel": "Hành trình 3 giai đoạn",
     "phase1Label": "Giai đoạn 1 — Dự án XTC",
     "phase1Desc": "Đảm nhiệm Lead UI/UX cho xưởng sản xuất đồ da. Nghiên cứu giải pháp từ Sapo POS để tinh giản quy trình và hoàn thiện hơn 15 màn hình chính.",
@@ -33,7 +31,6 @@
     "phase2Desc": "Khi khách hàng dừng dự án, em cùng giảng viên chuyển hướng sang mô hình SaaS. Em tái thiết kế giao diện, trực tiếp lập trình module thu chi và xử lý sự thiếu nhất quán giữa các thành viên frontend.",
     "phase3Label": "Giai đoạn 3 — Tối ưu với AI",
     "phase3Desc": "Xây dựng lại toàn bộ giao diện bằng v0.dev giúp tăng tốc độ thử nghiệm và nâng cao chất lượng đầu ra. Đây chính là tiền thân của nền tảng InvoiceAI.",
-
     "sitemapLabel": "Cấu trúc hệ thống",
     "sitemapRoot": "Hệ thống XTC",
     "module1": "Bảng điều khiển",
@@ -45,7 +42,6 @@
     "module7": "Hóa đơn điện tử",
     "userAdmin": "Quản trị viên",
     "userStaff": "Nhân viên (Phân quyền)",
-
     "problemLabel": "Thách thức",
     "problemTitle": "Quy trình thủ công.\nHệ thống rời rạc.\nDữ liệu thiếu minh bạch.",
     "solutionLabel": "Giải pháp",
@@ -55,14 +51,14 @@
     "reflectionLabel": "Nhìn lại dự án",
     "reflectionText": "Nhìn lại giai đoạn đầu, em thấy mình còn khá an toàn khi chưa áp dụng AI và quản lý màu sắc chưa chặt chẽ. Tuy nhiên, giá trị lớn nhất em nhận được không chỉ là sản phẩm cuối cùng, mà là kinh nghiệm điều phối thiết kế trong dự án thực tế, cách phối hợp với lập trình viên và khả năng thích nghi qua 3 lần tái cấu trúc."
   },
-
   "projects": {
     "eyebrow": "Sản phẩm thực tế",
     "title": "Dự Án Đã Triển Khai",
     "filters": {
       "all": "Tất cả",
       "frontend": "Frontend",
-      "uiux": "UI/UX"
+      "uiux": "UI/UX",
+      "other": "Khác"
     }
   },
   "project": {
@@ -152,6 +148,21 @@
       "period": "2023 – 2026",
       "gpa": "GPA 3.7 / 4.0",
       "note": "Dự kiến tốt nghiệp cuối năm 2026"
+    },
+    "journey": {
+      "eyebrow": "Hành trình",
+      "experience": {
+        "year": "Tháng 10/2025 – 01/2026",
+        "role": "UI/UX Designer",
+        "company": "VNMentors · Thực tập · 3 tháng",
+        "description": "Đóng vai trò Designer chính trong đội ngũ. Thiết kế các ấn phẩm truyền thông cho 990TOEIC và xây dựng bộ nhận diện logo cho VNMentors."
+      },
+      "education": {
+        "year": "2023 – 2026",
+        "degree": "Công nghệ Thông tin",
+        "school": "Cao đẳng Viễn Đông",
+        "note": "GPA 3.7 / 4.0 · Năm 3 · Dự kiến tốt nghiệp cuối năm 2026"
+      }
     }
   },
   "footer": {
